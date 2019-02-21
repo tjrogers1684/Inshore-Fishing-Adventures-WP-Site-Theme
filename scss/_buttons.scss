@@ -1,0 +1,22 @@
+
+.btn,
+.button,
+[type="button"],
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+	color: #000;
+
+	&:hover {
+	}
+
+	&.btn-sm {
+	}
+
+	&.btn-xsm {
+	}
+
+	&.btn-lg {
+	}
+}
