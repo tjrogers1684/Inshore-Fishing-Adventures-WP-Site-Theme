@@ -1,0 +1,232 @@
+/*
+author: Thrive Creative Labs
+date modified: November 15, 2018
+type: reset css
+*/
+/* ----- Utility Classes ----- */
+.redNote {
+  padding: 5px;
+  background-color: #cc0000;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+/* ----- Reset all CSS ----- */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, fieldset, form, label, legend, caption, tbody, tfoot, thead {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit; }
+
+/* ----- floats ----- */
+.flt-right {
+  float: right;
+  margin: 0 0 0 15px; }
+
+@media (max-width: 650px) {
+  .flt-right {
+    float: none;
+    margin: 0; } }
+.flt-left {
+  float: left;
+  margin: 0 15px 0 0; }
+
+@media (max-width: 650px) {
+  .flt-left {
+    float: none;
+    margin: 0; } }
+.clearfloat {
+  clear: both;
+  height: 0;
+  font-size: 1px;
+  line-height: 0px; }
+
+/* ----- form styles ----- */
+.grippie {
+  display: none !important; }
+
+.btn, input[type="submit"],
+input[type="button"],
+button,
+.button,
+[type="button"],
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  color: #000; }
+
+h1, h2, h3 {
+  font-weight: bold;
+  line-height: 1.25;
+  margin-bottom: 1em; }
+
+* ~ h1, * ~ h2, * ~ h3 {
+  margin-top: 1em; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 1.75em; }
+
+h3 {
+  font-size: 1.35em; }
+
+* + p,
+* + li {
+  margin-top: 1em; }
+
+small {
+  font-size: 0.75em; }
+
+label {
+  margin-bottom: 0.5em; }
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1em;
+  border: 1px solid #ccc; }
+
+textarea {
+  font-family: sans-serif;
+  padding: 1rem;
+  resize: none; }
+
+input[type="submit"],
+input[type="button"],
+button {
+  border: 0;
+  font-size: 1em; }
+
+.top-nav ul,
+.top-nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.top-nav .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .top-nav .menu > li.page_item_has_children, .top-nav .menu > li.menu-item-has-children {
+    position: relative; }
+    .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0; }
+      .top-nav .menu > li.page_item_has_children ul li, .top-nav .menu > li.menu-item-has-children ul li {
+        display: block;
+        width: 15em; }
+        .top-nav .menu > li.page_item_has_children ul li a, .top-nav .menu > li.menu-item-has-children ul li a {
+          display: block; }
+    .top-nav .menu > li.page_item_has_children:hover ul, .top-nav .menu > li.menu-item-has-children:hover ul {
+      display: block; }
+
+.footer-nav ul,
+.footer-nav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.footer-nav .menu > li.page_item_has_children ul, .footer-nav .menu > li.menu-item-has-children ul {
+  display: none; }
+
+.mobile-nav,
+.mobile-nav-icon {
+  display: none; }
+
+/* CSS Document */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden; }
+
+body {
+  color: #000;
+  font-size: 17px;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif; }
+
+a, a:visited {
+  color: #ff9e14;
+  text-decoration: none; }
+  a:hover, a:focus, a:visited:hover, a:visited:focus {
+    color: #e08400; }
+
+img {
+  max-width: 100%;
+  height: auto !important; }
+
+.social-contact-nav-wrap-outer {
+  background: #333; }
+  .social-contact-nav-wrap-outer .social-contact-nav-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding: 0 1.5em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center; }
+    .social-contact-nav-wrap-outer .social-contact-nav-wrap p {
+      margin: 0; }
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .btn, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="submit"],
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="button"],
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact button {
+        background: #ff9e14;
+        color: #fff;
+        padding: 0.35em 1em;
+        margin: 0 0.25em; }
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0.5em 1em;
+        color: #fff;
+        background: #888; }
+
+.header-wrap-outer {
+  background: #ccc url(/wp-content/themes/inshorefishing/images/bkd-header-hp.jpg) 50% 50%;
+  background-size: cover;
+  position: relative; }
+  .header-wrap-outer .header-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    height: 75vh;
+    min-height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
+
+.content-wrap {
+  max-width: 1120px;
+  margin: 0 auto; }
+
+.footer-wrap-outer {
+  background: #235f8a;
+  color: #fff; }
+
+/*# sourceMappingURL=all.css.map */

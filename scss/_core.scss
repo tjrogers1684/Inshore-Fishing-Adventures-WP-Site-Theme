@@ -21,15 +21,16 @@ body {
 	color: #000;
 	font-size: 17px;
 	line-height: 1.5;
+	font-family: 'Roboto', sans-serif;
 }
 
 a, a:visited {
-	color: #000;
+	color: $brand;
 	text-decoration: none;
 
 	&:hover,
 	&:focus {
-		color: #000;
+		color: $brand-dk;
 	}
 }
 
@@ -43,12 +44,91 @@ hr {
 
 
 // ---------------------------------------------------------------------------------
-// ----- HEADER --------------------------------------------------------------------
+// ----- SOCIAL CONNECT ------------------------------------------------------------
 // ---------------------------------------------------------------------------------
-.header-wrap {
+.social-contact-nav-wrap-outer {
+	background: #333;
+
+	.social-contact-nav-wrap {
+		max-width: 1120px;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+		padding: 0 1.5em;
+		font-weight: bold;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: center;
+
+		p {
+			margin: 0;
+
+			&.social-contact-contact {
+
+				.btn {
+					background: $brand;
+					color: #fff;
+					padding: 0.35em 1em;
+					margin: 0 0.25em;
+				}
+			}
+
+			&.social-contact-social {
+				a {
+					display: inline-block;
+					vertical-align: top;
+					padding: 0.5em 1em;
+					color: #fff;
+					background: #888;
+				}
+			}
+		}
+	}
 }
 
-.site-logo {
+
+// ---------------------------------------------------------------------------------
+// ----- HEADER --------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+.header-wrap-outer {
+	background: #ccc url(/wp-content/themes/inshorefishing/images/bkd-header-hp.jpg) 50% 50%;
+	background-size: cover;
+	position: relative;
+
+	// &:after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	bottom: -1px;
+	// 	left: 0;
+	// 	height: 80%;
+	// 	width: 100%;
+	// 	@include background-image( linear-gradient( to top, rgba(darken($brand, 60),0.9), rgba(darken($brand, 60),0) ) );
+	// }
+
+	.header-wrap {
+		max-width: 1120px;
+		margin: 0 auto;
+		padding: 2em;
+		text-align: center;
+		color: #fff;
+		font-weight: bold;
+		height: 75vh;
+		min-height: 800px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	// .swirl {
+	// 	line-height: 0;
+	// 	transform: translateY(1px);
+	// 	position: relative;
+	// }
+
 }
 
 
@@ -63,7 +143,7 @@ hr {
 // ----- CONTENT -------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .content-wrap {
-	max-width: 0px;
+	max-width: 1120px;
 	margin: 0 auto;
 }
 
@@ -80,8 +160,27 @@ hr {
 // ---------------------------------------------------------------------------------
 // ----- FOOTER --------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
-.footer-wrap {
+.footer-wrap-outer {
+	background: #235f8a;
+	color: #fff;
+	.footer-wrap {
+	
+	}
+
+	.footer-info {
+	
+	}
 }
 
-.footer-info {
-}
+
+
+
+
+
+
+
+
+
+
+
+

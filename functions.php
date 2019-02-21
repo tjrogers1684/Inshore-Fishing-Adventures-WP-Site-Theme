@@ -20,26 +20,37 @@ Add theme support for WooCommerce (optional)
 // }
 
 
+function register_theme_menus() {
+	register_nav_menus(
+		array(
+			'primary-menu' => __( 'Primary Menu' ),
+		)
+	);
+}
+add_action( 'init', 'register_theme_menus' );
+
+
 
 /**
 * Enqueue scripts and styles.
 >>> REPLACE "theme" with namespace for this theme <<<
 */
-function theme_styles_scripts() {
+function ifa_styles_scripts() {
 
 	// Theme stylesheet.
-	wp_enqueue_style( 'theme-main', get_theme_file_uri( '/style.css' ) );
-	wp_enqueue_style( 'theme-all', get_theme_file_uri( '/css/all.css' ) );
+	wp_enqueue_style( 'ifa-main', get_theme_file_uri( '/style.css' ) );
+	wp_enqueue_style( 'ifa-all', get_theme_file_uri( '/css/all.css' ) );
+	wp_enqueue_style( 'inwood-googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700' );
 
 	if( is_front_page() ){
-		wp_enqueue_style( 'theme-homepage', get_theme_file_uri( '/css/home.css' ) );
+		wp_enqueue_style( 'ifa-homepage', get_theme_file_uri( '/css/home.css' ) );
 	}
 
-	//wp_enqueue_script( 'theme-fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/js/all.js' );
-	//wp_enqueue_style( 'theme-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
-	wp_enqueue_script( 'theme-global', get_theme_file_uri( '/js/theme.js' ), array('jquery') );
+	wp_enqueue_script( 'ifa-fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/js/all.js' );
+	wp_enqueue_style( 'ifa-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
+	wp_enqueue_script( 'ifa-global', get_theme_file_uri( '/js/theme.js' ), array('jquery') );
 }
-add_action( 'wp_enqueue_scripts', 'theme_styles_scripts' );
+add_action( 'wp_enqueue_scripts', 'ifa_styles_scripts' );
 
 
 
