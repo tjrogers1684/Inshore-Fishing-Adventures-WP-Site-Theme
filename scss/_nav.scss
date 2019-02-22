@@ -3,6 +3,7 @@
 // ----- TOP NAV -------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .top-nav {
+	width: 75%;
 
 	ul,
 	ul li {
@@ -15,15 +16,21 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: space-around;
 		align-items: center;
 
 		> li {
+			position: relative;
 
 			a {
+				font-size: 0.88em;
+				padding: 0.5em 1.25em;
+				display: block;
 			}
 
 			&:hover a {
+				background: $brand-dk;
+				color: #fff;
 			}
 
 			&.current-menu-item a {
@@ -32,6 +39,27 @@
 			&.page_item_has_children,
 			&.menu-item-has-children {
 				position: relative;
+
+				&:hover {
+					&:after {
+						color: #004b71;
+						color: lighten($brand, 15);;
+						content: "\f104";
+						right: 0.35em;
+					}
+				}
+
+				&:after {
+					transition: 0.2s;
+					position: absolute;
+					top: 50%;
+					right: 0.25em;
+					transform: translateY(-50%);
+					content: "\f107";
+					font-family: "Font Awesome 5 Free";
+					//font-weight: 900;
+					color: #ff822f;
+				}
 
 				ul {
 					display: none;
@@ -45,8 +73,11 @@
 
 						a {
 							display: block;
+							text-align: left;
+							padding-left: 1.75em;
 
 							&:hover {
+								background: $brand;
 							}
 						}
 					}

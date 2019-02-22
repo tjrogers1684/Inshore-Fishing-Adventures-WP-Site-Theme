@@ -5,3 +5,226 @@
 // ---------------------------------------------------------------------------------
 // ----- HEADER --------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
+.feature-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+
+	.booking-callout {
+		background: rgba(63,130,174,0.7);
+		padding: 2em 2em;
+		position: relative;
+
+		h1 {
+			font-size: 3.18em;
+			margin: 0;
+
+			span {
+				display: block;
+				font-size: 1.58rem;
+				font-weight: 300;
+			}
+		}
+
+		.btn {
+			position: absolute;
+			left: 2em;
+			bottom: 0;
+			transform: translateY(50%);
+		}
+	}
+}
+
+// ---------------------------------------------------------------------------------
+// ----- ABOUT SECTION -------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+.hp-about-section-container {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bdffff+0,ffffff+100 */
+	background: #bdffff; /* Old browsers */
+	background: -moz-linear-gradient(top, #bdffff 0%, #ffffff 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #bdffff 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #bdffff 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 0 1.5em;
+	margin-top: -7em;
+	position: relative;
+	z-index: 3;
+
+	.hp-about-section {
+		width: 35%;
+
+		&.about-content {
+			width: 65%;
+			padding: 4em 2em 2em 3em;
+
+			.about-content-links {
+				margin-top: 2em;
+
+				a {
+					display: inline-block;
+					margin: 0 0.25em;
+				}
+			}
+		}
+	}
+}
+
+.hp-perks-section-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 2em 0;
+
+	.hp-perk-item {
+		width: 33%;
+		padding: 4em 1em 0;
+
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+
+		.hp-perk-item-icon {
+			width: 20%;
+			color: $brand-secondary;
+
+			img {
+				display: inline-block;
+				filter: invert(22%) sepia(95%) saturate(2543%) hue-rotate(186deg) brightness(87%) contrast(94%);
+			}
+		}
+
+		.hp-perk-item-description {
+			width: 80%;
+			padding-left: 2em;
+			margin-top: 0;
+		}
+	}
+}
+
+
+.prefooter-booking-callout-wrap {
+	.prefooter-booking-callout {
+		max-width: 1220px;
+		margin: 3em auto;
+		background: $brand;
+		color: #fff;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		align-items: stretch;
+
+		.prefooter-booking-callout-section {
+			padding: 2.5em 2em;
+		}
+
+		.prefooter-booking-callout-image-container {
+			width: 36%;
+			position: relative;
+
+			.prefooter-booking-callout-images {
+				//position: relative;
+				line-height: 0;
+
+				img {
+					display: block;
+					position: absolute;
+
+					&.captain-mark {
+						bottom: 0;
+						z-index: 2;
+					}
+
+					&.background {
+						bottom: 0;
+						z-index: 1;
+					}
+				}
+			}
+		}
+
+		.prefooter-booking-callout-image-background {
+			border-radius: 100px;
+			width: 200px;
+			height: 200px;
+			overflow: hidden;
+			display: none;
+		}
+
+		.prefooter-booking-callout-details {
+			width: 37%;
+		}
+
+		.prefooter-booking-callout-contact {
+			width: 27%;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

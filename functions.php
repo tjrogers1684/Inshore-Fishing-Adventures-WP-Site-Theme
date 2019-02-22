@@ -40,13 +40,14 @@ function ifa_styles_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style( 'ifa-main', get_theme_file_uri( '/style.css' ) );
 	wp_enqueue_style( 'ifa-all', get_theme_file_uri( '/css/all.css' ) );
-	wp_enqueue_style( 'inwood-googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700' );
+	wp_enqueue_style( 'inwood-googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700' );
+	wp_enqueue_style( 'ifa-fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
 
 	if( is_front_page() ){
 		wp_enqueue_style( 'ifa-homepage', get_theme_file_uri( '/css/home.css' ) );
 	}
 
-	wp_enqueue_script( 'ifa-fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/js/all.js' );
+	//wp_enqueue_script( 'ifa-fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/js/all.js' );
 	wp_enqueue_style( 'ifa-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
 	wp_enqueue_script( 'ifa-global', get_theme_file_uri( '/js/theme.js' ), array('jquery') );
 }

@@ -1,10 +1,154 @@
 .btn,
+.btn:visited,
 .button,
 [type="button"],
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-  color: #000; }
+  color: #fff;
+  background: #ff9e14;
+  padding: 0.75em 1.5em;
+  display: inline-block; }
+  .btn:hover,
+  .btn:visited:hover,
+  .button:hover,
+  [type="button"]:hover,
+  .woocommerce #respond input#submit.alt:hover,
+  .woocommerce a.button.alt:hover,
+  .woocommerce button.button.alt:hover,
+  .woocommerce input.button.alt:hover {
+    background: #e08400;
+    color: #fff; }
+  .btn.btn-alt,
+  .btn:visited.btn-alt,
+  .button.btn-alt,
+  [type="button"].btn-alt,
+  .woocommerce #respond input#submit.alt.btn-alt,
+  .woocommerce a.button.alt.btn-alt,
+  .woocommerce button.button.alt.btn-alt,
+  .woocommerce input.button.alt.btn-alt {
+    background: #fff;
+    color: #ff9e14; }
+
+.feature-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%; }
+  .feature-wrap .booking-callout {
+    background: rgba(63, 130, 174, 0.7);
+    padding: 2em 2em;
+    position: relative; }
+    .feature-wrap .booking-callout h1 {
+      font-size: 3.18em;
+      margin: 0; }
+      .feature-wrap .booking-callout h1 span {
+        display: block;
+        font-size: 1.58rem;
+        font-weight: 300; }
+    .feature-wrap .booking-callout .btn {
+      position: absolute;
+      left: 2em;
+      bottom: 0;
+      transform: translateY(50%); }
+
+.hp-about-section-container {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bdffff+0,ffffff+100 */
+  background: #bdffff;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bdffff 0%, #ffffff 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bdffff 0%, #ffffff 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bdffff 0%, #ffffff 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdffff', endColorstr='#ffffff',GradientType=0 );
+  /* IE6-9 */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 1.5em;
+  margin-top: -7em;
+  position: relative;
+  z-index: 3; }
+  .hp-about-section-container .hp-about-section {
+    width: 35%; }
+    .hp-about-section-container .hp-about-section.about-content {
+      width: 65%;
+      padding: 4em 2em 2em 3em; }
+      .hp-about-section-container .hp-about-section.about-content .about-content-links {
+        margin-top: 2em; }
+        .hp-about-section-container .hp-about-section.about-content .about-content-links a {
+          display: inline-block;
+          margin: 0 0.25em; }
+
+.hp-perks-section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 2em 0; }
+  .hp-perks-section-container .hp-perk-item {
+    width: 33%;
+    padding: 4em 1em 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start; }
+    .hp-perks-section-container .hp-perk-item .hp-perk-item-icon {
+      width: 20%;
+      color: #086ba5; }
+      .hp-perks-section-container .hp-perk-item .hp-perk-item-icon img {
+        display: inline-block;
+        filter: invert(22%) sepia(95%) saturate(2543%) hue-rotate(186deg) brightness(87%) contrast(94%); }
+    .hp-perks-section-container .hp-perk-item .hp-perk-item-description {
+      width: 80%;
+      padding-left: 2em;
+      margin-top: 0; }
+
+.prefooter-booking-callout-wrap .prefooter-booking-callout {
+  max-width: 1220px;
+  margin: 3em auto;
+  background: #ff9e14;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-items: stretch; }
+  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-section {
+    padding: 2.5em 2em; }
+  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
+    width: 36%;
+    position: relative; }
+    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images {
+      line-height: 0; }
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images img {
+        display: block;
+        position: absolute; }
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images img.captain-mark {
+          bottom: 0;
+          z-index: 2; }
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images img.background {
+          bottom: 0;
+          z-index: 1; }
+  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-background {
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: none; }
+  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-details {
+    width: 37%; }
+  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact {
+    width: 27%; }
 
 /*# sourceMappingURL=home.css.map */

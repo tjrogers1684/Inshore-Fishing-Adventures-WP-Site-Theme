@@ -53,13 +53,50 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .btn, input[type="submit"],
 input[type="button"],
 button,
+.btn:visited,
+input[type="submit"]:visited,
+input[type="button"]:visited,
+button:visited,
 .button,
 [type="button"],
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-  color: #000; }
+  color: #fff;
+  background: #ff9e14;
+  padding: 0.75em 1.5em;
+  display: inline-block; }
+  .btn:hover, input[type="submit"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .btn:visited:hover,
+  input[type="submit"]:visited:hover,
+  input[type="button"]:visited:hover,
+  button:visited:hover,
+  .button:hover,
+  [type="button"]:hover,
+  .woocommerce #respond input#submit.alt:hover,
+  .woocommerce a.button.alt:hover,
+  .woocommerce button.button.alt:hover,
+  .woocommerce input.button.alt:hover {
+    background: #e08400;
+    color: #fff; }
+  .btn.btn-alt, input.btn-alt[type="submit"],
+  input.btn-alt[type="button"],
+  button.btn-alt,
+  .btn:visited.btn-alt,
+  input[type="submit"]:visited.btn-alt,
+  input[type="button"]:visited.btn-alt,
+  button:visited.btn-alt,
+  .button.btn-alt,
+  [type="button"].btn-alt,
+  .woocommerce #respond input#submit.alt.btn-alt,
+  .woocommerce a.button.alt.btn-alt,
+  .woocommerce button.button.alt.btn-alt,
+  .woocommerce input.button.alt.btn-alt {
+    background: #fff;
+    color: #ff9e14; }
 
 h1, h2, h3 {
   font-weight: bold;
@@ -111,31 +148,61 @@ button {
   border: 0;
   font-size: 1em; }
 
-.top-nav ul,
-.top-nav ul li {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-.top-nav .menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
-  .top-nav .menu > li.page_item_has_children, .top-nav .menu > li.menu-item-has-children {
-    position: relative; }
-    .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0; }
-      .top-nav .menu > li.page_item_has_children ul li, .top-nav .menu > li.menu-item-has-children ul li {
-        display: block;
-        width: 15em; }
-        .top-nav .menu > li.page_item_has_children ul li a, .top-nav .menu > li.menu-item-has-children ul li a {
+.top-nav {
+  width: 75%; }
+  .top-nav ul,
+  .top-nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .top-nav .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center; }
+    .top-nav .menu > li {
+      position: relative; }
+      .top-nav .menu > li a {
+        font-size: 0.88em;
+        padding: 0.5em 1.25em;
+        display: block; }
+      .top-nav .menu > li:hover a {
+        background: #e08400;
+        color: #fff; }
+      .top-nav .menu > li.page_item_has_children, .top-nav .menu > li.menu-item-has-children {
+        position: relative; }
+        .top-nav .menu > li.page_item_has_children:hover:after, .top-nav .menu > li.menu-item-has-children:hover:after {
+          color: #004b71;
+          color: #ffbe61;
+          content: "\f104";
+          right: 0.35em; }
+        .top-nav .menu > li.page_item_has_children:after, .top-nav .menu > li.menu-item-has-children:after {
+          transition: 0.2s;
+          position: absolute;
+          top: 50%;
+          right: 0.25em;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          content: "\f107";
+          font-family: "Font Awesome 5 Free";
+          color: #ff822f; }
+        .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0; }
+          .top-nav .menu > li.page_item_has_children ul li, .top-nav .menu > li.menu-item-has-children ul li {
+            display: block;
+            width: 15em; }
+            .top-nav .menu > li.page_item_has_children ul li a, .top-nav .menu > li.menu-item-has-children ul li a {
+              display: block;
+              text-align: left;
+              padding-left: 1.75em; }
+              .top-nav .menu > li.page_item_has_children ul li a:hover, .top-nav .menu > li.menu-item-has-children ul li a:hover {
+                background: #ff9e14; }
+        .top-nav .menu > li.page_item_has_children:hover ul, .top-nav .menu > li.menu-item-has-children:hover ul {
           display: block; }
-    .top-nav .menu > li.page_item_has_children:hover ul, .top-nav .menu > li.menu-item-has-children:hover ul {
-      display: block; }
 
 .footer-nav ul,
 .footer-nav ul li {
@@ -191,16 +258,29 @@ img {
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .btn, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="submit"],
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="button"],
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact button {
-        background: #ff9e14;
-        color: #fff;
         padding: 0.35em 1em;
         margin: 0 0.25em; }
-      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a {
-        display: inline-block;
-        vertical-align: top;
-        padding: 0.5em 1em;
-        color: #fff;
-        background: #888; }
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center; }
+        .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a {
+          display: block;
+          padding: 0.5em 1em;
+          color: #fff;
+          background: #888; }
+          .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a.social-facebook {
+            background: #3b5998; }
+          .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a.social-twitter {
+            background: #33ccff; }
+          .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a.social-instagram {
+            background: #4e433c; }
+          .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a.social-linkedin {
+            background: #4875b4; }
+          .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a:hover {
+            background: #e08400; }
 
 .header-wrap-outer {
   background: #ccc url(/wp-content/themes/inshorefishing/images/bkd-header-hp.jpg) 50% 50%;
@@ -210,16 +290,18 @@ img {
     max-width: 1120px;
     margin: 0 auto;
     padding: 2em;
-    text-align: center;
     color: #fff;
     font-weight: bold;
     height: 75vh;
-    min-height: 800px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start; }
+    min-height: 800px; }
+    .header-wrap-outer .header-wrap .header-nav {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center; }
+      .header-wrap-outer .header-wrap .header-nav .site-logo {
+        width: 25%; }
 
 .content-wrap {
   max-width: 1120px;

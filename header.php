@@ -39,13 +39,22 @@ if( !empty(explode('/', $_SERVER['REQUEST_URI'])[2]) && !strstr(explode('/', $_S
 
 		<div class="header-wrap">
 
-			<p class="site-logo"><a href="<?php echo bloginfo( 'url' ); ?>"><img src="/wp-content/themes/inshorefishing/images/logo-header.png" alt=""></a></p>
+			<div class="header-nav">
+				<p class="site-logo"><a href="<?php echo bloginfo( 'url' ); ?>"><img src="/wp-content/themes/inshorefishing/images/logo-header.png" alt=""></a></p>
 
-			<div class="top-nav">
-				<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
-			</div><!-- TOP NAV -->
+				<div class="top-nav">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
+				</div><!-- TOP NAV -->
 
-			<p class="mobile-nav-icon"><a href="#"><i class="fas fa-bars"></i></a></p>
+				<p class="mobile-nav-icon"><a href="#"><i class="fas fa-bars"></i></a></p>
+			</div>
+
+			<div class="feature-wrap">
+				<div class="booking-callout">
+					<h1>Ft. Pierce Fishing Guide <span>and Family-Friendly Fishing Charter Captain</span></h1>
+					<a href="/booking" class="btn">Book now</a>
+				</div>
+			</div>
 
 		</div><!-- END HEADER WRAP -->
 

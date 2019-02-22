@@ -1,14 +1,20 @@
 
 .btn,
+.btn:visited,
 .button,
 [type="button"],
 .woocommerce #respond input#submit.alt,
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-	color: #000;
+	color: #fff;
+	background: $brand;
+	padding: 0.75em 1.5em;
+	display: inline-block;
 
 	&:hover {
+		background: $brand-dk;
+		color: #fff;
 	}
 
 	&.btn-sm {
@@ -18,5 +24,10 @@
 	}
 
 	&.btn-lg {
+	}
+
+	&.btn-alt {
+		background: #fff;
+		color: $brand;
 	}
 }

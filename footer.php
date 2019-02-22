@@ -1,5 +1,35 @@
 <?php wp_footer(); ?>
 
+<div class="prefooter-booking-callout-wrap">
+	<div class="prefooter-booking-callout">
+		<div class="prefooter-booking-callout-section prefooter-booking-callout-image-container">
+			<p class="prefooter-booking-callout-image-captain-mark">
+				<img class="captain-mark" src="/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark.png" alt="">
+			</p>
+
+			<p class="prefooter-booking-callout-image-background">
+				<img class="background" src="/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark-bkd.jpg" alt="">
+			</p>
+		</div>
+
+		<div class="prefooter-booking-callout-section prefooter-booking-callout-details">
+			<p>Rates starting as low as $325.</p>
+			<p>Multi-boat trips are available. Call Capt. Mark for details. Online booking is available for your convenience.</p>
+		</div>
+
+		<div class="prefooter-booking-callout-section prefooter-booking-callout-contact">
+			<p>Call 321-302-3474 <span>or <a class="btn btn-alt" href="/booking">Book now</a></span></p>
+		</div>
+	</div>
+
+</div>
+
+
+
+
+
+
+
 <div class="footer-wrap-outer">
 
 	<div class="footer-wrap">
