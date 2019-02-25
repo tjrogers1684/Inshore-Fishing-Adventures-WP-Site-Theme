@@ -9,15 +9,11 @@
 </head>
 
 <?php
-	$addl_body_classes = array();
-	$addl_body_classes[] = 'section-'.explode('/', $_SERVER['REQUEST_URI'])[1];
-	if( !empty(explode('/', $_SERVER['REQUEST_URI'])[2]) && !strstr(explode('/', $_SERVER['REQUEST_URI'])[2], '?') ){
-		$addl_body_classes[] = 'section-'.explode('/', $_SERVER['REQUEST_URI'])[1].'-'.explode('/', $_SERVER['REQUEST_URI'])[2];
-	}
-
-	if ( !is_front_page() ) { 
-		$addl_body_classes[] = 'not-front';
-	}
+$addl_body_classes = array();
+$addl_body_classes[] = 'section-'.explode('/', $_SERVER['REQUEST_URI'])[1];
+if( !empty(explode('/', $_SERVER['REQUEST_URI'])[2]) && !strstr(explode('/', $_SERVER['REQUEST_URI'])[2], '?') ){
+	$addl_body_classes[] = 'section-'.explode('/', $_SERVER['REQUEST_URI'])[1].'-'.explode('/', $_SERVER['REQUEST_URI'])[2];
+}
 ?>
 
 <body <?php body_class( $addl_body_classes ); ?>>
@@ -54,6 +50,10 @@
 			</div>
 
 			<div class="feature-wrap">
+				<div class="booking-callout">
+					<h1>Ft. Pierce Fishing Guide <span>and Family-Friendly Fishing Charter Captain</span></h1>
+					<a href="/booking" class="btn">Book now</a>
+				</div>
 			</div>
 
 		</div><!-- END HEADER WRAP -->

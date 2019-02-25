@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .btn,
 .btn:visited,
 .button,
@@ -45,10 +46,16 @@
     .feature-wrap .booking-callout h1 {
       font-size: 3.18em;
       margin: 0; }
+      @media (max-width: 800px) {
+        .feature-wrap .booking-callout h1 {
+          font-size: 2em; } }
       .feature-wrap .booking-callout h1 span {
         display: block;
         font-size: 1.58rem;
         font-weight: 300; }
+        @media (max-width: 800px) {
+          .feature-wrap .booking-callout h1 span {
+            font-size: 1.25rem; } }
     .feature-wrap .booking-callout .btn {
       position: absolute;
       left: 2em;
@@ -72,20 +79,54 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 1.5em;
+  padding: 0 3em 0 1.5em;
   margin-top: -7em;
   position: relative;
   z-index: 3; }
-  .hp-about-section-container .hp-about-section {
-    width: 35%; }
-    .hp-about-section-container .hp-about-section.about-content {
-      width: 65%;
-      padding: 4em 2em 2em 3em; }
-      .hp-about-section-container .hp-about-section.about-content .about-content-links {
-        margin-top: 2em; }
-        .hp-about-section-container .hp-about-section.about-content .about-content-links a {
-          display: inline-block;
-          margin: 0 0.25em; }
+  @media (max-width: 910px) {
+    .hp-about-section-container {
+      padding: 0 2em 0 0; } }
+  @media (max-width: 800px) {
+    .hp-about-section-container {
+      margin-top: 0; } }
+  @media (max-width: 650px) {
+    .hp-about-section-container {
+      padding: 2em;
+      flex-direction: column-reverse; } }
+  .hp-about-section-container .hp-about-section.about-content {
+    width: 66.6%;
+    padding: 4em 2em 2em 3em; }
+    @media (max-width: 910px) {
+      .hp-about-section-container .hp-about-section.about-content {
+        width: 60%;
+        padding: 2em; } }
+    @media (max-width: 650px) {
+      .hp-about-section-container .hp-about-section.about-content {
+        width: 100%;
+        padding: 0; } }
+    .hp-about-section-container .hp-about-section.about-content .about-content-links {
+      margin-top: 2em; }
+      .hp-about-section-container .hp-about-section.about-content .about-content-links a {
+        display: inline-block;
+        margin: 0 0.25em; }
+        @media (max-width: 910px) {
+          .hp-about-section-container .hp-about-section.about-content .about-content-links a {
+            display: block; }
+            .hp-about-section-container .hp-about-section.about-content .about-content-links a + a {
+              margin-top: 0.5em; } }
+  .hp-about-section-container .about-image-container {
+    width: 33.3%;
+    box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
+    line-height: 0; }
+    @media (max-width: 910px) {
+      .hp-about-section-container .about-image-container {
+        width: 40%; } }
+    @media (max-width: 650px) {
+      .hp-about-section-container .about-image-container {
+        width: 80%;
+        margin: 0 auto 2em; } }
+    .hp-about-section-container .about-image-container img {
+      width: 100%; }
 
 .hp-perks-section-container {
   display: flex;
@@ -94,6 +135,9 @@
   justify-content: center;
   align-items: flex-start;
   margin: 2em 0; }
+  @media (max-width: 750px) {
+    .hp-perks-section-container {
+      margin: 0; } }
   .hp-perks-section-container .hp-perk-item {
     width: 33%;
     padding: 4em 1em 0;
@@ -102,6 +146,22 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start; }
+    @media (max-width: 750px) {
+      .hp-perks-section-container .hp-perk-item {
+        width: 50%;
+        padding-top: 2em; } }
+    @media (max-width: 500px) {
+      .hp-perks-section-container .hp-perk-item {
+        width: 100%;
+        align-items: center;
+        padding-bottom: 2em; }
+        .hp-perks-section-container .hp-perk-item + .hp-perk-item {
+          border-top: 1px solid #eee; }
+        .hp-perks-section-container .hp-perk-item:nth-child(even) {
+          flex-direction: row-reverse; }
+          .hp-perks-section-container .hp-perk-item:nth-child(even) .hp-perk-item-description {
+            padding-left: 0;
+            padding-right: 1em; } }
     .hp-perks-section-container .hp-perk-item .hp-perk-item-icon {
       width: 20%;
       color: #086ba5; }
@@ -123,23 +183,21 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  align-items: stretch; }
+  align-items: stretch;
+  box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-section {
-    padding: 2.5em 2em; }
+    padding: 1.5em 2em; }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
     width: 36%;
-    position: relative; }
-    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images {
-      line-height: 0; }
-      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images img {
-        display: block;
-        position: absolute; }
-        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images img.captain-mark {
-          bottom: 0;
-          z-index: 2; }
-        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-images img.background {
-          bottom: 0;
-          z-index: 1; }
+    position: relative;
+    background: url(/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark-bkd.png) 50% 50%;
+    background-size: 120%; }
+    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-image-captain-mark {
+      position: absolute;
+      bottom: 0;
+      left: 25%;
+      line-height: 0;
+      width: 65%; }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-background {
     border-radius: 100px;
     width: 200px;
@@ -149,6 +207,215 @@
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-details {
     width: 37%; }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact {
-    width: 27%; }
+    width: 27%;
+    font-size: 1.58em;
+    text-align: right; }
+    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact p span {
+      display: block; }
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact p span .btn {
+        font-size: 1.4rem;
+        font-weight: bold;
+        padding: 0.5em 1.25em;
+        margin-left: 0.25em; }
+
+.testimonials-listing-hp {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2em 1.5em; }
+  @media (max-width: 580px) {
+    .testimonials-listing-hp {
+      padding: 0; } }
+  .testimonials-listing-hp .testimonial-item {
+    position: relative;
+    padding: 0 3.5em; }
+    @media (max-width: 580px) {
+      .testimonials-listing-hp .testimonial-item {
+        padding: 0 2em; } }
+    .testimonials-listing-hp .testimonial-item .testimonial-item-quote {
+      width: 41px;
+      position: absolute; }
+      .testimonials-listing-hp .testimonial-item .testimonial-item-quote.quote-start {
+        left: 0;
+        top: 0; }
+        @media (max-width: 580px) {
+          .testimonials-listing-hp .testimonial-item .testimonial-item-quote.quote-start {
+            left: -1em; } }
+      .testimonials-listing-hp .testimonial-item .testimonial-item-quote.quote-end {
+        right: 0;
+        bottom: 0; }
+        @media (max-width: 580px) {
+          .testimonials-listing-hp .testimonial-item .testimonial-item-quote.quote-end {
+            right: -1em; } }
+    .testimonials-listing-hp .testimonial-item .tesitmonial-item-author {
+      font-size: 0.77em;
+      font-style: italic; }
+    .testimonials-listing-hp .testimonial-item .tesitmonial-item-quote-text {
+      font-size: 1.3em; }
+      @media (max-width: 580px) {
+        .testimonials-listing-hp .testimonial-item .tesitmonial-item-quote-text {
+          font-size: 1em; } }
+  .testimonials-listing-hp .more-testimonials-link {
+    font-size: 0.89em;
+    text-align: right;
+    margin-top: 2em;
+    padding-right: 9em; }
+
+.blog-species-section-container-wrap {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #eeeeee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 0%, #eeeeee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
+  /* IE6-9 */
+  padding: 1em 0 0; }
+  .blog-species-section-container-wrap .blog-species-section-container {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(3em); }
+    .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap {
+      width: calc(66% - 0.5rem);
+      padding: 0 1.5em; }
+      @media (max-width: 1080px) {
+        .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap {
+          width: 55%; } }
+      @media (max-width: 650px) {
+        .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap {
+          width: 100%; } }
+      .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 2em; }
+        .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section h2,
+        .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section .more-articles-link {
+          margin: 0; }
+        .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section .more-articles-link {
+          margin-left: 1em; }
+      .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; }
+        .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item {
+          width: calc(50% - 0.75rem);
+          box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
+          height: 0;
+          padding-top: calc(50% - 0.75rem);
+          position: relative; }
+          @media (max-width: 860px) {
+            .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item {
+              width: 100%;
+              background-size: cover; }
+              .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item + .blog-listing-item {
+                margin-top: 1.25em; } }
+          @media (max-width: 650px) {
+            .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item {
+              padding-top: calc(75% - 0.75rem); } }
+          .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#235f8a+0,235f8a+100&0+0,1+100 */
+            background: -moz-linear-gradient(top, rgba(35, 95, 138, 0) 0%, #235f8a 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(35, 95, 138, 0) 0%, #235f8a 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(35, 95, 138, 0) 0%, #235f8a 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00235f8a', endColorstr='#235f8a',GradientType=0 );
+            /* IE6-9 */ }
+          .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item .blog-listing-item-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            color: #fff;
+            padding: 1.5em; }
+            .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item .blog-listing-item-content .blog-article-meta {
+              font-size: 0.7em; }
+            .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item .blog-listing-item-content .blog-item-title {
+              margin-top: 0.5em;
+              color: #ff9e14; }
+    @media (max-width: 1080px) {
+      .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap {
+        width: 45%; } }
+    @media (max-width: 650px) {
+      .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap {
+        width: 100%;
+        width: 80%;
+        margin: 2em auto 0; } }
+    .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp {
+      box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
+      .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp p {
+        line-height: 0; }
+        .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp p img {
+          width: 100%; }
+
+/* --------------------------------------------- CALL NOW BOOKING SECTION -- */
+.call-now-booking-callout {
+  text-align: center;
+  padding: 5em 1.5em 3em;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #848484; }
+  @media (max-width: 580px) {
+    .call-now-booking-callout span {
+      display: block; } }
+  .call-now-booking-callout .btn {
+    padding: 0.5em 1em;
+    margin-left: 0.25em; }
+
+.sponsors-listing-hp-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 4em;
+  box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
+  margin-bottom: -8em;
+  z-index: 3;
+  position: relative;
+  background: #fff; }
+  @media (max-width: 750px) {
+    .sponsors-listing-hp-container {
+      padding-top: 0; } }
+  .sponsors-listing-hp-container h2 {
+    width: 25%;
+    font-size: 1rem;
+    font-weight: 400; }
+    @media (max-width: 750px) {
+      .sponsors-listing-hp-container h2 {
+        width: 100%;
+        padding-bottom: 1.5em; } }
+    .sponsors-listing-hp-container h2 span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 1.77em;
+      font-weight: bold; }
+  .sponsors-listing-hp-container .sponsors-listing-hp {
+    width: 75%;
+    padding-left: 0.75em; }
+    @media (max-width: 750px) {
+      .sponsors-listing-hp-container .sponsors-listing-hp {
+        width: 100%; } }
 
 /*# sourceMappingURL=home.css.map */

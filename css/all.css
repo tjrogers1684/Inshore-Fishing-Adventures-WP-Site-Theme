@@ -150,6 +150,9 @@ button {
 
 .top-nav {
   width: 75%; }
+  @media (max-width: 680px) {
+    .top-nav {
+      display: none; } }
   .top-nav ul,
   .top-nav ul li {
     list-style: none;
@@ -161,6 +164,9 @@ button {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; }
+    @media (max-width: 1100px) {
+      .top-nav .menu {
+        justify-content: flex-end; } }
     .top-nav .menu > li {
       position: relative; }
       .top-nav .menu > li a {
@@ -216,6 +222,14 @@ button {
 .mobile-nav-icon {
   display: none; }
 
+.mobile-nav-icon {
+  margin-top: 0;
+  font-size: 1.75em;
+  line-height: 1; }
+  @media (max-width: 680px) {
+    .mobile-nav-icon {
+      display: block; } }
+
 /* CSS Document */
 *, *:before, *:after {
   box-sizing: border-box; }
@@ -253,6 +267,12 @@ img {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center; }
+    @media (max-width: 550px) {
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap {
+        padding: 0; } }
+    @media (max-width: 460px) {
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap {
+        justify-content: center; } }
     .social-contact-nav-wrap-outer .social-contact-nav-wrap p {
       margin: 0; }
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .btn, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="submit"],
@@ -266,11 +286,17 @@ img {
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center; }
+        @media (max-width: 460px) {
+          .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social {
+            display: none; } }
         .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a {
           display: block;
           padding: 0.5em 1em;
           color: #fff;
           background: #888; }
+          @media (max-width: 500px) {
+            .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a {
+              padding: 0.4em 0.75em; } }
           .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a.social-facebook {
             background: #3b5998; }
           .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social a.social-twitter {
@@ -286,6 +312,26 @@ img {
   background: #ccc url(/wp-content/themes/inshorefishing/images/bkd-header-hp.jpg) 50% 50%;
   background-size: cover;
   position: relative; }
+  .header-wrap-outer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
+    /* IE6-9 */
+    z-index: 1; }
+  .header-wrap-outer .wave-overlay-header {
+    line-height: 0; }
+    @media (max-width: 800px) {
+      .header-wrap-outer .wave-overlay-header {
+        display: none; } }
   .header-wrap-outer .header-wrap {
     max-width: 1120px;
     margin: 0 auto;
@@ -293,7 +339,12 @@ img {
     color: #fff;
     font-weight: bold;
     height: 75vh;
-    min-height: 800px; }
+    min-height: 800px;
+    z-index: 2;
+    position: relative; }
+    @media (max-width: 800px) {
+      .header-wrap-outer .header-wrap {
+        min-height: 350px; } }
     .header-wrap-outer .header-wrap .header-nav {
       display: flex;
       flex-direction: row;
@@ -302,13 +353,124 @@ img {
       align-items: center; }
       .header-wrap-outer .header-wrap .header-nav .site-logo {
         width: 25%; }
+        @media (max-width: 680px) {
+          .header-wrap-outer .header-wrap .header-nav .site-logo {
+            width: auto; } }
 
 .content-wrap {
   max-width: 1120px;
   margin: 0 auto; }
 
+.wave-overlay-footer {
+  margin-bottom: -8px;
+  position: relative;
+  z-index: 2; }
+
 .footer-wrap-outer {
-  background: #235f8a;
-  color: #fff; }
+  background: #235f8a url(/wp-content/themes/inshorefishing/images/bkd-footer.jpg) center bottom;
+  background-size: cover;
+  color: #fff;
+  position: relative; }
+  .footer-wrap-outer:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#235f8a+1,235f8a+100&1+0,0+100 */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #235f8a 0%, rgba(35, 95, 138, 0.99) 1%, rgba(35, 95, 138, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#235f8a', endColorstr='#00235f8a',GradientType=0 );
+    /* IE6-9 */
+    z-index: 1; }
+  .footer-wrap-outer .footer-wrap {
+    padding: 10em 2em 3em;
+    max-width: 1120px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; }
+    @media (max-width: 900px) {
+      .footer-wrap-outer .footer-wrap .footer-address-container {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end; } }
+    @media (max-width: 500px) {
+      .footer-wrap-outer .footer-wrap .footer-address-container {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 3em; } }
+    .footer-wrap-outer .footer-wrap .footer-address-container .footer-social a {
+      display: inline-block;
+      font-size: 1.25em;
+      margin: 0 0.5em;
+      color: #fff; }
+      .footer-wrap-outer .footer-wrap .footer-address-container .footer-social a:first-of-type {
+        margin-left: 0; }
+      .footer-wrap-outer .footer-wrap .footer-address-container .footer-social a:hover {
+        color: #ff9e14; }
+    @media (max-width: 900px) {
+      .footer-wrap-outer .footer-wrap .footer-nav {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center; } }
+    @media (max-width: 500px) {
+      .footer-wrap-outer .footer-wrap .footer-nav {
+        width: 100%; } }
+    .footer-wrap-outer .footer-wrap .footer-nav .menu li + li {
+      margin-top: 0.5em; }
+    .footer-wrap-outer .footer-wrap .footer-review-contact {
+      text-align: center; }
+      @media (max-width: 900px) {
+        .footer-wrap-outer .footer-wrap .footer-review-contact {
+          width: 100%;
+          margin-top: 4em; } }
+      @media (max-width: 560px) {
+        .footer-wrap-outer .footer-wrap .footer-review-contact {
+          margin-top: 1em; } }
+      .footer-wrap-outer .footer-wrap .footer-review-contact .footer-review {
+        margin-bottom: 4em; }
+        @media (max-width: 900px) {
+          .footer-wrap-outer .footer-wrap .footer-review-contact .footer-review {
+            margin-bottom: 2em; } }
+        .footer-wrap-outer .footer-wrap .footer-review-contact .footer-review a {
+          margin: 0 1.5em; }
+          @media (max-width: 560px) {
+            .footer-wrap-outer .footer-wrap .footer-review-contact .footer-review a {
+              display: block;
+              margin: 1.5em 0; } }
+    .footer-wrap-outer .footer-wrap .footer-site-info {
+      width: 100%;
+      text-align: center;
+      margin-top: 5em;
+      font-size: 0.76em; }
+      .footer-wrap-outer .footer-wrap .footer-site-info a {
+        color: #fff;
+        text-decoration: underline; }
+    @media (max-width: 400px) {
+      .footer-wrap-outer .footer-wrap .footer-contact span {
+        display: block;
+        margin-top: 0.75em; } }
+    .footer-wrap-outer .footer-wrap .footer-contact span .btn, .footer-wrap-outer .footer-wrap .footer-contact span input[type="submit"],
+    .footer-wrap-outer .footer-wrap .footer-contact span input[type="button"],
+    .footer-wrap-outer .footer-wrap .footer-contact span button {
+      margin-left: 0.5em; }
+
+.not-front .header-wrap {
+  height: 360px;
+  min-height: 0; }
+.not-front .content-wrap {
+  padding: 4em 1.5em 1em; }
 
 /*# sourceMappingURL=all.css.map */

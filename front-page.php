@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header( 'front' ); ?>
 
 <div class="page-wrap">
 
@@ -61,4 +61,4 @@
 
 </div>
 
-<?php get_footer(); ?>
+<?php get_footer( 'front' ); ?>

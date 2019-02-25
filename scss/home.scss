@@ -13,6 +13,11 @@
 	align-items: center;
 	height: 100%;
 
+	@media (max-width: 800px) {
+		//justify-content: flex-start;
+		//align-items: flex-start;
+	}
+
 	.booking-callout {
 		background: rgba(63,130,174,0.7);
 		padding: 2em 2em;
@@ -22,10 +27,18 @@
 			font-size: 3.18em;
 			margin: 0;
 
+			@media (max-width: 800px) {
+				font-size: 2em;
+			}
+
 			span {
 				display: block;
 				font-size: 1.58rem;
 				font-weight: 300;
+
+				@media (max-width: 800px) {
+					font-size: 1.25rem;
+				}
 			}
 		}
 
@@ -53,17 +66,39 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 0 1.5em;
+	padding: 0 3em 0 1.5em;
 	margin-top: -7em;
 	position: relative;
 	z-index: 3;
 
+	@media (max-width: 910px) {
+		padding: 0 2em 0 0;
+	}
+
+	@media (max-width: 800px) {
+		margin-top: 0;
+	}
+
+	@media (max-width: 650px) {
+		padding: 2em;
+		flex-direction: column-reverse;
+	}
+
 	.hp-about-section {
-		width: 35%;
 
 		&.about-content {
-			width: 65%;
+			width: 66.6%;
 			padding: 4em 2em 2em 3em;
+
+			@media (max-width: 910px) {
+				width: 60%;
+				padding: 2em;
+			}
+
+			@media (max-width: 650px) {
+				width: 100%;
+				padding: 0;
+			}
 
 			.about-content-links {
 				margin-top: 2em;
@@ -71,12 +106,43 @@
 				a {
 					display: inline-block;
 					margin: 0 0.25em;
+
+					@media (max-width: 910px) {
+						display: block;
+
+						& + a {
+							margin-top: 0.5em;
+						}
+					}
 				}
 			}
 		}
 	}
+
+	.about-image-container {
+		width: 33.3%;
+		box-shadow: 0 5px 10px rgba(35,37,40,0.2);
+		line-height: 0;
+
+		@media (max-width: 910px) {
+			width: 40%;
+		}
+
+		@media (max-width: 650px) {
+			width: 80%;
+			margin: 0 auto 2em;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
 }
 
+
+// ---------------------------------------------------------------------------------
+// ----- PERKS        --------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 .hp-perks-section-container {
 	display: flex;
 	flex-direction: row;
@@ -85,15 +151,42 @@
 	align-items: flex-start;
 	margin: 2em 0;
 
+	@media (max-width: 750px) {
+		margin: 0;
+	}
+
 	.hp-perk-item {
 		width: 33%;
 		padding: 4em 1em 0;
-
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: flex-start;
+
+		@media (max-width: 750px) {
+			width: 50%;
+			padding-top: 2em;
+		}
+
+		@media (max-width: 500px) {
+			width: 100%;
+			align-items: center;
+			padding-bottom: 2em;
+
+			& + .hp-perk-item {
+				border-top: 1px solid #eee;
+			}
+
+			&:nth-child(even) {
+				flex-direction: row-reverse;
+
+				.hp-perk-item-description {
+					padding-left: 0;
+					padding-right: 1em;
+				}
+			}
+		}
 
 		.hp-perk-item-icon {
 			width: 20%;
@@ -113,7 +206,9 @@
 	}
 }
 
-
+// ---------------------------------------------------------------------------------
+// ----- BOOKING CALLOUT -----------------------------------------------------------
+// ---------------------------------------------------------------------------------
 .prefooter-booking-callout-wrap {
 	.prefooter-booking-callout {
 		max-width: 1220px;
@@ -126,34 +221,27 @@
 		justify-content: center;
 		align-items: flex-start;
 		align-items: stretch;
+		box-shadow: 0 5px 10px rgba(35,37,40,0.2);
 
 		.prefooter-booking-callout-section {
-			padding: 2.5em 2em;
+			padding: 1.5em 2em;
 		}
 
 		.prefooter-booking-callout-image-container {
 			width: 36%;
 			position: relative;
+			background: url(/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark-bkd.png) 50% 50%;
+			background-size: 120%;
 
-			.prefooter-booking-callout-images {
-				//position: relative;
+			.prefooter-booking-callout-image-captain-mark {
+				position: absolute;
+				bottom: 0;
+				left: 25%;
+				//background: #ccc;
 				line-height: 0;
-
-				img {
-					display: block;
-					position: absolute;
-
-					&.captain-mark {
-						bottom: 0;
-						z-index: 2;
-					}
-
-					&.background {
-						bottom: 0;
-						z-index: 1;
-					}
-				}
+				width: 65%;
 			}
+
 		}
 
 		.prefooter-booking-callout-image-background {
@@ -170,20 +258,304 @@
 
 		.prefooter-booking-callout-contact {
 			width: 27%;
+			font-size: 1.58em;
+			text-align: right;
+
+			p {
+				span {
+					display: block;
+
+					.btn {
+						font-size: 1.4rem;
+						font-weight: bold;
+						padding: 0.5em 1.25em;
+						margin-left: 0.25em;
+					}
+				}
+			}
+		}
+	}
+}
+
+.testimonials-listing-hp {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 2em 1.5em;
+
+	@media (max-width: 580px) {
+		padding: 0;
+	}
+
+	 .testimonial-item {
+	 	position: relative;
+	 	padding: 0 3.5em;
+
+	 	@media (max-width: 580px) {
+			padding: 0 2em;
+		}
+
+	 	.testimonial-item-quote {
+	 		width: 41px;
+	 		position: absolute;
+
+	 		&.quote-start {
+	 			left: 0;
+	 			top: 0;
+
+	 			@media (max-width: 580px) {
+					left: -1em;
+				}
+	 		}
+
+	 		&.quote-end {
+	 			right: 0;
+	 			bottom: 0;
+
+	 			@media (max-width: 580px) {
+					right: -1em;
+				}
+	 		}
+	 	}
+
+	 	.tesitmonial-item-author {
+			font-size: 0.77em;
+			font-style: italic;
+	 	}
+
+	 	.tesitmonial-item-quote-text {
+	 		font-size: 1.3em;
+
+	 		@media (max-width: 580px) {
+	 			font-size: 1em;
+	 		}
+	 	}
+	 }
+
+	 .more-testimonials-link {
+	 		font-size: 0.89em;
+	 		text-align: right;
+	 		margin-top: 2em;
+	 		padding-right: 9em;
+	 	}
+}
+
+
+// ---------------------------------------------------------------------------------
+// ----- NEWS/SPECIES --------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+.blog-species-section-container-wrap {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
+	background: rgb(255,255,255); /* Old browsers */
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(238,238,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 ); /* IE6-9 */
+	padding: 1em 0 0;
+
+	.blog-species-section-container {
+		max-width: 1120px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		transform: translateY(3em);
+
+		.blog-listing-hp-wrap {
+			width: calc(66% - 0.5rem);
+			padding: 0 1.5em;
+
+			@media (max-width: 1080px) {
+				width: 55%;
+			}
+
+			@media (max-width: 650px) {
+				width: 100%;
+			}
+
+			.blog-listing-hp-heading-section {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				align-items: center;
+				margin-bottom: 2em;
+
+				h2,
+				.more-articles-link {
+					margin: 0;
+				}
+
+				.more-articles-link {
+					margin-left: 1em;
+				}
+			}
+
+			.blog-listing-hp {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+
+				.blog-listing-item {
+					width: calc(50% - 0.75rem);
+					box-shadow: 0 5px 10px rgba(35,37,40,0.2);
+					height: 0;
+					padding-top: calc(50% - 0.75rem);
+					position: relative;
+					// display: flex;
+					// flex-direction: row;
+					// flex-wrap: wrap;
+					// justify-content: flex-start;
+					// align-items: flex-end;
+
+					@media (max-width: 860px) {
+						width: 100%;
+						background-size: cover;
+
+						& + .blog-listing-item {
+							margin-top: 1.25em;
+						}
+					}
+
+					@media (max-width: 650px) {
+						padding-top: calc(75% - 0.75rem);
+					}
+
+					&:after {
+						content: '';
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						left: 0;
+						top: 0;
+						/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#235f8a+0,235f8a+100&0+0,1+100 */
+						background: -moz-linear-gradient(top, rgba(35,95,138,0) 0%, rgba(35,95,138,1) 100%); /* FF3.6-15 */
+						background: -webkit-linear-gradient(top, rgba(35,95,138,0) 0%,rgba(35,95,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+						background: linear-gradient(to bottom, rgba(35,95,138,0) 0%,rgba(35,95,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00235f8a', endColorstr='#235f8a',GradientType=0 ); /* IE6-9 */
+					}
+
+					.blog-listing-item-content {
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						z-index: 2;
+						color: #fff;
+						padding: 1.5em;
+
+						.blog-article-meta {
+							font-size: 0.7em;
+						}
+
+						.blog-item-title {
+							margin-top: 0.5em;
+							color: $brand;
+						}
+					}
+				}
+			}
+		}
+
+		.species-listing-hp-wrap {
+			@media (max-width: 1080px) {
+				width: 45%;
+			}
+
+			@media (max-width: 650px) {
+				width: 100%;
+				width: 80%;
+				margin: 2em auto 0;
+			}
+
+			.species-listing-hp {
+				box-shadow: 0 5px 10px rgba(35,37,40,0.2);
+
+				p {
+					line-height: 0;
+
+					img {
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 }
 
 
+/* --------------------------------------------- CALL NOW BOOKING SECTION -- */
+.call-now-booking-callout {
+	text-align: center;
+	padding: 5em 1.5em 3em;
+	font-size: 1.6em;
+	font-weight: bold;
+	color: #848484;
+
+	span {
+		@media (max-width: 580px) {
+			display: block;
+		}
+	}
+
+	.btn {
+		padding: 0.5em 1em;
+		margin-left: 0.25em;
+	}
+}
 
 
+// ---------------------------------------------------------------------------------
+// ----- SPONSORS SECTIONS ---------------------------------------------------------
+// ---------------------------------------------------------------------------------
+.sponsors-listing-hp-container {
+	max-width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3em 4em;
+	box-shadow: 0 5px 10px rgba(35,37,40,0.2);
+	margin-bottom: -8em;
+	z-index: 3;
+	position: relative;
+	background: #fff;
 
+	@media (max-width: 750px) {
+		padding-top: 0;
+	}
 
+	h2 {
+		width: 25%;
+		font-size: 1rem;
+		font-weight: 400;
 
+		@media (max-width: 750px) {
+			width: 100%;
+			padding-bottom: 1.5em;
+		}
 
+		span {
+			display: block;
+			text-transform: uppercase;
+			font-size: 1.77em;
+			font-weight: bold;
+		}
+	}
 
+	.sponsors-listing-hp {
+		width: 75%;
+		padding-left: 0.75em;
 
-
+		@media (max-width: 750px) {
+			width: 100%;
+		}
+	}
+}
 
 
 

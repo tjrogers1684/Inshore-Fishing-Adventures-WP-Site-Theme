@@ -1,40 +1,13 @@
 <?php wp_footer(); ?>
 
-<div class="prefooter-booking-callout-wrap">
-	<div class="prefooter-booking-callout">
-		<div class="prefooter-booking-callout-section prefooter-booking-callout-image-container">
-			<p class="prefooter-booking-callout-image-captain-mark">
-				<img class="captain-mark" src="/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark.png" alt="">
-			</p>
+<p class="wave-overlay-footer"><img src="/wp-content/themes/inshorefishing/images/footer-wavy-swirl.png" alt=""></p>
 
-			<p class="prefooter-booking-callout-image-background">
-				<img class="background" src="/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark-bkd.jpg" alt="">
-			</p>
-		</div>
-
-		<div class="prefooter-booking-callout-section prefooter-booking-callout-details">
-			<p>Rates starting as low as $325.</p>
-			<p>Multi-boat trips are available. Call Capt. Mark for details. Online booking is available for your convenience.</p>
-		</div>
-
-		<div class="prefooter-booking-callout-section prefooter-booking-callout-contact">
-			<p>Call 321-302-3474 <span>or <a class="btn btn-alt" href="/booking">Book now</a></span></p>
-		</div>
-	</div>
-
-</div>
-
-
-
-
-
-
-
-<div class="footer-wrap-outer">
+<div class="footer-wrap-outer">	
 
 	<div class="footer-wrap">
 
 		<div class="footer-section footer-address-container">
+			<p class="site-logo-footer"><a href="<?php echo bloginfo( 'url' ); ?>"><img src="/wp-content/themes/inshorefishing/images/logo-footer.png" alt=""></a></p>
 			<p class="foote-address">123 Here Street<br/>Anytown, FL 32780</p>
 
 			<p class="footer-social">
@@ -50,8 +23,13 @@
 		</div>
 
 		<div class="footer-section footer-review-contact">
-			<p class="footer-review"></p>
-			<p class="footer-contact">Call 321-302-3474 or <a href="/#" class="btn book">Book now</a></p>
+
+			<p class="footer-review">
+				<a href="https://www.yelp.com/"><img class="footer-review-site review-yelp" src="/wp-content/themes/inshorefishing/images/footer-logo-yelp.png" alt=""></a>
+				<a href="https://www.google.com/"><img class="footer-review-site review-google" src="/wp-content/themes/inshorefishing/images/footer-logo-google.png" alt=""></a>
+				<a href="https://www.tripadvisor.com/"><img class="footer-review-site review-trip-advisor" src="/wp-content/themes/inshorefishing/images/footer-logo-trip-advisor.png" alt=""></a>
+			</p>
+			<p class="footer-contact">Call 321-302-3474 <span>or <a href="/#" class="btn book">Book now</a></span></p>
 		</div>
 
 		<div class="footer-site-info">
