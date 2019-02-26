@@ -161,6 +161,7 @@ hr {
 
 		@media (max-width: 800px) {
 			min-height: 350px;
+			height: auto;
 		}
 
 		.header-nav {
@@ -169,6 +170,7 @@ hr {
 			flex-wrap: wrap;
 			justify-content: space-between;
 			align-items: center;
+			position: relative;
 
 			.site-logo {
 				width: 25%;

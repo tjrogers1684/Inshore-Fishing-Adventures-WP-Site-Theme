@@ -31,7 +31,7 @@
 			position: relative;
 
 			@media (max-width: 1100px) {
-				
+
 			}
 
 			a {
@@ -44,6 +44,16 @@
 				background: $brand-dk;
 				color: #fff;
 			}
+
+			&.spacer {
+		    	display: none;
+
+		    	@media (max-width: 1080px) {
+		    		display: block;
+		    		width: 100%;
+		    		height: 0;
+		    	}
+		    }
 
 			&.current-menu-item a {
 			}
@@ -129,6 +139,10 @@
 			&.current-menu-item a {
 			}
 
+			&.spacer {
+		    	display: none;
+		    }
+
 			&.page_item_has_children,
 			&.menu-item-has-children {
 
@@ -145,17 +159,69 @@
 // ----- MOBILE NAV ----------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .mobile-nav,
-.mobile-nav-icon {
+.mobile-nav-icon,
+.mobile-nav-close {
 	display: none;
 }
 
-.mobile-nav-icon {
+.mobile-nav-icon,
+.mobile-nav-close {
 	margin-top: 0;
 	font-size: 1.75em;
 	line-height: 1;
+	position: absolute;
+	right: 0;
+}
 
+.mobile-nav-icon {
 	@media (max-width: 680px) {
 		display: block;
+	}
+}
+
+.mobile-nav {
+	display: none;
+	position: relative;
+	z-index: 5;
+	background: $brand-secondary;
+
+	ul,
+	ul li {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.menu {
+		margin: 0;
+
+		li {
+			a {
+				display: block;
+			    font-size: 0.75em;
+			    text-transform: uppercase;
+			    padding: 1em;
+			    color: #fff;
+			}
+
+			& + li {
+		    	border-top: 1px solid #fff
+		    }
+
+		    &.spacer {
+		    	display: none;
+		    }
+
+			&:hover a,
+			&.current-menu-item a {
+				color: #fff;
+				background: $brand;
+			}
+
+			ul {
+				display: none;
+			}
+		}
 	}
 }
 

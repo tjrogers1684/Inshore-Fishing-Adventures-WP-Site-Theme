@@ -49,7 +49,7 @@ function ifa_styles_scripts() {
 
 	//wp_enqueue_script( 'ifa-fontawesome', 'https://use.fontawesome.com/releases/v5.5.0/js/all.js' );
 	wp_enqueue_style( 'ifa-animatecss', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' );
-	wp_enqueue_script( 'ifa-global', get_theme_file_uri( '/js/theme.js' ), array('jquery') );
+	wp_enqueue_script( 'ifa-global', get_theme_file_uri( '/js/inshorefishing.js' ), array('jquery') );
 }
 add_action( 'wp_enqueue_scripts', 'ifa_styles_scripts' );
 

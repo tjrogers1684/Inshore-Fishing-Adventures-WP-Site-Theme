@@ -39,6 +39,9 @@
   justify-content: flex-end;
   align-items: center;
   height: 100%; }
+  @media (max-width: 800px) {
+    .feature-wrap {
+      padding: 2em 0; } }
   .feature-wrap .booking-callout {
     background: rgba(63, 130, 174, 0.7);
     padding: 2em 2em;

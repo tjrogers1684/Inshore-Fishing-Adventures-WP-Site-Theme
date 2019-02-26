@@ -23,7 +23,6 @@
 <body <?php body_class( $addl_body_classes ); ?>>
 
 	<div class="mobile-nav">
-		<p class="mobile-nav-close"><a href="#"><i class="fas fa-times"></i></a></p>
 		<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 	</div>
 
@@ -51,6 +50,7 @@
 				</div><!-- TOP NAV -->
 
 				<p class="mobile-nav-icon"><a href="#"><i class="fas fa-bars"></i></a></p>
+				<p class="mobile-nav-close"><a href="#"><i class="fas fa-times"></i></a></p>
 			</div>
 
 			<div class="feature-wrap">
