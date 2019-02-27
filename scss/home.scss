@@ -423,6 +423,20 @@
 						padding-top: calc(75% - 0.75rem);
 					}
 
+					&:hover {
+						&:after {
+							/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9e14+0,ff9e14+100&0+0,1+100 */
+							background: -moz-linear-gradient(top, rgba(255,158,20,0) 0%, rgba(255,158,20,1) 100%); /* FF3.6-15 */
+							background: -webkit-linear-gradient(top, rgba(255,158,20,0) 0%,rgba(255,158,20,1) 100%); /* Chrome10-25,Safari5.1-6 */
+							background: linear-gradient(to bottom, rgba(255,158,20,0) 0%,rgba(255,158,20,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ff9e14', endColorstr='#ff9e14',GradientType=0 ); /* IE6-9 */
+						}
+
+						.blog-item-title {
+							color: #fff !important;
+						}
+					}
+
 					&:after {
 						content: '';
 						width: 100%;
@@ -435,6 +449,16 @@
 						background: -webkit-linear-gradient(top, rgba(35,95,138,0) 0%,rgba(35,95,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
 						background: linear-gradient(to bottom, rgba(35,95,138,0) 0%,rgba(35,95,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00235f8a', endColorstr='#235f8a',GradientType=0 ); /* IE6-9 */
+						transition: 0.3s;
+					}
+
+					.blog-listing-item-link {
+						position: absolute;
+						z-index: 3;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
 					}
 
 					.blog-listing-item-content {
@@ -459,24 +483,64 @@
 		}
 
 		.species-listing-hp-wrap {
+			width: 34%;
+
 			@media (max-width: 1080px) {
 				width: 45%;
 			}
 
 			@media (max-width: 650px) {
 				width: 100%;
-				width: 80%;
+				width: 90%;
 				margin: 2em auto 0;
 			}
 
 			.species-listing-hp {
 				box-shadow: 0 5px 10px rgba(35,37,40,0.2);
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#358eaf+0,235f8a+100 */
+				background: rgb(53,142,175); /* Old browsers */
+				background: -moz-linear-gradient(top, rgba(53,142,175,1) 0%, rgba(35,95,138,1) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(53,142,175,1) 0%,rgba(35,95,138,1) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(53,142,175,1) 0%,rgba(35,95,138,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#358eaf', endColorstr='#235f8a',GradientType=0 ); /* IE6-9 */
 
-				p {
-					line-height: 0;
+				h2 {
+					background: #2a71a0;
+					color: #fff;
+					font-size: 1.29em;
+					text-transform: capitalize;
+					padding: 1em;
+				}
 
-					img {
+				.species-listing {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: center;
+					padding: 1em;
+
+					.species-listing-item {
+						width: 50%;
+						padding: 1em;
+
+						.species-image {
+							filter: brightness(0) invert(1);
+						}
+
+						.species-item-name {
+							font-size: 0.7em;
+							color: #fff;
+						}
+					}
+
+					.species-more-link {
+						text-align: right;
 						width: 100%;
+
+						.btn {
+							transform: translateX(1.5em);
+						}
 					}
 				}
 			}
@@ -549,9 +613,37 @@
 	.sponsors-listing-hp {
 		width: 75%;
 		padding-left: 0.75em;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
 
 		@media (max-width: 750px) {
 			width: 100%;
+		}
+
+		.sponsor-item {
+			width: 20%;
+			padding: 0 0.5em;
+			text-align: center;
+
+			&:nth-child(2) {
+				width: 50%;
+			}
+
+			@media (max-width: 580px) {
+				width: 90%;
+				margin: auto;
+
+				& + .sponsor-item {
+					margin-top: 1.5em;
+				}
+
+				&:nth-child(2) {
+					width: 100%;
+				}
+			}
 		}
 	}
 }

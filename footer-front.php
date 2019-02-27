@@ -111,6 +111,8 @@
 					?>
 
 					<div class="blog-listing-item" style="background-image: url(<?php the_post_thumbnail_url(); ?>)">
+						<a href="<?php the_permalink(); ?>" class="blog-listing-item-link">&nbsp;</a>
+
 						<div class="blog-listing-item-content">
 							<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
 							<p class="blog-item-title"><?php echo $article_title; ?></p>
@@ -125,9 +127,63 @@
 		</div>
 
 		<div class="species-listing-hp-wrap">
-			<div class="species-listing-hp">
-				<p><img src="/wp-content/themes/inshorefishing/images/ph-species.jpg" alt=""></p>
-			</div>
+			<?php
+
+					$species_query_count = 4;
+
+					$species_args = [
+						'post_type' => 'species',
+						'posts_per_page' => $species_query_count,
+						'order' => 'DESC',
+						'orderby' => 'date',
+					];
+
+					// The Query
+					$species_query = new WP_Query( $species_args );
+				?>
+
+				<div class="species-listing-hp">
+
+					<h2>Species you'll fish for...</h2>
+
+					<div class="species-listing">
+
+						<?php if ( $species_query->have_posts() ) : while ($species_query->have_posts() ) : $species_query->the_post(); ?>
+
+							<?php
+								$title  = get_the_title();
+								$species_count = wp_count_posts( 'species' );
+								$species_count = $species_count->publish;
+
+								//echo 'Total Number of Species: ' . $species_count;
+
+								$species_meta = get_post_meta( $post->ID );
+								$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+							?>
+								<div class="species-listing-item">
+									<p class="species-item-image"><img class="species-image" src="<?php echo $featured_img_url; ?>" alt=""></p>
+									<p class="species-item-name"><?php echo $title; ?></p>
+								</div>
+
+						<?php endwhile; else : ?>
+						<?php wp_reset_postdata() ?>
+						<?php endif; ?>
+
+						<?php if ( $species_count > $species_query_count ) { ?>
+
+						<?php $more_species = $species_count - $species_query_count; ?>
+
+							<p class="species-more-link"><a href="/charters/" class="btn">...and <?php echo $more_species; ?> more »</a></p>
+
+						<?php } else { ?>
+
+							<p class="species-more-link"><a href="/charters/" class="btn">Learn more »</a></p>
+
+						<?php } ?>
+
+					</div>
+
+				</div>
 		</div>
 
 	</div>
@@ -138,11 +194,48 @@
 	<p>Call 321-302-3474 <span>or <a class="btn btn-lg" href="/booking">Book now</a></span></p>
 </div>
 
+
+
+
+<?php
+
+
+	$sponsors_args = [
+		'post_type' => 'sponsor',
+		'posts_per_page' => 3,
+		'order' => 'DESC',
+		'orderby' => 'title',
+	];
+
+	// The Query
+	$sponsors_query = new WP_Query( $sponsors_args );
+?>
+
 <!-- SPONSORS SECTION -->
 <div class="sponsors-listing-hp-container">
 	<h2>Our great <span>sponsors</span></h2>
 	<div class="sponsors-listing-hp">
-		<img src="/wp-content/themes/inshorefishing/images/ph-sponsors-logos.jpg" alt="">
+
+		<?php if ( $sponsors_query->have_posts() ) : while ($sponsors_query->have_posts() ) : $sponsors_query->the_post(); ?>
+
+			<?php
+				$title  = get_the_title();
+
+				$sponsor_meta = get_post_meta( $post->ID );
+				$sponsor_website = $sponsor_meta['sponsor_website']['0'];
+				$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+
+				//echo 'Sponsor Website: '. $sponsor_website;
+			?>
+
+			<div class="sponsor-item">
+				<p class="sponsor-item-logo"><a href="<?php echo $sponsor_website; ?>"><img class="sponsor-logo" src="<?php echo $featured_img_url; ?>" alt=""></a></p>
+			</div>
+
+		<?php endwhile; else : ?>
+		<?php wp_reset_postdata() ?>
+		<?php endif; ?>
+
 	</div>
 </div>
 

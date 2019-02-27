@@ -40,13 +40,7 @@
 
 		<br class="clearfloat" />
 
-		<?php
-			if ( is_active_sidebar( 'content_bottom' ) ) {
-				echo '<div class="content-bottom">';
-				dynamic_sidebar( 'content_bottom' );
-				echo '</div>';
-			}
-		?>
+		<?php get_sidebar(); ?>
 
 	</div>
 
