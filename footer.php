@@ -1,8 +1,55 @@
 <?php wp_footer(); ?>
 
+<!-- CALL NOW SECTION -->
+<div class="call-now-booking-callout">
+	<p>Call 321-302-3474 <span>or <a class="btn btn-lg" href="/booking">Book now</a></span></p>
+</div>
+
+<?php
+
+
+	$sponsors_args = [
+		'post_type' => 'sponsor',
+		'posts_per_page' => 3,
+		'order' => 'DESC',
+		'orderby' => 'title',
+	];
+
+	// The Query
+	$sponsors_query = new WP_Query( $sponsors_args );
+?>
+
+<!-- SPONSORS SECTION -->
+<div class="sponsors-listing-hp-container">
+	<h2>Our great <span>sponsors</span></h2>
+	<div class="sponsors-listing-hp">
+
+		<?php if ( $sponsors_query->have_posts() ) : while ($sponsors_query->have_posts() ) : $sponsors_query->the_post(); ?>
+
+			<?php
+				$title  = get_the_title();
+
+				$sponsor_meta = get_post_meta( $post->ID );
+				$sponsor_website = $sponsor_meta['sponsor_website']['0'];
+				$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+
+				//echo 'Sponsor Website: '. $sponsor_website;
+			?>
+
+			<div class="sponsor-item">
+				<p class="sponsor-item-logo"><a href="<?php echo $sponsor_website; ?>"><img class="sponsor-logo" src="<?php echo $featured_img_url; ?>" alt=""></a></p>
+			</div>
+
+		<?php endwhile; else : ?>
+		<?php wp_reset_postdata() ?>
+		<?php endif; ?>
+
+	</div>
+</div>
+
 <p class="wave-overlay-footer"><img src="/wp-content/themes/inshorefishing/images/footer-wavy-swirl.png" alt=""></p>
 
-<div class="footer-wrap-outer">	
+<div class="footer-wrap-outer">
 
 	<div class="footer-wrap">
 

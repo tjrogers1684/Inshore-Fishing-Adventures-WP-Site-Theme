@@ -194,9 +194,6 @@
 	<p>Call 321-302-3474 <span>or <a class="btn btn-lg" href="/booking">Book now</a></span></p>
 </div>
 
-
-
-
 <?php
 
 
@@ -241,7 +238,7 @@
 
 <p class="wave-overlay-footer"><img src="/wp-content/themes/inshorefishing/images/footer-wavy-swirl.png" alt=""></p>
 
-<div class="footer-wrap-outer">	
+<div class="footer-wrap-outer">
 
 	<div class="footer-wrap">
 
