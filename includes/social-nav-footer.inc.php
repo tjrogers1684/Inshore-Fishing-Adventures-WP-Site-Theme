@@ -9,7 +9,7 @@
 		<a href="http://www.instagram.com/<?php echo get_theme_mod('fgc_instagram_handle'); ?>" class="home-header-social-link social-instagram"><i class="fab fa-instagram"></i></a>
 	<?php } ?>
 	<?php if( get_theme_mod('fgc_youtube_url') ){ ?>
-		<a href="<?php echo get_theme_mod('fgc_youtube_url'); ?>" class="home-header-social-link social-youtube"><i class="fab fa-youtube-play"></i></a>
+		<a href="<?php echo get_theme_mod('fgc_youtube_url'); ?>" class="home-header-social-link social-youtube"><i class="fab fa-youtube"></i></a>
 	<?php } ?>
 	<?php if( get_theme_mod('fgc_linkedin_url') ){ ?>
 		<a href="<?php echo get_theme_mod('fgc_linkedin_url'); ?>" class="home-header-social-link social-linkedin"><i class="fab fa-linkedin"></i></a>
