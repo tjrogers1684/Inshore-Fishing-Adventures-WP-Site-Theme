@@ -596,4 +596,67 @@ img {
 .not-front .content-wrap {
   padding: 4em 1.5em 1em; }
 
+.tesimonial-page-listing-container {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1.25em;
+          column-gap: 1.25em; }
+  @media (max-width: 860px) {
+    .tesimonial-page-listing-container {
+      -webkit-column-count: 2;
+              column-count: 2; } }
+  @media (max-width: 540px) {
+    .tesimonial-page-listing-container {
+      -webkit-column-count: 1;
+              column-count: 1; } }
+  .tesimonial-page-listing-container .tesimonial-page-listing-item {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(35, 37, 40, 0.2);
+    margin-top: 1.25em;
+    display: inline-block; }
+    .tesimonial-page-listing-container .tesimonial-page-listing-item .testimonial-image {
+      border-radius: 15px 15px 0 0;
+      overflow: hidden;
+      margin: 0;
+      background-position: 50% 0%;
+      background-size: cover;
+      width: 100%;
+      display: inline-block;
+      height: 0;
+      padding-top: 60%; }
+    .tesimonial-page-listing-container .tesimonial-page-listing-item .tesimonial-details {
+      padding: 1.5em 1em; }
+      .tesimonial-page-listing-container .tesimonial-page-listing-item .tesimonial-details .testimonial-quote {
+        font-style: italic;
+        font-size: 0.85em; }
+      .tesimonial-page-listing-container .tesimonial-page-listing-item .tesimonial-details .testimonial-author {
+        font-weight: bold;
+        text-align: right; }
+
+/* CSS Document */
+.boat-ramp-row + .boat-ramp-row {
+  margin-top: 1.5em; }
+.boat-ramp-row .boat-ramp {
+  border-radius: 15px;
+  box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
+  margin: 0 1.5em 0 0 !important;
+  transition: 0.3s; }
+  .boat-ramp-row .boat-ramp:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+    background: #086ba5;
+    color: #fff; }
+  .boat-ramp-row .boat-ramp .wp-block-image {
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    margin: 0; }
+  .boat-ramp-row .boat-ramp p {
+    padding: 1em 1.5em 1.5em; }
+    .boat-ramp-row .boat-ramp p strong {
+      font-size: 1.25em;
+      line-height: 1.3;
+      display: inline-block;
+      padding-bottom: 0.5em; }
+
 /*# sourceMappingURL=all.css.map */

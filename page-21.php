@@ -1,13 +1,5 @@
 <?php get_header(); ?>
 
-<?php
-	if ( is_active_sidebar( 'subnav_tabs' ) ) {
-		echo '<div class="subnav-tabs">';
-		dynamic_sidebar( 'subnav_tabs' );
-		echo '</div>';
-	}
-?>
-
 <div class="page-wrap">
 
 	<div class="content-wrap">

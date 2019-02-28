@@ -73,3 +73,17 @@ function create_widget($name, $id, $description) {
 }
 // Create the actual widgets (ID is a unique string)
 create_widget("Name", "id", "Description");
+
+
+
+function my_cptui_change_posts_per_page( $query ) {
+    if ( is_admin() || ! $query->is_main_query() ) {
+       return;
+    }
+
+    if ( is_post_type_archive( 'testimonials' ) ) {
+       $query->set( 'posts_per_page', 40 );
+    }
+}
+add_filter( 'pre_get_posts', 'my_cptui_change_posts_per_page' );
+
