@@ -82,7 +82,8 @@ function my_cptui_change_posts_per_page( $query ) {
     }
 
     if ( is_post_type_archive( 'testimonials' ) ) {
-       $query->set( 'posts_per_page', 40 );
+       $query->set( 'posts_per_page', 120 );
+       $query->set( 'orderby', 'rand' );
     }
 }
 add_filter( 'pre_get_posts', 'my_cptui_change_posts_per_page' );
