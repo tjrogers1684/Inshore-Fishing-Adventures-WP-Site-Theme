@@ -32,11 +32,21 @@
     color: #ff9e14; }
 
 .feature-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
   height: 100%; }
   @media (max-width: 800px) {
     .feature-wrap {
@@ -62,13 +72,13 @@
       position: absolute;
       left: 2em;
       bottom: 0;
-      transform: translateY(50%); }
+      -webkit-transform: translateY(50%);
+              transform: translateY(50%); }
 
 .hp-about-section-container {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bdffff+0,ffffff+100 */
   background: #bdffff;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #bdffff 0%, #ffffff 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #bdffff 0%, #ffffff 100%);
   /* Chrome10-25,Safari5.1-6 */
@@ -76,11 +86,21 @@
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdffff', endColorstr='#ffffff',GradientType=0 );
   /* IE6-9 */
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
   padding: 0 3em 0 1.5em;
   margin-top: -7em;
   position: relative;
@@ -94,7 +114,10 @@
   @media (max-width: 650px) {
     .hp-about-section-container {
       padding: 2em;
-      flex-direction: column-reverse; } }
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -webkit-flex-direction: column-reverse;
+              flex-direction: column-reverse; } }
   .hp-about-section-container .hp-about-section.about-content {
     width: 66.6%;
     padding: 4em 2em 2em 3em; }
@@ -131,11 +154,21 @@
       width: 100%; }
 
 .hp-perks-section-container {
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
   margin: 2em 0; }
   @media (max-width: 750px) {
     .hp-perks-section-container {
@@ -143,11 +176,21 @@
   .hp-perks-section-container .hp-perk-item {
     width: 33%;
     padding: 4em 1em 0;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start; }
     @media (max-width: 750px) {
       .hp-perks-section-container .hp-perk-item {
         width: 50%;
@@ -155,12 +198,17 @@
     @media (max-width: 500px) {
       .hp-perks-section-container .hp-perk-item {
         width: 100%;
-        align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
         padding-bottom: 2em; }
         .hp-perks-section-container .hp-perk-item + .hp-perk-item {
           border-top: 1px solid #eee; }
         .hp-perks-section-container .hp-perk-item:nth-child(even) {
-          flex-direction: row-reverse; }
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: reverse;
+          -webkit-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
           .hp-perks-section-container .hp-perk-item:nth-child(even) .hp-perk-item-description {
             padding-left: 0;
             padding-right: 1em; } }
@@ -169,7 +217,8 @@
       color: #086ba5; }
       .hp-perks-section-container .hp-perk-item .hp-perk-item-icon img {
         display: inline-block;
-        filter: invert(22%) sepia(95%) saturate(2543%) hue-rotate(186deg) brightness(87%) contrast(94%); }
+        -webkit-filter: invert(22%) sepia(95%) saturate(2543%) hue-rotate(186deg) brightness(87%) contrast(94%);
+                filter: invert(22%) sepia(95%) saturate(2543%) hue-rotate(186deg) brightness(87%) contrast(94%); }
     .hp-perks-section-container .hp-perk-item .hp-perk-item-description {
       width: 80%;
       padding-left: 2em;
@@ -180,12 +229,24 @@
   margin: 3em auto;
   background: #ff9e14;
   color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
-  align-items: stretch;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+          align-items: stretch;
   box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-section {
     padding: 1.5em 2em; }
@@ -266,10 +327,10 @@
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100 */
   background: white;
   /* Old browsers */
-  background: -moz-linear-gradient(top, white 0%, #eeeeee 100%);
   /* FF3.6-15 */
   background: -webkit-linear-gradient(top, white 0%, #eeeeee 100%);
   /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(top, #ffffff 0%, #eeeeee 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #eeeeee 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eeeeee',GradientType=0 );
@@ -278,12 +339,23 @@
   .blog-species-section-container-wrap .blog-species-section-container {
     max-width: 1120px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    transform: translateY(3em); }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-transform: translateY(3em);
+            transform: translateY(3em); }
     .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap {
       width: calc(66% - 0.5rem);
       padding: 0 1.5em; }
@@ -294,11 +366,21 @@
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap {
           width: 100%; } }
       .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section {
+        display: -webkit-box;
+        display: -webkit-flex;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: center;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+                justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center;
         margin-bottom: 2em; }
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section h2,
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section .more-articles-link {
@@ -306,11 +388,21 @@
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section .more-articles-link {
           margin-left: 1em; }
       .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp {
+        display: -webkit-box;
+        display: -webkit-flex;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center; }
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+                align-items: center; }
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item {
           width: calc(50% - 0.75rem);
           box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
@@ -328,7 +420,6 @@
               padding-top: calc(75% - 0.75rem); } }
           .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item:hover:after {
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9e14+0,ff9e14+100&0+0,1+100 */
-            background: -moz-linear-gradient(top, rgba(255, 158, 20, 0) 0%, #ff9e14 100%);
             /* FF3.6-15 */
             background: -webkit-linear-gradient(top, rgba(255, 158, 20, 0) 0%, #ff9e14 100%);
             /* Chrome10-25,Safari5.1-6 */
@@ -346,7 +437,6 @@
             left: 0;
             top: 0;
             /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#235f8a+0,235f8a+100&0+0,1+100 */
-            background: -moz-linear-gradient(top, rgba(35, 95, 138, 0) 0%, #235f8a 100%);
             /* FF3.6-15 */
             background: -webkit-linear-gradient(top, rgba(35, 95, 138, 0) 0%, #235f8a 100%);
             /* Chrome10-25,Safari5.1-6 */
@@ -354,6 +444,7 @@
             /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00235f8a', endColorstr='#235f8a',GradientType=0 );
             /* IE6-9 */
+            -webkit-transition: 0.3s;
             transition: 0.3s; }
           .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item .blog-listing-item-link {
             position: absolute;
@@ -389,7 +480,6 @@
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#358eaf+0,235f8a+100 */
         background: #358eaf;
         /* Old browsers */
-        background: -moz-linear-gradient(top, #358eaf 0%, #235f8a 100%);
         /* FF3.6-15 */
         background: -webkit-linear-gradient(top, #358eaf 0%, #235f8a 100%);
         /* Chrome10-25,Safari5.1-6 */
@@ -404,17 +494,28 @@
           text-transform: capitalize;
           padding: 1em; }
         .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp .species-listing {
+          display: -webkit-box;
+          display: -webkit-flex;
           display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          align-items: center;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+                  flex-direction: row;
+          -webkit-flex-wrap: wrap;
+                  flex-wrap: wrap;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+                  align-items: center;
           padding: 1em; }
           .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp .species-listing .species-listing-item {
             width: 50%;
             padding: 1em; }
             .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp .species-listing .species-listing-item .species-image {
-              filter: brightness(0) invert(1); }
+              -webkit-filter: brightness(0) invert(1);
+                      filter: brightness(0) invert(1); }
             .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp .species-listing .species-listing-item .species-item-name {
               font-size: 0.7em;
               color: #fff; }
@@ -422,6 +523,7 @@
             text-align: right;
             width: 100%; }
             .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap .species-listing-hp .species-listing .species-more-link .btn {
-              transform: translateX(1.5em); }
+              -webkit-transform: translateX(1.5em);
+                      transform: translateX(1.5em); }
 
 /*# sourceMappingURL=home.css.map */
