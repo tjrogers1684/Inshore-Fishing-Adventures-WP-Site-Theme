@@ -6,6 +6,8 @@
 
 		<div class="content-area blog-listing has-sidebar">
 
+			<h1>Inshore Fishing Adventures Blog</h1>
+
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<?php
@@ -24,6 +26,13 @@
 
 				<div class="blog-item">
 
+					<?php if ( has_post_thumbnail() ) : ?>
+					    <div class="blog-item-section blog-item-image">
+						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="blog-item-teaser-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
+						    </a>
+					    </div>
+					<?php endif; ?>
+
 					<div class="blog-item-section blog-item-content <?php if ( has_post_thumbnail() ) { echo 'has-blog-image'; } ?>">
 						<h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
@@ -32,13 +41,6 @@
 
 						<p><a class="btn btn-small" href="<?php echo get_the_permalink(); ?>">Read Article <i class="fas fa-angle-double-right"></i></a></p>
 					</div>
-
-					<?php if ( has_post_thumbnail() ) : ?>
-					    <div class="blog-item-section blog-item-image">
-						    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" class="blog-item-teaser-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
-						    </a>
-					    </div>
-					<?php endif; ?>
 
 				</div>
 

@@ -1,0 +1,70 @@
+@import 'compass/css3';
+@import 'bits';
+
+/* CSS Document */
+
+// ---------------------------------------------------------------------------------
+// ----- LANDING PAGE ---------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+.blog {
+	.blog-listing {
+		.blog-item {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: stretch;
+			border-radius: 15px;
+			box-shadow: 0 2px 12px rgba(35,37,40,0.2);
+
+			& + .blog-item {
+				margin-top: 2em;
+			}
+
+			.blog-item-image {
+				width: 40%;
+				border-radius: 15px 0 0 15px;
+				overflow: hidden;
+
+
+				a {
+					display: block;
+					background-size: cover;
+					height: 100%;
+					background-position: 50% 0%;
+					//padding-top: 200%;
+					position: relative;
+				}
+			}
+
+			.blog-item-content {
+				padding: 1em 2em;
+				border-radius: 0 15px 15px 0;
+
+				&.has-blog-image {
+					width: 60%;
+
+					h2 {
+						margin: 0;
+					}
+
+					.blog-article-meta {
+						margin: 0.5em 0 1em;
+						font-style: italic;
+						color: #777;
+						font-size: 0.9em;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
