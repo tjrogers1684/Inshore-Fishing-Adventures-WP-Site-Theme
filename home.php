@@ -4,7 +4,7 @@
 
 	<div class="content-wrap">
 
-		<div class="content-area blog-listing">
+		<div class="content-area blog-listing has-sidebar">
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
@@ -14,9 +14,9 @@
 					$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 
 					if ( has_term( 'fishing-report', 'category', $post->ID ) ) {
-						$article_type = 'Fishing Report';
+						$article_type = '<i class="fas fa-file-invoice"></i> Fishing Report';
 					} else {
-						$article_type = 'Blog';
+						$article_type = '<i class="fas fa-newspaper"></i> Blog';
 					}
 
 					//echo 'ARTICLE META<br/><pre>'.print_r( $categories, true ).'</pre>';
@@ -30,7 +30,7 @@
 
 						<?php the_excerpt(); ?>
 
-						<p><a class="btn btn-small" href="<?php echo get_the_permalink(); ?>"><i class="fas fa-newspaper"></i>Read Article</a></p>
+						<p><a class="btn btn-small" href="<?php echo get_the_permalink(); ?>">Read Article <i class="fas fa-angle-double-right"></i></a></p>
 					</div>
 
 					<?php if ( has_post_thumbnail() ) : ?>
@@ -58,9 +58,7 @@
 
 		</div>
 
-		<div class="sidebar-area">
-			<?php dynamic_sidebar( 'blog_sidebar' ); ?>
-		</div>
+		<?php get_sidebar(); ?>
 
 		<br class="clearfloat" />
 
