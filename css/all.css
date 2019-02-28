@@ -499,17 +499,16 @@ img {
       padding-top: 0; } }
   .sponsors-listing-hp-container h2 {
     width: 25%;
-    font-size: 1rem;
-    font-weight: 400; }
+    text-transform: uppercase; }
     @media (max-width: 750px) {
       .sponsors-listing-hp-container h2 {
         width: 100%;
         padding-bottom: 1.5em; } }
     .sponsors-listing-hp-container h2 span {
       display: block;
-      text-transform: uppercase;
-      font-size: 1.77em;
-      font-weight: bold; }
+      font-size: 0.5em;
+      font-weight: normal;
+      margin: 0; }
   .sponsors-listing-hp-container .sponsors-listing-hp {
     width: 75%;
     padding-left: 0.75em;
@@ -673,7 +672,7 @@ img {
       font-size: 0.76em; }
       .footer-wrap-outer .footer-wrap .footer-site-info a {
         color: #fff;
-        text-decoration: underline; }
+        border-bottom: 1px solid; }
     @media (max-width: 400px) {
       .footer-wrap-outer .footer-wrap .footer-contact span {
         display: block;
