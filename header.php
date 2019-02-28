@@ -26,17 +26,7 @@
 		<?php wp_nav_menu( array( 'theme_location' => 'primary-menu' ) ); ?>
 	</div>
 
-	<div class="social-contact-nav-wrap-outer">
-		<div class="social-contact-nav-wrap">
-			<p class="social-contact-contact">Call 321-302-3474 or <a href="/#" class="btn book">Book now</a></p>
-			<p class="social-contact-social">
-				<a href="http://www.facebook.com/" class="home-header-social-link social-facebook"><i class="fab fa-facebook-square"></i></a>
-				<a href="http://www.twitter.com/" class="home-header-social-link social-twitter"><i class="fab fa-twitter-square"></i></a>
-				<a href="http://www.instagram.com/" class="home-header-social-link social-instagram"><i class="fab fa-instagram"></i></a>
-				<a href="http://www.linkedin.com/" class="home-header-social-link social-linkedin"><i class="fab fa-linkedin"></i></a>
-			</p>
-		</div><!-- END NAV WRAP -->
-	</div><!-- END NAV WRAP OUTER -->
+	<?php include("includes/social-nav.inc.php"); ?>
 
 	<div class="header-wrap-outer">
 
