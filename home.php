@@ -13,6 +13,12 @@
 					$post_meta = get_post_meta( $post->ID );
 					$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
 
+					if ( has_term( 'fishing-report', 'category', $post->ID ) ) {
+						$article_type = 'Fishing Report';
+					} else {
+						$article_type = 'Blog';
+					}
+
 					//echo 'ARTICLE META<br/><pre>'.print_r( $categories, true ).'</pre>';
 				?>
 
@@ -20,13 +26,7 @@
 
 					<div class="blog-item-section blog-item-content <?php if ( has_post_thumbnail() ) { echo 'has-blog-image'; } ?>">
 						<h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" );  ?> |
-							<?php
-								foreach ( $categories as $category ) {
-							        echo '<span class="category-item">'.$category->name.'<span class="category-divider">|</span></span>';
-							    }
-							?>
-						</p>
+						<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
 
 						<?php the_excerpt(); ?>
 
