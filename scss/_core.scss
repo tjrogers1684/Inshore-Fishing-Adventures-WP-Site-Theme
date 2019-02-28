@@ -264,8 +264,7 @@ hr {
 
 	h2 {
 		width: 25%;
-		font-size: 1rem;
-		font-weight: 400;
+		text-transform: uppercase;
 
 		@media (max-width: 750px) {
 			width: 100%;
@@ -274,9 +273,9 @@ hr {
 
 		span {
 			display: block;
-			text-transform: uppercase;
-			font-size: 1.77em;
-			font-weight: bold;
+			font-size: 0.5em;
+			font-weight: normal;
+			margin: 0;
 		}
 	}
 
@@ -459,7 +458,7 @@ hr {
 
 			a {
 				color: #fff;
-				text-decoration: underline;
+				border-bottom: 1px solid;
 			}
 		}
 

@@ -1,6 +1,6 @@
 <div class="social-contact-nav-wrap-outer">
 	<div class="social-contact-nav-wrap">
-		<p class="social-contact-contact">Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> or <a href="/#" class="btn book">Book now</a></p>
+		<p class="social-contact-contact">Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> or <a href="/#" class="btn book">Book Now</a></p>
 		<p class="social-contact-social">
 			<?php if( get_theme_mod('fgc_facebook_url') ){ ?>
 				<a href="<?php echo get_theme_mod('fgc_facebook_url'); ?>" class="home-header-social-link social-facebook"><i class="fab fa-facebook-square"></i></a>
