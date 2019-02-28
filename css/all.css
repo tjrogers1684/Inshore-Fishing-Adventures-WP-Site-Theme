@@ -694,6 +694,8 @@ img {
     display: block; } }
 .not-front .content-wrap {
   padding: 4em 1.5em 1em; }
+  .not-front .content-wrap .blocks-gallery-item img {
+    height: 100% !important; }
 
 .tesimonial-page-listing-container {
   -webkit-column-count: 3;

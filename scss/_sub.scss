@@ -23,6 +23,12 @@
 
 	.content-wrap {
 		padding: 4em 1.5em 1em;
+	
+		.blocks-gallery-item {
+			img {
+				height: 100% !important;
+			}
+		}
 	}
 }
 
