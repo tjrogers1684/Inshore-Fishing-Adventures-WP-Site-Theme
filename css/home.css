@@ -28,8 +28,8 @@
   .woocommerce a.button.alt.btn-alt,
   .woocommerce button.button.alt.btn-alt,
   .woocommerce input.button.alt.btn-alt {
-    background: #fff;
-    color: #ff9e14; }
+    background-color: #fff;
+    color: #ff9e14 !important; }
 
 .feature-wrap {
   display: -webkit-box;
