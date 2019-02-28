@@ -6,8 +6,8 @@
 .woocommerce a.button.alt,
 .woocommerce button.button.alt,
 .woocommerce input.button.alt {
-  color: #fff;
-  background: #ff9e14;
+  color: #fff !important;
+  background-color: #ff9e14;
   padding: 0.75em 1.5em;
   display: inline-block; }
   .btn:hover,
