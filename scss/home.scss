@@ -101,7 +101,7 @@
 					display: inline-block;
 					margin: 0 0.25em;
 
-					@media (max-width: 910px) {
+					@media (max-width: 970px) {
 						display: block;
 
 						& + a {
@@ -380,8 +380,13 @@
 					margin: 0;
 				}
 
+				h2 {
+					font-size: 1.295em;
+				}
+
 				.more-articles-link {
 					margin-left: 1em;
+					font-size: 0.88em;
 				}
 			}
 

@@ -167,7 +167,8 @@ button {
 .top-nav {
   width: 75%;
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  letter-spacing: 0; }
   @media (max-width: 680px) {
     .top-nav {
       display: none; } }
@@ -190,14 +191,16 @@ button {
       .top-nav .menu > li.current-menu-item.menu-item-has-children:after {
         color: #004b71;
         color: #ffbe61;
-        content: "\f107"; }
+        content: "\f107";
+        right: 0.35em; }
       .top-nav .menu > li.current-menu-item a {
         background: #e08400;
         color: #fff; }
       .top-nav .menu > li a {
         font-size: 0.88em;
         padding: 0.5em 1.25em;
-        display: block; }
+        display: block;
+        font-weight: normal; }
       .top-nav .menu > li:hover a {
         background: #e08400;
         color: #fff; }
@@ -224,7 +227,7 @@ button {
                   transform: translateY(-50%);
           content: "\f107";
           font-family: "Font Awesome 5 Free";
-          color: #ff822f; }
+          color: #ff9e14; }
         .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
           display: none;
           position: absolute;
@@ -391,7 +394,7 @@ img {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
     /* FF3.6-15 */
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(#ffffff 10%, rgba(255, 255, 255, 0) 25%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
     /* IE6-9 */
@@ -407,8 +410,8 @@ img {
     padding: 2em;
     color: #fff;
     font-weight: bold;
-    height: 75vh;
-    min-height: 800px;
+    height: 50vh;
+    min-height: 720px;
     z-index: 2;
     position: relative; }
     @media (max-width: 800px) {
@@ -457,22 +460,21 @@ img {
 /* --------------------------------------------- CALL NOW BOOKING SECTION -- */
 .call-now-booking-callout {
   text-align: center;
-  padding: 5em 1.5em 3em;
+  padding: 4em 1.5em;
   font-size: 1.6em;
-  font-weight: bold;
-  color: #848484; }
+  font-weight: bold; }
   @media (max-width: 580px) {
     .call-now-booking-callout span {
       display: block; } }
   .call-now-booking-callout .btn, .call-now-booking-callout input[type="submit"],
   .call-now-booking-callout input[type="button"],
   .call-now-booking-callout button {
-    padding: 0.5em 1em;
+    padding: 0.25em 1em;
     margin-left: 0.25em; }
 
 @media (max-width: 750px) {
   .not-front .call-now-booking-callout {
-    padding-top: 3em; } }
+    padding: 3em 1.5em; } }
 
 .sponsors-listing-hp-container {
   max-width: 1120px;
@@ -482,7 +484,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 3em 4em;
+  padding: 1.5em 4em;
   box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
   margin-bottom: -8em;
   z-index: 3;
@@ -515,18 +517,19 @@ img {
       .sponsors-listing-hp-container .sponsors-listing-hp {
         width: 100%; } }
     .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item {
-      width: 20%;
-      padding: 0 0.5em;
+      width: 105px;
       text-align: center; }
       .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2) {
-        width: 50%; }
-      @media (max-width: 580px) {
+        width: 290px; }
+      .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) {
+        width: 60px; }
+      @media (max-width: 620px) {
         .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item {
-          width: 90%;
+          width: 100%;
           margin: auto; }
           .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item + .sponsor-item {
             margin-top: 1.5em; }
-          .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2) {
+          .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2), .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) {
             width: 100%; } }
 
 .wave-overlay-footer {
@@ -578,7 +581,7 @@ img {
         align-items: center;
         margin-bottom: 3em; } }
     .footer-wrap-outer .footer-wrap .footer-address-container .footer-social {
-      margin-top: 1em; }
+      margin-top: 1.5em; }
       .footer-wrap-outer .footer-wrap .footer-address-container .footer-social a {
         display: inline-block;
         font-size: 1.25em;
@@ -628,14 +631,18 @@ img {
       .footer-wrap-outer .footer-wrap .footer-site-info a {
         color: #fff;
         border-bottom: 1px solid; }
-    @media (max-width: 400px) {
-      .footer-wrap-outer .footer-wrap .footer-contact span {
-        display: block;
-        margin-top: 0.75em; } }
-    .footer-wrap-outer .footer-wrap .footer-contact span .btn, .footer-wrap-outer .footer-wrap .footer-contact span input[type="submit"],
-    .footer-wrap-outer .footer-wrap .footer-contact span input[type="button"],
-    .footer-wrap-outer .footer-wrap .footer-contact span button {
-      margin-left: 0.5em; }
+    .footer-wrap-outer .footer-wrap .footer-contact {
+      font-size: 1.3em; }
+      @media (max-width: 400px) {
+        .footer-wrap-outer .footer-wrap .footer-contact span {
+          display: block;
+          margin-top: 0.75em; } }
+      .footer-wrap-outer .footer-wrap .footer-contact span .btn, .footer-wrap-outer .footer-wrap .footer-contact span input[type="submit"],
+      .footer-wrap-outer .footer-wrap .footer-contact span input[type="button"],
+      .footer-wrap-outer .footer-wrap .footer-contact span button {
+        margin-left: 0.5em;
+        font-size: 1.17rem;
+        padding: 0.25em 1em; }
 
 .not-front .header-wrap {
   height: 360px;

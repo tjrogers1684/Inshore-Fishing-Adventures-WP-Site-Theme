@@ -6,6 +6,7 @@
 	width: 75%;
 	position: relative;
 	z-index: 3;
+	letter-spacing: 0;
 
 	@media (max-width: 680px) {
 		display: none;
@@ -38,7 +39,7 @@
 						color: #004b71;
 						color: lighten($brand, 15);;
 						content: "\f107";
-						//right: 0.35em;
+						right: 0.35em;
 					}
 				}
 
@@ -53,6 +54,7 @@
 				font-size: 0.88em;
 				padding: 0.5em 1.25em;
 				display: block;
+				font-weight: normal;
 			}
 
 			&:hover a {
@@ -95,7 +97,7 @@
 					content: "\f107";
 					font-family: "Font Awesome 5 Free";
 					//font-weight: 900;
-					color: #ff822f;
+					color: $brand;
 				}
 
 				ul {

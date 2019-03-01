@@ -75,7 +75,7 @@
 		</div>
 
 		<div class="footer-site-info">
-			<p class="site-info">&copy;<?php echo date("Y"); ?> Captain Mark Wright | Web Design by <a href="http://www.thrivecreativelabs.com/">Thrive Creative Labs</a></p>
+			<p class="site-info">&copy;<?php echo date("Y"); ?> Captain Mark Wright | Website by <a href="http://www.thrivecreativelabs.com/">Thrive Creative Labs</a></p>
 		</div>
 
 	</div><!-- end of footerWrap -->

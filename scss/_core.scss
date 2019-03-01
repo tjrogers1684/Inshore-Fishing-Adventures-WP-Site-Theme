@@ -22,6 +22,7 @@ body {
 	font-size: 17px;
 	line-height: 1.5;
 	font-family: 'Roboto', sans-serif;
+	//letter-spacing: 1px;
 }
 
 a, a:visited {
@@ -133,10 +134,10 @@ hr {
 		left: 0;
 		width: 100%;
 		height: 100%;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-		background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+		background: -webkit-linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0) 25%);
+		background: -o-linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0) 25%);
+		background: linear-gradient(rgba(255,255,255,1) 10%, rgba(255,255,255,0) 25%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 		z-index: 1;
 	}
@@ -155,8 +156,8 @@ hr {
 		padding: 2em;
 		color: #fff;
 		font-weight: bold;
-		height: 75vh;
-		min-height: 800px;
+		height: 50vh;
+		min-height: 720px;
 		z-index: 2;
 		position: relative;
 
@@ -234,10 +235,9 @@ hr {
 /* --------------------------------------------- CALL NOW BOOKING SECTION -- */
 .call-now-booking-callout {
 	text-align: center;
-	padding: 5em 1.5em 3em;
+	padding: 4em 1.5em;
 	font-size: 1.6em;
 	font-weight: bold;
-	color: #848484;
 
 	span {
 		@media (max-width: 580px) {
@@ -246,14 +246,14 @@ hr {
 	}
 
 	.btn {
-		padding: 0.5em 1em;
+		padding: 0.25em 1em;
 		margin-left: 0.25em;
 	}
 }
 
 .not-front .call-now-booking-callout {
 	@media (max-width: 750px) {
-		padding-top: 3em;
+		padding: 3em 1.5em;
 	}
 }
 
@@ -269,7 +269,7 @@ hr {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 3em 4em;
+	padding: 1.5em 4em;
 	box-shadow: 0 5px 10px rgba(35,37,40,0.2);
 	margin-bottom: -8em;
 	z-index: 3;
@@ -311,23 +311,27 @@ hr {
 		}
 
 		.sponsor-item {
-			width: 20%;
-			padding: 0 0.5em;
+			width: 105px;
 			text-align: center;
 
 			&:nth-child(2) {
-				width: 50%;
+				width: 290px;
 			}
 
-			@media (max-width: 580px) {
-				width: 90%;
+			&:nth-child(3) {
+				width: 60px;
+			}
+
+			@media (max-width: 620px) {
+				width: 100%;
 				margin: auto;
 
 				& + .sponsor-item {
 					margin-top: 1.5em;
 				}
 
-				&:nth-child(2) {
+				&:nth-child(2),
+				&:nth-child(3) {
 					width: 100%;
 				}
 			}
@@ -399,7 +403,7 @@ hr {
 			}
 
 			.footer-social {
-				margin-top: 1em;
+				margin-top: 1.5em;
 
 				a {
 					display: inline-block;
@@ -481,6 +485,7 @@ hr {
 		}
 
 		.footer-contact {
+			font-size: 1.3em;
 
 			span {
 				@media (max-width: 400px) {
@@ -490,6 +495,8 @@ hr {
 
 				.btn {
 					margin-left: 0.5em;
+					font-size: 1.17rem;
+					padding: 0.25em 1em;
 				}
 			}
 		}

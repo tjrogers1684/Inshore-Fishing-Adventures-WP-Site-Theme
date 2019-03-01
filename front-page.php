@@ -13,7 +13,7 @@
 					<p>It is here that anglers come to sample the incredible fishery that has made Ft. Pierce one of the premier fishing destinations in the world!</p>
 
 					<p class="about-content-links">
-						<a href="/about" class="btn">About Capt. Mark</a>
+						<a href="/about" class="btn">About Captain Mark</a>
 						<a href="/gallery" class="btn">Gallery</a>
 						<a href="/locations" class="btn">Locations</a>
 					</p>
