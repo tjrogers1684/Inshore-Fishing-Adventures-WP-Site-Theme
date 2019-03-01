@@ -314,7 +314,7 @@
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section h2 {
           font-size: 1.295em; }
         .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp-heading-section .more-articles-link {
-          margin-left: 1em;
+          margin: 0.25em 0 0 1em;
           font-size: 0.88em; }
       .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp {
         display: flex;

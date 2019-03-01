@@ -460,7 +460,7 @@ img {
 /* --------------------------------------------- CALL NOW BOOKING SECTION -- */
 .call-now-booking-callout {
   text-align: center;
-  padding: 4em 1.5em;
+  padding: 6em 1.5em 4em;
   font-size: 1.6em;
   font-weight: bold; }
   @media (max-width: 580px) {
@@ -484,7 +484,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5em 4em;
+  padding: 1.5em 4em 1.5em;
   box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
   margin-bottom: -8em;
   z-index: 3;
@@ -642,7 +642,7 @@ img {
       .footer-wrap-outer .footer-wrap .footer-contact span button {
         margin-left: 0.5em;
         font-size: 1.17rem;
-        padding: 0.4em 1.40em; }
+        padding: 0.4em 1.5em; }
 
 .not-front .header-wrap {
   height: 360px;
@@ -722,6 +722,11 @@ img {
       padding-bottom: 0.5em; }
 
 /* CSS Document */
+.blog .content-wrap,
+.archive.section-blog .content-wrap {
+  max-width: 1400px;
+  letter-spacing: 1px;
+  font-size: 18px; }
 .blog .blog-listing .blog-item,
 .archive.section-blog .blog-listing .blog-item {
   display: flex;
@@ -788,6 +793,11 @@ img {
     .blog .blog-listing .blog-item .blog-item-content .btn-sm,
     .archive.section-blog .blog-listing .blog-item .blog-item-content .btn-sm {
       margin-top: 1em; }
+
+/* --------------------------------------------- NEWSLETTER SIGN UP -- */
+#nf-field-9-container {
+  width: 100%;
+  margin: 0; }
 
 /* --------------------------------------------- CATEGORIES -- */
 .widget_categories h2 {
