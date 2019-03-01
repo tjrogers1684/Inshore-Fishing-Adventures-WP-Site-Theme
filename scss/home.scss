@@ -247,6 +247,7 @@
 
 		.prefooter-booking-callout-details {
 			width: 37%;
+			font-weight: 300;
 		}
 
 		.prefooter-booking-callout-contact {
@@ -257,11 +258,12 @@
 			p {
 				span {
 					display: block;
+					padding-top: 0.25em;
 
 					.btn {
 						font-size: 1.4rem;
 						font-weight: bold;
-						padding: 0.5em 1.25em;
+						padding: 0.35em 1.35em;
 						margin-left: 0.25em;
 					}
 				}
