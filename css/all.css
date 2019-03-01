@@ -165,7 +165,9 @@ button {
   font-size: 1em; }
 
 .top-nav {
-  width: 75%; }
+  width: 75%;
+  position: relative;
+  z-index: 3; }
   @media (max-width: 680px) {
     .top-nav {
       display: none; } }
@@ -185,6 +187,13 @@ button {
         justify-content: flex-end; } }
     .top-nav .menu > li {
       position: relative; }
+      .top-nav .menu > li.current-menu-item.menu-item-has-children:after {
+        color: #004b71;
+        color: #ffbe61;
+        content: "\f107"; }
+      .top-nav .menu > li.current-menu-item a {
+        background: #e08400;
+        color: #fff; }
       .top-nav .menu > li a {
         font-size: 0.88em;
         padding: 0.5em 1.25em;

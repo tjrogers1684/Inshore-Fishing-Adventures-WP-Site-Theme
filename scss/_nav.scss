@@ -4,6 +4,8 @@
 // ---------------------------------------------------------------------------------
 .top-nav {
 	width: 75%;
+	position: relative;
+	z-index: 3;
 
 	@media (max-width: 680px) {
 		display: none;
@@ -30,8 +32,21 @@
 		> li {
 			position: relative;
 
-			@media (max-width: 1100px) {
+			&.current-menu-item {
+				&.menu-item-has-children {
+					&:after {
+						color: #004b71;
+						color: lighten($brand, 15);;
+						content: "\f107";
+						//right: 0.35em;
+					}
+				}
 
+				a {
+					background: $brand-dk;
+					color: #fff;
+
+				}
 			}
 
 			a {
