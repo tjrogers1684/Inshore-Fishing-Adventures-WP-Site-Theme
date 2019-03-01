@@ -432,11 +432,19 @@ img {
   width: 100%; }
   .content-area.has-sidebar {
     width: 66.6%;
-    padding-right: 1.5em; }
+    padding-right: 2em; }
 
 .sidebar-area {
   width: 33.3%; }
 
+@media (max-width: 750px) {
+  .content-area.has-sidebar,
+  .sidebar-area {
+    width: 100%;
+    padding: 0; }
+
+  .sidebar-area {
+    margin-top: 2em; } }
 /* --------------------------------------------- CALL NOW BOOKING SECTION -- */
 .call-now-booking-callout {
   text-align: center;
@@ -452,6 +460,10 @@ img {
   .call-now-booking-callout button {
     padding: 0.5em 1em;
     margin-left: 0.25em; }
+
+@media (max-width: 750px) {
+  .not-front .call-now-booking-callout {
+    padding-top: 3em; } }
 
 .sponsors-listing-hp-container {
   max-width: 1120px;
@@ -706,6 +718,13 @@ img {
   .blog .blog-listing .blog-item:nth-child(odd),
   .archive.section-blog .blog-listing .blog-item:nth-child(odd) {
     flex-direction: row-reverse; }
+    @media (max-width: 500px) {
+      .blog .blog-listing .blog-item:nth-child(odd),
+      .archive.section-blog .blog-listing .blog-item:nth-child(odd) {
+        flex-direction: row; }
+        .blog .blog-listing .blog-item:nth-child(odd) .blog-item-image,
+        .archive.section-blog .blog-listing .blog-item:nth-child(odd) .blog-item-image {
+          border-radius: 15px 15px 0 0 !important; } }
     .blog .blog-listing .blog-item:nth-child(odd) .blog-item-image,
     .archive.section-blog .blog-listing .blog-item:nth-child(odd) .blog-item-image {
       border-radius: 0 15px 15px 0; }
@@ -717,6 +736,12 @@ img {
     width: 40%;
     border-radius: 15px 0 0 15px;
     overflow: hidden; }
+    @media (max-width: 500px) {
+      .blog .blog-listing .blog-item .blog-item-image,
+      .archive.section-blog .blog-listing .blog-item .blog-item-image {
+        width: 100%;
+        min-height: 240px;
+        border-radius: 15px 15px 0 0; } }
     .blog .blog-listing .blog-item .blog-item-image a,
     .archive.section-blog .blog-listing .blog-item .blog-item-image a {
       display: block;
@@ -731,6 +756,10 @@ img {
     .blog .blog-listing .blog-item .blog-item-content.has-blog-image,
     .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image {
       width: 60%; }
+      @media (max-width: 500px) {
+        .blog .blog-listing .blog-item .blog-item-content.has-blog-image,
+        .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image {
+          width: 100%; } }
       .blog .blog-listing .blog-item .blog-item-content.has-blog-image h2,
       .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image h2 {
         margin: 0; }
@@ -752,7 +781,7 @@ img {
   margin: 0;
   padding: 0; }
 .widget_categories ul li.current-cat a {
-  background: #e7e7e7;
+  background: #f6f6f6;
   color: #434343;
   padding-left: 0.8em; }
 .widget_categories ul li + li {
@@ -770,5 +799,42 @@ img {
 /* ----- ALL ARTICLES LINK ----- */
 .widget_custom_html {
   margin-top: 1.5em; }
+
+/* --------------------------------------------- FEATURE -- */
+.single-post .header-wrap {
+  height: 360px;
+  min-height: 0; }
+  @media (max-width: 700px) {
+    .single-post .header-wrap {
+      height: auto; } }
+.single-post .feature-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%; }
+  @media (max-width: 800px) {
+    .single-post .feature-wrap {
+      padding: 2em 0; } }
+  .single-post .feature-wrap .article-node-meta-conatiner {
+    background: rgba(63, 130, 174, 0.7);
+    padding: 2em 2em;
+    position: relative;
+    text-align: center; }
+    .single-post .feature-wrap .article-node-meta-conatiner h1 {
+      font-size: 3.18em;
+      margin: 0; }
+      @media (max-width: 800px) {
+        .single-post .feature-wrap .article-node-meta-conatiner h1 {
+          font-size: 2em; } }
+    .single-post .feature-wrap .article-node-meta-conatiner .blog-article-node-meta {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-top: 0.5em; }
+      @media (max-width: 800px) {
+        .single-post .feature-wrap .article-node-meta-conatiner .blog-article-node-meta {
+          font-size: 1.25rem; } }
 
 /*# sourceMappingURL=all.css.map */

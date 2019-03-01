@@ -210,12 +210,24 @@ hr {
 
 	&.has-sidebar {
 		width: 66.6%;
-		padding-right: 1.5em;
+		padding-right: 2em;
 	}
 }
 
 .sidebar-area {
 	width: 33.3%;
+}
+
+@media (max-width: 750px) {
+	.content-area.has-sidebar,
+	.sidebar-area {
+		width: 100%;
+		padding: 0;
+	}
+
+	.sidebar-area {
+		margin-top: 2em;
+	}
 }
 
 
@@ -236,6 +248,12 @@ hr {
 	.btn {
 		padding: 0.5em 1em;
 		margin-left: 0.25em;
+	}
+}
+
+.not-front .call-now-booking-callout {
+	@media (max-width: 750px) {
+		padding-top: 3em;
 	}
 }
 

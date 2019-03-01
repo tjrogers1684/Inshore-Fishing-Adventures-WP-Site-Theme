@@ -21,6 +21,14 @@
 			&:nth-child(odd) {
 				flex-direction: row-reverse;
 
+				@media (max-width: 500px) {
+					flex-direction: row;
+
+					.blog-item-image {
+						border-radius: 15px 15px 0 0 !important;
+					}
+				}
+
 				.blog-item-image {
 					border-radius: 0 15px 15px 0;
 				}
@@ -34,6 +42,12 @@
 				width: 40%;
 				border-radius: 15px 0 0 15px;
 				overflow: hidden;
+
+				@media (max-width: 500px) {
+					width: 100%;
+					min-height: 240px;
+					border-radius: 15px 15px 0 0;
+				}
 
 
 				a {
@@ -52,6 +66,10 @@
 
 				&.has-blog-image {
 					width: 60%;
+
+					@media (max-width: 500px) {
+						width: 100%;
+					}
 
 					h2 {
 						margin: 0;
@@ -94,7 +112,7 @@
 		li {
 			&.current-cat {
 				a {
-					background: #e7e7e7;
+					background: #f6f6f6;
 					color: #434343;
 					padding-left: 0.8em;
 				}
@@ -126,9 +144,61 @@
 }
 
 
+// ---------------------------------------------------------------------------------
+// ----- ARTICLE NODE --------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 
+/* --------------------------------------------- FEATURE -- */
+.single-post {
+	.header-wrap {
+		height: 360px;
+		min-height: 0;
 
+		@media (max-width: 700px) {
+			height: auto;
+		}
+	}
 
+	.feature-wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+
+		@media (max-width: 800px) {
+			padding: 2em 0;
+		}
+
+		.article-node-meta-conatiner {
+			background: rgba(63,130,174,0.7);
+			padding: 2em 2em;
+			position: relative;
+			text-align: center;
+
+			h1 {
+				font-size: 3.18em;
+				margin: 0;
+
+				@media (max-width: 800px) {
+					font-size: 2em;
+				}
+			}
+
+			.blog-article-node-meta {
+				display: block;
+				font-size: 1.25rem;
+				font-weight: 300;
+				margin-top: 0.5em;
+
+				@media (max-width: 800px) {
+					font-size: 1.25rem;
+				}
+			}
+		}
+	}
+}
 
 
 
