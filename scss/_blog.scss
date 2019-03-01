@@ -6,7 +6,8 @@
 // ---------------------------------------------------------------------------------
 // ----- LANDING PAGE ---------------------------------------------------------------
 // ---------------------------------------------------------------------------------
-.blog {
+.blog,
+.archive.section-blog {
 	.blog-listing {
 		.blog-item {
 			display: flex;
@@ -16,6 +17,14 @@
 			align-items: stretch;
 			border-radius: 15px;
 			box-shadow: 0 2px 12px rgba(35,37,40,0.2);
+
+			&:nth-child(odd) {
+				flex-direction: row-reverse;
+
+				.blog-item-image {
+					border-radius: 0 15px 15px 0;
+				}
+			}
 
 			& + .blog-item {
 				margin-top: 2em;
@@ -49,16 +58,78 @@
 					}
 
 					.blog-article-meta {
-						margin: 0.5em 0 1em;
+						margin: 0.25em 0 1.5em;
 						font-style: italic;
 						color: #777;
 						font-size: 0.9em;
 					}
 				}
+
+				.btn-sm {
+					margin-top: 1em;
+				}
 			}
 		}
 	}
 }
+
+
+// ---------------------------------------------------------------------------------
+// ----- SIDEBAR -------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+
+/* --------------------------------------------- CATEGORIES -- */
+.widget_categories {
+	h2 {
+		margin-bottom: 0.5em;
+	}
+
+	ul, li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul {
+		li {
+			& + li {
+				border-top: 1px solid #eee;
+			}
+
+			a {
+				display: block;
+				padding: 0.5em;
+				transition: 0.3s;
+
+				&:hover {
+					background: $brand;
+					color: #fff;
+					padding-left: 0.8em;
+					border-left: 8px solid $brand-dk;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

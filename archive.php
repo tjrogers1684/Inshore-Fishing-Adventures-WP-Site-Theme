@@ -4,34 +4,28 @@
 
 	<div class="content-wrap">
 
-		<div class="content-area blog-listing">
+		<div class="content-area blog-listing has-sidebar">
+
+			<h1>Inshore Fishing Adventures Blog</h1>
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+				<?php
+					$categories = wp_get_object_terms( $post->ID, 'category' );
+					$post_meta = get_post_meta( $post->ID );
+					$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+					$article_snippet = wp_trim_words( get_the_content(), 15, '...' );
+
+					if ( has_term( 'fishing-report', 'category', $post->ID ) ) {
+						$article_type = '<i class="fas fa-file-invoice"></i> Fishing Report';
+					} else {
+						$article_type = '<i class="fas fa-newspaper"></i> Blog';
+					}
+
+					//echo 'ARTICLE META<br/><pre>'.print_r( $categories, true ).'</pre>';
+				?>
+
 				<div class="blog-item">
-
-					<?php
-						$categories = wp_get_object_terms( $post->ID, 'category' );
-						$post_meta = get_post_meta( $post->ID );
-						$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
-
-						//echo 'ARTICLE META<br/><pre>'.print_r( $categories, true ).'</pre>';
-					?>
-
-					<div class="blog-item-section blog-item-content <?php if ( has_post_thumbnail() ) { echo 'has-blog-image'; } ?>">
-						<h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
-						<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" );  ?> |
-							<?php 
-								foreach ( $categories as $category ) {
-							        echo '<span class="category-item">'.$category->name.'<span class="category-divider">|</span></span>';
-							    }
-							?>
-						</p>
-
-						<?php the_excerpt(); ?>
-
-						<p><a class="btn btn-small" href="<?php echo get_the_permalink(); ?>"><i class="fas fa-newspaper"></i>Read Article</a></p>
-					</div>
 
 					<?php if ( has_post_thumbnail() ) : ?>
 					    <div class="blog-item-section blog-item-image">
@@ -39,6 +33,17 @@
 						    </a>
 					    </div>
 					<?php endif; ?>
+
+					<div class="blog-item-section blog-item-content <?php if ( has_post_thumbnail() ) { echo 'has-blog-image'; } ?>">
+						<h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
+						<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
+
+						<?php // the_excerpt(); ?>
+
+						<div class="blog-article-excerpt"><?php echo $article_snippet; ?></div>
+
+						<p><a class="btn btn-sm" href="<?php echo get_the_permalink(); ?>">Read Article <i class="fas fa-angle-double-right"></i></a></p>
+					</div>
 
 				</div>
 
@@ -58,9 +63,7 @@
 
 		</div>
 
-		<div class="sidebar-area">
-			<?php dynamic_sidebar( 'blog_sidebar' ); ?>
-		</div>
+		<?php get_sidebar(); ?>
 
 		<br class="clearfloat" />
 

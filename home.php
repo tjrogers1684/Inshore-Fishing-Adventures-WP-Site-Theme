@@ -14,6 +14,7 @@
 					$categories = wp_get_object_terms( $post->ID, 'category' );
 					$post_meta = get_post_meta( $post->ID );
 					$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+					$article_snippet = wp_trim_words( get_the_content(), 15, '...' );
 
 					if ( has_term( 'fishing-report', 'category', $post->ID ) ) {
 						$article_type = '<i class="fas fa-file-invoice"></i> Fishing Report';
@@ -37,9 +38,11 @@
 						<h2><a href="<?php echo get_the_permalink(); ?>"><?php the_title(); ?></a></h2>
 						<p class="blog-article-meta"><?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
 
-						<?php the_excerpt(); ?>
+						<?php // the_excerpt(); ?>
 
-						<p><a class="btn btn-small" href="<?php echo get_the_permalink(); ?>">Read Article <i class="fas fa-angle-double-right"></i></a></p>
+						<div class="blog-article-excerpt"><?php echo $article_snippet; ?></div>
+
+						<p><a class="btn btn-sm" href="<?php echo get_the_permalink(); ?>">Read Article <i class="fas fa-angle-double-right"></i></a></p>
 					</div>
 
 				</div>
