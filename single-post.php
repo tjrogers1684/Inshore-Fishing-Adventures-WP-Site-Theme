@@ -31,9 +31,8 @@
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 				<?php if ( has_post_thumbnail() ) : ?>
-					<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
-
-				    <div class="blog-article-node-section blog-article-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
+				    <div class="blog-article-node-section blog-article-image">
+				    	<?php the_post_thumbnail( 'medium' ); ?>
 				    </div>
 				<?php endif; ?>
 

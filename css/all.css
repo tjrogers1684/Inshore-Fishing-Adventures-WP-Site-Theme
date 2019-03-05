@@ -1002,13 +1002,9 @@ img {
   .single-post .content-wrap .content-area.has-sidebar {
     width: 70%; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-image {
-      display: block;
-      background-size: cover;
-      height: 0;
-      background-position: 50% 10%;
-      padding-top: 16em;
-      position: relative;
-      margin-bottom: 1em; }
+      float: left;
+      line-height: 0;
+      margin: 0.5em 1em 0.5em 1em; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share {
       margin-top: 3em;
       background: #ecebe4;
