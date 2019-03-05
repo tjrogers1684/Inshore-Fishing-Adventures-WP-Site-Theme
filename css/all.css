@@ -170,8 +170,7 @@ button {
 .top-nav {
   width: 75%;
   position: relative;
-  z-index: 3;
-  letter-spacing: 0; }
+  z-index: 3; }
   @media (max-width: 680px) {
     .top-nav {
       display: none; } }
@@ -834,7 +833,6 @@ img {
 .blog .content-wrap,
 .archive.section-blog .content-wrap {
   max-width: 1400px;
-  letter-spacing: 1px;
   font-size: 18px; }
   .blog .content-wrap .content-area.has-sidebar,
   .archive.section-blog .content-wrap .content-area.has-sidebar {
@@ -842,6 +840,16 @@ img {
   .blog .content-wrap .sidebar-area,
   .archive.section-blog .content-wrap .sidebar-area {
     width: 30%; }
+  @media (max-width: 750px) {
+    .blog .content-wrap .content-area.has-sidebar,
+    .blog .content-wrap .sidebar-area,
+    .archive.section-blog .content-wrap .content-area.has-sidebar,
+    .archive.section-blog .content-wrap .sidebar-area {
+      width: 100%;
+      padding: 0; }
+    .blog .content-wrap .sidebar-area,
+    .archive.section-blog .content-wrap .sidebar-area {
+      margin-top: 2em; } }
 .blog .blog-listing .blog-item,
 .archive.section-blog .blog-listing .blog-item {
   display: -webkit-box;
@@ -889,7 +897,8 @@ img {
       @media (max-width: 500px) {
         .blog .blog-listing .blog-item .blog-item-content.has-blog-image,
         .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image {
-          width: 100%; } }
+          width: 100%;
+          padding: 1em 0; } }
       .blog .blog-listing .blog-item .blog-item-content.has-blog-image h2,
       .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image h2 {
         margin: 0; }
@@ -981,10 +990,7 @@ img {
       padding: 2em 0; } }
 .single-post .content-wrap {
   max-width: 1400px;
-  letter-spacing: 1px;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 1.2px;
+  font-size: 17.5px;
   padding-top: 3em; }
   .single-post .content-wrap .blog-article-node-meta-wrap {
     width: 100%; }
@@ -1004,7 +1010,7 @@ img {
     .single-post .content-wrap .content-area.has-sidebar .blog-article-image {
       float: left;
       line-height: 0;
-      margin: 0.5em 1em 0.5em 1em; }
+      margin: 0.5em 1em 0.5em 0; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share {
       margin-top: 3em;
       background: #ecebe4;
