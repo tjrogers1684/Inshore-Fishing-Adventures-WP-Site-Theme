@@ -230,6 +230,16 @@
 				color: #c7c5b6;
 			}
 
+			.blog-article-image {
+				display: block;
+				background-size: cover;
+				height: 0;
+				background-position: 50% 10%;
+				padding-top: 16em;
+				position: relative;
+				margin-bottom: 1em;
+			}
+
 			.blog-article-node-social-share {
 				margin-top: 3em;
 				// padding-top: 2em;

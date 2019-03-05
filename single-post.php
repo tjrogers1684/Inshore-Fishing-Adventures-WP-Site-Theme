@@ -25,18 +25,19 @@
 				?>
 
 				<h1 class="page-title"><?php the_title(); ?></h1>
-						<p class="blog-article-node-meta">Posted on <?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
 
-				<div class="blog-article-section blog-article-content <?php if ( has_post_thumbnail() ) { echo 'has-blog-image'; } ?>">
-						<?php the_content(); ?>
-				</div>
+				<p class="blog-article-node-meta">Posted on <?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?> </p>
 
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php $featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full'); ?>
 
-				    <div class="blog-article-section blog-article-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
+				    <div class="blog-article-node-section blog-article-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
 				    </div>
 				<?php endif; ?>
+
+				<div class="blog-article-node-section blog-article-content <?php if ( has_post_thumbnail() ) { echo 'has-blog-image'; } ?>">
+						<?php the_content(); ?>
+				</div>
 
 				<div class="blog-article-node-social-share">
 					<?php

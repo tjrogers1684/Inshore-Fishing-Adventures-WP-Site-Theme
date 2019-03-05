@@ -999,6 +999,14 @@ img {
       margin: 0 0 2em;
       font-style: italic;
       color: #c7c5b6; }
+    .single-post .content-wrap .content-area.has-sidebar .blog-article-image {
+      display: block;
+      background-size: cover;
+      height: 0;
+      background-position: 50% 10%;
+      padding-top: 16em;
+      position: relative;
+      margin-bottom: 1em; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share {
       margin-top: 3em;
       background: #ecebe4;
