@@ -13,21 +13,21 @@
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 					<?php
-						$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'full');
+						$featured_img_url = get_the_post_thumbnail_url(get_the_ID(),'thumbnail');
 
 						//echo $featured_img_url;
 					?>
 
 					<div class="tesimonial-page-listing-item">
-
-						<?php if ( $featured_img_url ) { ?>
-
-							<div class="tesimonial-page-listing-item-section testimonial-image" style="background-image: url(<?php echo $featured_img_url; ?>)"></div>
-
-						<?php } ?>
-
 						<div class="tesimonial-page-listing-item-section tesimonial-details">
 							<div class="testimonial-quote"><?php the_content(); ?></div>
+						</div>
+
+						<div class="tesimonial-page-listing-item-section tesimonial-author-info">
+							<?php if ( $featured_img_url ) { ?>
+								<div class="tesimonial-page-listing-item-section testimonial-image" style="background-image: url(<?php echo $featured_img_url; ?>)">
+								</div>
+							<?php } ?>
 							<p class="testimonial-author"><?php the_title(); ?></p>
 						</div>
 					</div>
