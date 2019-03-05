@@ -11,9 +11,9 @@
 	}
 
 	.boat-ramp {
-		border-radius:15px;
+		border-radius: 5px;
 		box-shadow: 0 5px 10px rgba(35,37,40,0.2);
-		margin: 0 1.5em 0 0 !important;
+		margin: 0 2.5em 1.25em 0 !important;
 		transition: 0.3s;
 
 		&:hover {
@@ -23,7 +23,7 @@
 		}
 
 		.wp-block-image {
-			border-radius: 15px 15px 0 0;
+			border-radius: 5px 5px 0 0;
 			overflow: hidden;
 			margin: 0;
 		}

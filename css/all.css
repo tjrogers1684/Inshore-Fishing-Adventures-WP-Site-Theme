@@ -823,9 +823,9 @@ img {
 .boat-ramp-row + .boat-ramp-row {
   margin-top: 1.5em; }
 .boat-ramp-row .boat-ramp {
-  border-radius: 15px;
+  border-radius: 5px;
   box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
-  margin: 0 1.5em 0 0 !important;
+  margin: 0 2.5em 1.25em 0 !important;
   -webkit-transition: 0.3s;
   transition: 0.3s; }
   .boat-ramp-row .boat-ramp:hover {
@@ -834,7 +834,7 @@ img {
     background: #086ba5;
     color: #fff; }
   .boat-ramp-row .boat-ramp .wp-block-image {
-    border-radius: 15px 15px 0 0;
+    border-radius: 5px 5px 0 0;
     overflow: hidden;
     margin: 0; }
   .boat-ramp-row .boat-ramp p {
