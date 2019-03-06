@@ -70,6 +70,7 @@
 		<div class="content-area">
 
 			<!-- TESTIMONIALS GRID -->
+			<a name="testimonialsgrid"></a>
 			<div class="tesimonial-page-listing-container">
 
 				<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -80,7 +81,6 @@
 						//echo $featured_img_url;
 					?>
 
-					<a name="testimonialsgrid"></a>
 					<div class="tesimonial-page-listing-item">
 						<div class="tesimonial-page-listing-item-section tesimonial-details">
 							<div class="testimonial-quote"><?php the_content(); ?></div>
