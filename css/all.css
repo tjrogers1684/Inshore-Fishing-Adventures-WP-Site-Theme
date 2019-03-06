@@ -816,8 +816,16 @@ img {
               font-size: 1em; } }
   .post-type-archive-testimonials .review-platforms-conatiner {
     background: #ecebe4;
-    padding: 5.25em 2em;
+    padding: 5.25em 2em 6em;
     text-align: center; }
+    .post-type-archive-testimonials .review-platforms-conatiner h2 {
+      font-size: 3rem;
+      line-height: 1.15; }
+      .post-type-archive-testimonials .review-platforms-conatiner h2 span {
+        text-transform: uppercase;
+        display: block;
+        font-weight: 300;
+        font-size: 0.5em; }
     .post-type-archive-testimonials .review-platforms-conatiner .review-platforms {
       max-width: 1440px;
       margin: auto;
@@ -837,12 +845,22 @@ img {
       -webkit-align-items: center;
               align-items: center;
       padding: 2em 0; }
+      @media (max-width: 610px) {
+        .post-type-archive-testimonials .review-platforms-conatiner .review-platforms {
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+                  flex-direction: column;
+          padding-top: 0; } }
       .post-type-archive-testimonials .review-platforms-conatiner .review-platforms a {
         margin: 0 2em;
         -webkit-transform: scale(1.15);
                 transform: scale(1.15);
         -webkit-filter: invert(75%) sepia(41%) saturate(2251%) hue-rotate(348deg) brightness(252%) contrast(101%);
                 filter: invert(75%) sepia(41%) saturate(2251%) hue-rotate(348deg) brightness(252%) contrast(101%); }
+        @media (max-width: 610px) {
+          .post-type-archive-testimonials .review-platforms-conatiner .review-platforms a {
+            margin: 1.5em 0; } }
         .post-type-archive-testimonials .review-platforms-conatiner .review-platforms a:hover {
           -webkit-filter: invert(75%) sepia(41%) saturate(2251%) hue-rotate(348deg) brightness(202%) contrast(71%);
                   filter: invert(75%) sepia(41%) saturate(2251%) hue-rotate(348deg) brightness(202%) contrast(71%); }
