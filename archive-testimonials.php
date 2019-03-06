@@ -13,6 +13,13 @@
 					'post_type' => 'testimonials',
 					'posts_per_page' => '1',
 					'orderby'   => 'rand',
+					'meta_query' => array(
+						array(
+							'key' => 'featured_testimonial',
+							'value' => 'featured_testimonial',
+							'compare' => 'LIKE'
+						)
+					)
 				];
 
 				// The Query
@@ -39,7 +46,7 @@
 
 					<img class="testimonial-item-quote quote-end" src="/wp-content/themes/inshorefishing/images/icn-quotes-end.png" alt="">
 
-					<?php // echo '<pre>'.print_r( $post_meta, true ).'</pre>'; ?>
+					<?php //echo '<pre>'.print_r( $post_meta, true ).'</pre>'; ?>
 
 				</div>
 
