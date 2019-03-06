@@ -201,12 +201,11 @@ button {
                 justify-content: flex-end; } }
     .top-nav .menu > li {
       position: relative; }
-      .top-nav .menu > li.current-menu-item.menu-item-has-children:after {
+      .top-nav .menu > li.current-menu-item.menu-item-has-children:after, .top-nav .menu > li.current-menu-parent.menu-item-has-children:after {
         color: #004b71;
         color: #ffbe61;
-        content: "\f107";
-        right: 0.35em; }
-      .top-nav .menu > li.current-menu-item a {
+        content: "\f107"; }
+      .top-nav .menu > li.current-menu-item a, .top-nav .menu > li.current-menu-parent a {
         background: #e08400;
         color: #fff; }
       .top-nav .menu > li a {
@@ -214,7 +213,7 @@ button {
         padding: 0.5em 1.25em;
         display: block;
         font-weight: normal; }
-      .top-nav .menu > li:hover a {
+      .top-nav .menu > li:hover a, .top-nav .menu > li.current-menu-parent a, .top-nav .menu > li.current_page_parent a {
         background: #e08400;
         color: #fff; }
       .top-nav .menu > li.spacer {
@@ -242,6 +241,8 @@ button {
           content: "\f107";
           font-family: "Font Awesome 5 Free";
           color: #ff9e14; }
+        .top-nav .menu > li.page_item_has_children > a, .top-nav .menu > li.menu-item-has-children > a {
+          padding: 0.5em 1.25em 0.5em 0.5em; }
         .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
           display: none;
           position: absolute;
@@ -258,6 +259,13 @@ button {
                 background: #ff9e14; }
         .top-nav .menu > li.page_item_has_children:hover ul, .top-nav .menu > li.menu-item-has-children:hover ul {
           display: block; }
+
+.category-fishing-report .top-nav .menu-item-161 a {
+  background: none !important;
+  color: #ff9e14 !important; }
+  .category-fishing-report .top-nav .menu-item-161 a:hover {
+    background: #e08400 !important;
+    color: #fff !important; }
 
 .footer-nav ul,
 .footer-nav ul li {

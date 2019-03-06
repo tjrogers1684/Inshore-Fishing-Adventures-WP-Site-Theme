@@ -32,13 +32,14 @@
 		> li {
 			position: relative;
 
-			&.current-menu-item {
+			&.current-menu-item,
+			&.current-menu-parent {
 				&.menu-item-has-children {
 					&:after {
 						color: #004b71;
 						color: lighten($brand, 15);;
 						content: "\f107";
-						right: 0.35em;
+						//right: 0.35em;
 					}
 				}
 
@@ -56,7 +57,9 @@
 				font-weight: normal;
 			}
 
-			&:hover a {
+			&:hover a,
+			&.current-menu-parent a,
+			&.current_page_parent a {
 				background: $brand-dk;
 				color: #fff;
 			}
@@ -70,9 +73,6 @@
 		    		height: 0;
 		    	}
 		    }
-
-			&.current-menu-item a {
-			}
 
 			&.page_item_has_children,
 			&.menu-item-has-children {
@@ -97,6 +97,10 @@
 					font-family: "Font Awesome 5 Free";
 					//font-weight: 900;
 					color: $brand;
+				}
+
+				& > a {
+					padding: 0.5em 1.25em 0.5em 0.5em;
 				}
 
 				ul {
@@ -126,6 +130,16 @@
 				}
 			}
 		}
+	}
+}
+
+.category-fishing-report .top-nav .menu-item-161 a {
+	background: none !important;
+	color: $brand !important;
+
+	&:hover {
+		background: $brand-dk !important;
+		color: #fff !important;
 	}
 }
 

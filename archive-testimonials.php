@@ -23,7 +23,7 @@
 				];
 
 				// The Query
-				$hp_testimonials_query = new WP_Query( $hp_testimonials_args ); 
+				$hp_testimonials_query = new WP_Query( $hp_testimonials_args );
 
 			?>
 
