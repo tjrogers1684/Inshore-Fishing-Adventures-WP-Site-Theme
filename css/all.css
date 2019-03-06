@@ -776,6 +776,29 @@ img {
   padding: 4em 1.5em 1em; }
   .not-front .content-wrap .blocks-gallery-item img {
     height: 100% !important; }
+  .not-front .content-wrap .shadow img {
+    box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
+  .not-front .content-wrap .wp-block-separator {
+    margin: 2.5em 0; }
+
+/* --------------------------------------------- SUBMENUS -- */
+.sidebar-submenu h2 {
+  margin-bottom: 0.5em; }
+.sidebar-submenu ul, .sidebar-submenu li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+.sidebar-submenu ul li.current-cat a {
+  background: #d7d7d7;
+  color: #434343; }
+.sidebar-submenu ul li a {
+  display: block;
+  padding: 0.25em 0.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .sidebar-submenu ul li a:hover {
+    background: #e08400;
+    color: #fff; }
 
 .post-type-archive-testimonials {
   /* --------------------------------------------- REVIEW US SECTION -- */
@@ -942,6 +965,13 @@ img {
       .post-type-archive-testimonials .tesimonial-page-listing-container .tesimonial-page-listing-item .tesimonial-details .testimonial-quote {
         font-weight: 300; }
 
+.page-id-5 .ifa-licenses {
+  margin: 3em 0 2em;
+  background: #ecebe4;
+  padding: 2em; }
+  .page-id-5 .ifa-licenses p {
+    margin-bottom: 0.5em; }
+
 /* CSS Document */
 .boat-ramp-row + .boat-ramp-row {
   margin-top: 1.5em; }
@@ -1014,7 +1044,8 @@ img {
   .blog .blog-listing .blog-item .blog-item-image,
   .archive.section-blog .blog-listing .blog-item .blog-item-image {
     width: 30%;
-    overflow: hidden; }
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
     @media (max-width: 500px) {
       .blog .blog-listing .blog-item .blog-item-image,
       .archive.section-blog .blog-listing .blog-item .blog-item-image {
@@ -1149,6 +1180,8 @@ img {
       float: left;
       line-height: 0;
       margin: 0.5em 1em 0.5em 0; }
+      .single-post .content-wrap .content-area.has-sidebar .blog-article-image img {
+        box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share {
       margin-top: 3em;
       background: #ecebe4;
