@@ -319,10 +319,11 @@ button {
   box-sizing: border-box; }
 
 html, body {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 body {
-  color: #000;
+  color: #4f4f4f;
   font-size: 17px;
   line-height: 1.5;
   font-family: 'Roboto', sans-serif; }
@@ -763,8 +764,6 @@ img {
 @media (max-width: 800px) {
   .not-front .wave-overlay-header {
     display: block; } }
-.not-front h1, .not-front h2, .not-front h3 {
-  color: #4f4f4f; }
 .not-front .content-wrap {
   padding: 4em 1.5em 1em; }
   .not-front .content-wrap .blocks-gallery-item img {
@@ -814,18 +813,24 @@ img {
           @media (max-width: 580px) {
             .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .testimonial-item .tesitmonial-item-quote-text {
               font-size: 1em; } }
+      .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link {
+        font-size: 0.89em;
+        text-align: right;
+        margin-top: 2em;
+        padding-right: 9em; }
   .post-type-archive-testimonials .review-platforms-conatiner {
     background: #ecebe4;
     padding: 5.25em 2em 6em;
     text-align: center; }
     .post-type-archive-testimonials .review-platforms-conatiner h2 {
-      font-size: 3rem;
-      line-height: 1.15; }
+      font-size: 2.5rem;
+      line-height: 1.15;
+      text-transform: capitalize; }
       .post-type-archive-testimonials .review-platforms-conatiner h2 span {
         text-transform: uppercase;
         display: block;
         font-weight: 300;
-        font-size: 0.5em; }
+        font-size: 0.65em; }
     .post-type-archive-testimonials .review-platforms-conatiner .review-platforms {
       max-width: 1440px;
       margin: auto;

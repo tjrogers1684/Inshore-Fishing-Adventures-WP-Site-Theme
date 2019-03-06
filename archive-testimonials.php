@@ -43,6 +43,8 @@
 
 				</div>
 
+				<p class="more-testimonials-link"><a href="#testimonialsgrid">Read More Testimonials &raquo;</a></p>
+
 			<?php endwhile; else : ?>
 			<?php wp_reset_postdata(); ?>
 			<?php endif; ?>
@@ -53,7 +55,7 @@
 	<!-- REVIEW [OTHER PLATFORMS] CALLOUT -->
 	<div class="review-platforms-conatiner">
 
-		<h2>Give us a review! <span>on one of these platforms</span></h2>
+		<h2>We'd love to here from you! <span> Review us on these platforms</span></h2>
 
 		<p class="review-platforms">
 			<a href="https://www.yelp.com/biz/capt-mark-wright-titusville?osq=capt+mark+wright"><img class="footer-review-site review-yelp" src="/wp-content/themes/inshorefishing/images/footer-logo-yelp.png" alt=""></a>
@@ -78,6 +80,7 @@
 						//echo $featured_img_url;
 					?>
 
+					<a name="testimonialsgrid"></a>
 					<div class="tesimonial-page-listing-item">
 						<div class="tesimonial-page-listing-item-section tesimonial-details">
 							<div class="testimonial-quote"><?php the_content(); ?></div>
