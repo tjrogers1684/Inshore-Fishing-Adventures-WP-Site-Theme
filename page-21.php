@@ -4,7 +4,7 @@
 
 	<div class="content-wrap">
 
-		<div class="content-area <?php if ( is_active_sidebar( 'subnav_sidebar' ) ) { echo 'has-sidebar'; } ?>">
+		<div class="content-area <?php if ( is_active_sidebar( 'right_sidebar' ) ) { echo 'has-sidebar'; } ?>">
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
