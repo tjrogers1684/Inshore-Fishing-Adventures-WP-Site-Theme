@@ -997,12 +997,23 @@ img {
   -webkit-box-align: stretch;
   -webkit-align-items: stretch;
           align-items: stretch; }
+  @media (max-width: 860px) {
+    .rates-pricing-table {
+      -webkit-justify-content: space-around;
+              justify-content: space-around; } }
   .rates-pricing-table .pricing-table-block {
     width: 28%;
     box-shadow: 0 0 10px rgba(35, 37, 40, 0.2);
     margin: 1em;
     text-align: center;
     padding: 2em 0; }
+    @media (max-width: 860px) {
+      .rates-pricing-table .pricing-table-block {
+        width: 45%;
+        margin: 1em 0; } }
+    @media (max-width: 570px) {
+      .rates-pricing-table .pricing-table-block {
+        width: 100%; } }
     .rates-pricing-table .pricing-table-block p {
       padding: 0 0.5em; }
     .rates-pricing-table .pricing-table-block .table-block-title {
@@ -1090,7 +1101,7 @@ img {
 .policies {
   max-width: 960px;
   margin: 3em auto 0;
-  padding: 0 2em; }
+  padding: 0; }
 
 /* CSS Document */
 .boat-ramp-row + .boat-ramp-row {
