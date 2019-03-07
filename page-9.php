@@ -1,3 +1,8 @@
+<?php
+//  RATES PAGE
+?>
+
+
 <?php get_header(); ?>
 
 <div class="page-wrap">
@@ -10,207 +15,96 @@
 
 				<h1><?php the_title(); ?></h1>
 
-				<?php //the_content(); ?>
+				<?php the_content(); ?>
+
+				<?php
+
+					$rates_listing_args = [
+						'post_type' => 'rate',
+						'posts_per_page' => '100',
+						'orderby' => 'publsh',
+					];
+
+					// The Query
+					$rates_listing_query = new WP_Query( $rates_listing_args );
+
+				?>
 
 				<div class="rates-pricing-table">
 
-					<div class="pricing-table-block inshore-three-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-3-hrs.svg" alt=""></p>
-						<p class="table-block-price">$325 <span>usd</span></p>
-						<p class="table-block-trip-time">3 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Flats boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-2-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 2 anglers</p>
+					<?php if ( $rates_listing_query->have_posts() ) : while ($rates_listing_query->have_posts() ) : $rates_listing_query->the_post(); ?>
 
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
+						<?php
+							$post_meta = get_post_meta( $post->ID );
+							$trip_length = $post_meta['trip_length']['0'];
+							$trip_price = $post_meta['trip_price']['0'];
+							$trip_passenger_limit = $post_meta['passenger_limit']['0'];
+							$trip_type = get_field_object('trip_type');
+							$trip_type_value = $trip_type['value'];
+							$trip_type_label = $trip_type['choices'][$trip_type_value];
+							$trip_boat_type = get_field_object('boat_type');
+							$trip_boat_type_value = $trip_boat_type['value'];
+							$trip_boat_type_label = $trip_boat_type['choices'][$trip_boat_type_value];
+							//$trip_additional_passengers = $post_meta['additional_passengers']['0'];
 
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
+							$trip_fish_species = get_field_object('fish_species');
+
+							//echo 'Rates Meta <br/><pre>' . print_r( $trip_fish_species["value"], true ) . '</pre>';
+
+						?>
+
+						<div class="pricing-table-block inshore-three-hours">
+							<p class="table-block-title"><?php echo $trip_type_label; ?></p>
+							<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-3-hrs.svg" alt=""></p>
+							<p class="table-block-price">$<?php echo $trip_price; ?> <span>usd</span></p>
+							<p class="table-block-trip-time"><?php echo $trip_length; ?> hours</p>
+
+							<?php if ( $trip_boat_type_label == 'Flats Boat' ) { ?>
+
+								<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
+
+							<?php } else { ?>
+								<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
+
+							<?php } ?>
+
+							<p class="table-block-boat-type"><?php echo $trip_boat_type_label; ?></p>
+
+							<?php if ( $trip_passenger_limit == '2' ) { ?>
+
+								<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-2-passengers.svg" alt=""></p>
+
+							<?php } else if ( $trip_passenger_limit == '3' ) { ?>
+
+								<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-3-passengers.svg" alt=""></p>
+
+							<?php } else { ?>
+
+								<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-4-passengers.svg" alt=""></p>
+
+							<?php } ?>
+
+							<p class="table-block-passenger-count"><span>up to</span> <?php echo $trip_passenger_limit; ?> anglers</p>
+
+							<?php if( $trip_fish_species['value'] ): ?>
+
+							    <div class="table-block-fish-types-container">
+									<p class="table-block-fish-types-title">Fish species</p>
+
+									<ul class="table-block-fish-types">
+								        <?php foreach( $trip_fish_species['value'] as $fish ): ?>
+								            <li><?php echo $fish->post_title; ?></li>
+								        <?php endforeach; ?>
+								    </ul>
+								</div>
+
+							<?php endif; ?>
+
 						</div>
-					</div>
 
-					<div class="pricing-table-block inshore-four-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-4-hrs.svg" alt=""></p>
-						<p class="table-block-price">$375 <span>usd</span></p>
-						<p class="table-block-trip-time">4 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Flats boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-2-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 2 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block inshore-five-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-5-hrs.svg" alt=""></p>
-						<p class="table-block-price">$425 <span>usd</span></p>
-						<p class="table-block-trip-time">5 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Flats boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-2-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 2 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block inshore-six-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-6-hrs.svg" alt=""></p>
-						<p class="table-block-price">$475 <span>usd</span></p>
-						<p class="table-block-trip-time">6 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Flats boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-2-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 2 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block inshore-three-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-3-hrs.svg" alt=""></p>
-						<p class="table-block-price">$450 <span>usd</span></p>
-						<p class="table-block-trip-time">3 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Bay boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-4-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 4 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block inshore-four-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-4-hrs.svg" alt=""></p>
-						<p class="table-block-price">$500 <span>usd</span></p>
-						<p class="table-block-trip-time">4 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Bay boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-4-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 4 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block inshore-five-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-5-hrs.svg" alt=""></p>
-						<p class="table-block-price">$550 <span>usd</span></p>
-						<p class="table-block-trip-time">5 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Bay boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-4-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 4 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block inshore-six-hours">
-						<p class="table-block-title">Inshore flats</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-6-hrs.svg" alt=""></p>
-						<p class="table-block-price">$600 <span>usd</span></p>
-						<p class="table-block-trip-time">6 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Bay boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-4-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 4 anglers</p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="pricing-table-block nearshore-five-hours">
-						<p class="table-block-title">Near shore</p>
-						<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-5-hrs.svg" alt=""></p>
-						<p class="table-block-price">$550 <span>usd</span></p>
-						<p class="table-block-trip-time">5 hours</p>
-						<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
-						<p class="table-block-boat-type">Bay boat</p>
-						<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-3-passengers.svg" alt=""></p>
-						<p class="table-block-passenger-count"><span>up to</span> 3 anglers <span class="fourth-angler">(4th angler + $75)</span></p>
-
-						<div class="table-block-fish-types-container">
-							<p class="table-block-fish-types-title">Fish species</p>
-
-							<ul class="table-block-fish-types">
-								<li>Redfish</li>
-								<li>Trout</li>
-								<li>Black drum</li>
-								<li>and more...</li>
-							</ul>
-						</div>
-					</div>
+					<?php endwhile; else : ?>
+					<?php wp_reset_postdata(); ?>
+					<?php endif; ?>
 
 				</div>
 

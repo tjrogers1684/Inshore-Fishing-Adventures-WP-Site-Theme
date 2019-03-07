@@ -1078,7 +1078,8 @@ img {
         margin: 0;
         padding: 0; }
       .rates-pricing-table .pricing-table-block .table-block-fish-types-container .table-block-fish-types {
-        margin-top: 0.75em;
+        margin: 0.75em auto 0;
+        width: 75%;
         display: -webkit-box;
         display: -webkit-flex;
         display: flex;
@@ -1088,9 +1089,9 @@ img {
                 flex-direction: row;
         -webkit-flex-wrap: wrap;
                 flex-wrap: wrap;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-                justify-content: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between;
         -webkit-box-align: center;
         -webkit-align-items: center;
                 align-items: center; }
