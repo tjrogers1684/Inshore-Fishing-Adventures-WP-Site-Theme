@@ -1025,12 +1025,19 @@ img {
       text-transform: capitalize; }
     .rates-pricing-table .pricing-table-block .table-block-time-icon {
       margin-top: 2.5em;
-      -webkit-filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
-              filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.2));
+      -webkit-filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
+              filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.2));
       text-align: center;
       line-height: 0; }
       .rates-pricing-table .pricing-table-block .table-block-time-icon img {
         max-width: 60px; }
+      .rates-pricing-table .pricing-table-block .table-block-time-icon .piechart {
+        -webkit-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        border-radius: 1000px;
+        width: 60px;
+        height: 60px;
+        border: 3px solid #ecebe4; }
     .rates-pricing-table .pricing-table-block .table-block-price {
       margin-top: 0.25em;
       font-weight: bold;

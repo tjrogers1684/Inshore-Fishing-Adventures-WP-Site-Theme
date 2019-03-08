@@ -22,7 +22,12 @@
 					$rates_listing_args = [
 						'post_type' => 'rate',
 						'posts_per_page' => '100',
-						'orderby' => 'publsh',
+						//'orderby' => 'publsh',
+						'orderby' => array (
+							'trip_type' => 'DESC',
+							'boat_type' => 'DESC',
+							'trip_length' => 'DESC'
+						)
 					];
 
 					// The Query
@@ -45,17 +50,23 @@
 							$trip_boat_type = get_field_object('boat_type');
 							$trip_boat_type_value = $trip_boat_type['value'];
 							$trip_boat_type_label = $trip_boat_type['choices'][$trip_boat_type_value];
-							//$trip_additional_passengers = $post_meta['additional_passengers']['0'];
-
 							$trip_fish_species = get_field_object('fish_species');
 
-							//echo 'Rates Meta <br/><pre>' . print_r( $trip_fish_species["value"], true ) . '</pre>';
+							//echo 'Rates Meta <br/><pre>' . print_r( $post_meta, true ) . '</pre>';
 
 						?>
 
 						<div class="pricing-table-block inshore-three-hours">
 							<p class="table-block-title"><?php echo $trip_type_label; ?></p>
-							<p class="table-block-time-icon"><img src="/wp-content/themes/inshorefishing/images/img-trip-3-hrs.svg" alt=""></p>
+
+							<p class="table-block-time-icon">
+
+								<svg class="piechart" viewBox="0 0 32 32">
+								    <circle r="16" cx="16" cy="16" fill="#f7f7f7" stroke="#f0c419" stroke-width="32" stroke-dasharray="<?php echo $trip_length * 10; ?> 100" />
+								</svg>
+
+							</p>
+
 							<p class="table-block-price">$<?php echo $trip_price; ?> <span>usd</span></p>
 							<p class="table-block-trip-time"><?php echo $trip_length; ?> hours</p>
 
@@ -70,21 +81,15 @@
 
 							<p class="table-block-boat-type"><?php echo $trip_boat_type_label; ?></p>
 
-							<?php if ( $trip_passenger_limit == '2' ) { ?>
+							<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-<?php echo $trip_passenger_limit; ?>-passengers.svg" alt=""></p>
 
-								<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-2-passengers.svg" alt=""></p>
+							<p class="table-block-passenger-count"><span>up to</span> <?php echo $trip_passenger_limit; ?> anglers <?php if ( !empty($post_meta['additional_passengers']['0']) ) {
+								$trip_additional_passengers = $post_meta['additional_passengers']['0'];
 
-							<?php } else if ( $trip_passenger_limit == '3' ) { ?>
+								echo '<span class="fourth-angler">' . $trip_additional_passengers . '</span>';
+							} ?>
 
-								<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-3-passengers.svg" alt=""></p>
-
-							<?php } else { ?>
-
-								<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-4-passengers.svg" alt=""></p>
-
-							<?php } ?>
-
-							<p class="table-block-passenger-count"><span>up to</span> <?php echo $trip_passenger_limit; ?> anglers</p>
+							</p>
 
 							<?php if( $trip_fish_species['value'] ): ?>
 
