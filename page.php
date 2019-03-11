@@ -10,6 +10,8 @@
 
 <div class="page-wrap">
 
+	<h1 class="page-title"><?php the_title(); ?></h1>
+
 	<div class="content-wrap">
 
 		<?php
@@ -23,8 +25,6 @@
 		<div class="content-area <?php if ( is_active_sidebar( 'right_sidebar' ) ) { echo 'has-sidebar'; } ?>">
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-				<h1 class="page-title"><?php the_title(); ?></h1>
 
 				<?php the_content(); ?>
 

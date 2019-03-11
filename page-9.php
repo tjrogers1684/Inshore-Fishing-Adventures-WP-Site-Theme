@@ -1,5 +1,7 @@
 <?php
-//  RATES PAGE
+// ---------------------------------------------------------------------------------
+// ----- RATES ---------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 ?>
 
 
@@ -7,13 +9,13 @@
 
 <div class="page-wrap">
 
+	<h1 class="page-title"><?php the_title(); ?></h1>
+
 	<div class="content-wrap">
 
-		<div class="content-area <?php if ( is_active_sidebar( 'right_sidebar' ) ) { echo 'has-sidebar'; } ?>">
+		<div class="content-area">
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-				<h1><?php the_title(); ?></h1>
 
 				<?php the_content(); ?>
 
@@ -34,6 +36,8 @@
 					$rates_listing_query = new WP_Query( $rates_listing_args );
 
 				?>
+
+				<div class="rates-filters"><a href="#showspecies" class="btn btn-sm rates-filter-showspecies">Show/Hide Species</a></div>
 
 				<div class="rates-pricing-table">
 
@@ -56,51 +60,65 @@
 
 						?>
 
-						<div class="pricing-table-block inshore-three-hours">
-							<p class="table-block-title"><?php echo $trip_type_label; ?></p>
+						<div class="pricing-table-block">
 
-							<p class="table-block-time-icon">
+							<div class="table-block-title">
+								<p class="table-block-time-icon">
+									<svg class="piechart" viewBox="0 0 32 32">
+										<circle r="16" cx="16" cy="16" fill="#ecebe4" stroke="#da8000" stroke-width="32" stroke-dasharray="<?php echo $trip_length * 10; ?> 100" />
+									</svg>
+								</p>
+								<?php echo $trip_type_label; ?>
+							</div>
 
-								<svg class="piechart" viewBox="0 0 32 32">
-								    <circle r="16" cx="16" cy="16" fill="#f7f7f7" stroke="#f0c419" stroke-width="32" stroke-dasharray="<?php echo $trip_length * 10; ?> 100" />
-								</svg>
+							<p class="table-block-price">$<?php echo $trip_price; ?><span>usd</span></p>
 
-							</p>
-
-							<p class="table-block-price">$<?php echo $trip_price; ?> <span>usd</span></p>
 							<p class="table-block-trip-time"><?php echo $trip_length; ?> hours</p>
 
-							<?php if ( $trip_boat_type_label == 'Flats Boat' ) { ?>
+							<div class="table-block-boat-type-wrap">
 
-								<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
+								<?php if ( $trip_boat_type_label == 'Flats Boat' ) { ?>
 
-							<?php } else { ?>
-								<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
+									<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-flats-boat.svg" alt=""></p>
 
-							<?php } ?>
+								<?php } else { ?>
 
-							<p class="table-block-boat-type"><?php echo $trip_boat_type_label; ?></p>
+									<p class="table-block-boat-type-icon"><img src="/wp-content/themes/inshorefishing/images/img-bay-boat.svg" alt=""></p>
 
-							<p class="table-block-passenger-count-icon"><img src="/wp-content/themes/inshorefishing/images/img-<?php echo $trip_passenger_limit; ?>-passengers.svg" alt=""></p>
+								<?php } ?>
 
-							<p class="table-block-passenger-count"><span>up to</span> <?php echo $trip_passenger_limit; ?> anglers <?php if ( !empty($post_meta['additional_passengers']['0']) ) {
-								$trip_additional_passengers = $post_meta['additional_passengers']['0'];
+								<p class="table-block-boat-type"><?php echo $trip_boat_type_label; ?></p>
 
-								echo '<span class="fourth-angler">' . $trip_additional_passengers . '</span>';
-							} ?>
+							</div>
 
-							</p>
+							<div class="table-block-passenger-count-wrap">
+
+								<p class="table-block-passenger-count-icons">
+									<?php for ($i=1; $i <= $trip_passenger_limit; $i++) { ?>
+										<img src="/wp-content/themes/inshorefishing/images/icn-angler.svg" alt="">
+									<?php } ?>
+								</p>
+
+								<p class="table-block-passenger-count">
+									<span>up to <?php echo $trip_passenger_limit; ?> anglers</span>
+									<?php if ( !empty($post_meta['additional_passengers']['0']) ) {
+										$trip_additional_passengers = $post_meta['additional_passengers']['0'];
+										echo '<span class="fourth-angler">' . $trip_additional_passengers . '</span>';
+									} ?>
+								</p>
+
+							</div>
 
 							<?php if( $trip_fish_species['value'] ): ?>
 
-							    <div class="table-block-fish-types-container">
-									<p class="table-block-fish-types-title">Fish species</p>
+								<div class="table-block-fish-types-container">
+									<p class="table-block-fish-types-title">Fish Species</p>
 
 									<ul class="table-block-fish-types">
-								        <?php foreach( $trip_fish_species['value'] as $fish ): ?>
-								            <li><?php echo $fish->post_title; ?></li>
-								        <?php endforeach; ?>
-								    </ul>
+										<?php foreach( $trip_fish_species['value'] as $fish ): ?>
+											<li><?php echo get_the_post_thumbnail( $fish->ID, 'large' ); ?><span><?php echo $fish->post_title; ?></span></li>
+										<?php endforeach; ?>
+									</ul>
 								</div>
 
 							<?php endif; ?>
@@ -139,8 +157,6 @@
 		</div>
 
 		<br class="clearfloat" />
-
-		<?php get_sidebar(); ?>
 
 	</div>
 

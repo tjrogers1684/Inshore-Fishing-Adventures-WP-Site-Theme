@@ -1,10 +1,16 @@
-<?php get_header(); ?>
+<?php
+// ---------------------------------------------------------------------------------
+// ----- TESTIMONIALS --------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+get_header();
+?>
 
 <div class="page-wrap">
 
+	<h1 class="page-title">What Our Customers Are Saying...</h1>
+
 	<!-- SINGLE RANDOM TESTIMONIAL -->
 	<div class="testimonials-page-listing-single-container">
-		<h1>What our Clients are Saying</h1>
 
 		<div class="testimonials-listing random single">
 			<?php
@@ -62,7 +68,7 @@
 	<!-- REVIEW [OTHER PLATFORMS] CALLOUT -->
 	<div class="review-platforms-conatiner">
 
-		<h2>We'd love to here from you! <span> Review Inshore Fishing on these platforms</span></h2>
+		<h2>We'd love to hear from you! <span> Review Inshore Fishing on these platforms</span></h2>
 
 		<p class="review-platforms">
 			<a href="https://www.yelp.com/biz/capt-mark-wright-titusville?osq=capt+mark+wright"><img class="footer-review-site review-yelp" src="/wp-content/themes/inshorefishing/images/footer-logo-yelp.png" alt=""></a>
@@ -116,8 +122,6 @@
 		</div>
 
 		<br class="clearfloat" />
-
-		<?php get_sidebar(); ?>
 
 	</div>
 

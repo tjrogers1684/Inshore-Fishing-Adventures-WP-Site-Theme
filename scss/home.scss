@@ -57,12 +57,11 @@
 .hp-about-section-container {
 	@include background-image(linear-gradient(to bottom, #bdffff, #ffffff));
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 0 3em 0 1.5em;
-	margin-top: -7em;
+	margin-top: -7rem;
 	position: relative;
 	z-index: 3;
 
