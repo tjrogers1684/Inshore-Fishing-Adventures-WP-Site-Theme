@@ -1,6 +1,14 @@
 
 $brand: #ff9e14;
 $brand-dk: darken($brand, 10);
-$brand-secondary: #086ba5;
+$brand-secondary: #ecebe4;
 
 $maintext: #4f4f4f;
+
+
+$rad: 5px;
+
+@mixin inshorecard(){
+	border-radius: $rad;
+	box-shadow: 0 0.5rem 1rem rgba($maintext, 0.15);
+}

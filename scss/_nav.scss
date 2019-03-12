@@ -1,9 +1,9 @@
+@import 'compass/css3';
 
 // ---------------------------------------------------------------------------------
 // ----- TOP NAV -------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .top-nav {
-	width: 75%;
 	position: relative;
 	z-index: 3;
 
@@ -20,39 +20,33 @@
 
 	.menu {
 		display: flex;
-		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-around;
 		align-items: center;
-
-		@media (max-width: 1100px) {
-			justify-content: flex-end;
-		}
 
 		> li {
 			position: relative;
 
 			&.current-menu-item,
 			&.current-menu-parent {
+
 				&.menu-item-has-children {
+
 					&:after {
-						color: #004b71;
-						color: lighten($brand, 15);;
+						color: $brand;
 						content: "\f107";
-						//right: 0.35em;
 					}
 				}
 
 				a {
-					background: $brand-dk;
+					background: $brand;
 					color: #fff;
 
 				}
 			}
 
 			a {
-				font-size: 0.88em;
-				padding: 0.5em 1.25em;
+				font-size: 0.85em;
+				padding: 0.5em;
 				display: block;
 				font-weight: normal;
 			}
@@ -79,11 +73,12 @@
 				position: relative;
 
 				&:hover {
+
 					&:after {
-						color: #004b71;
-						color: lighten($brand, 15);;
-						content: "\f104";
-						right: 0.35em;
+						color: #fff;
+						content: "\f107";
+						@include transform(translateY(-50%) rotate(-90deg));
+						right: 0.25em;
 					}
 				}
 
@@ -91,16 +86,17 @@
 					transition: 0.2s;
 					position: absolute;
 					top: 50%;
-					right: 0.25em;
-					transform: translateY(-50%);
+					right: 0.5em;
+					@include transform(translateY(-50%));
+					@include transition(0.2s);
 					content: "\f107";
 					font-family: "Font Awesome 5 Free";
-					//font-weight: 900;
+					font-size: 0.9em;
 					color: $brand;
 				}
 
 				& > a {
-					padding: 0.5em 1.25em 0.5em 0.5em;
+					padding: 0.5em 1.35em 0.5em 0.5em;
 				}
 
 				ul {
@@ -111,12 +107,13 @@
 
 					li {
 						display: block;
-						width: 15em;
+						min-width: 10rem;
 
 						a {
 							display: block;
 							text-align: left;
-							padding-left: 1em;
+							padding: 0.5em 1em;
+							white-space: nowrap;
 
 							&:hover {
 								background: $brand;
