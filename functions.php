@@ -40,7 +40,7 @@ function ifa_styles_scripts() {
 	// Theme stylesheet.
 	wp_enqueue_style( 'ifa-main', get_theme_file_uri( '/style.css' ) );
 	wp_enqueue_style( 'ifa-all', get_theme_file_uri( '/css/all.css' ) );
-	wp_enqueue_style( 'inwood-googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700' );
+	wp_enqueue_style( 'ifa-googlefonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700' );
 	wp_enqueue_style( 'ifa-fontawesome', 'https://use.fontawesome.com/releases/v5.7.2/css/all.css' );
 
 	if( is_front_page() ){
