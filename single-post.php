@@ -4,6 +4,8 @@
 
 <div class="page-wrap <?php if( isset($posttype) ){ echo 'posttype-'.$posttype; } ?>">
 
+	<h1 class="page-title"><?php the_title(); ?></h1>
+
 	<div class="content-wrap">
 
 		<?php
@@ -21,7 +23,6 @@
 		?>
 
 		<div class="blog-article-node-meta-wrap">
-			<h1 class="page-title"><?php the_title(); ?></h1>
 
 			<p class="blog-article-node-meta">Posted on <?php echo get_the_time( "F j, Y" ); ?> &bull; <?php echo $article_type; ?></p>
 		</div>
@@ -58,7 +59,6 @@
 
 					<a class="social-share share-facebook" href="http://www.facebook.com/sharer.php?u=<?php echo $article_url; ?>"><i class="fab fa-facebook-square"></i><span>Share on Facebook</span></a>
 					<a class="social-share share-twitter" href="http://twitter.com/intent/tweet?text=<?php echo $article_title . ' ' . $article_url; ?>"><i class="fab fa-twitter-square"></i><span>Tweet This Article</span></a>
-					<a class="social-share share-google" href="https://plus.google.com/share?url=<?php echo $article_url; ?>" class="social-share shareGoogle" count-layout="horizontal"><i class="fab fa-google-plus-square"></i><span>Post to Google+</span></a>
 				</div>
 
 		</div>

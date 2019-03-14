@@ -259,6 +259,13 @@ button {
     background: #e08400 !important;
     color: #fff !important; }
 
+.single-post .current_page_parent a {
+  background: none !important;
+  color: #ff9e14 !important; }
+.single-post .current_page_parent:hover a {
+  background: #e08400 !important;
+  color: #fff !important; }
+
 .footer-nav ul,
 .footer-nav ul li {
   list-style: none;

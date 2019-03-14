@@ -140,6 +140,20 @@
 	}
 }
 
+.single-post .current_page_parent {
+	a {
+		background: none !important;
+		color: $brand !important;
+	}
+
+	&:hover {
+		a {
+			background: $brand-dk !important;
+			color: #fff !important;
+		}
+	}
+}
+
 
 // ---------------------------------------------------------------------------------
 // ----- FOOTER NAV ----------------------------------------------------------------
