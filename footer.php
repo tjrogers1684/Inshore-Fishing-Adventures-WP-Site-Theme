@@ -54,7 +54,7 @@
 	<div class="footer-wrap">
 
 		<div class="footer-section footer-address-container">
-			<p class="site-logo-footer"><a href="<?php echo bloginfo( 'url' ); ?>"><img src="/wp-content/themes/inshorefishing/images/logo-footer.png" alt=""></a></p>
+			<p class="site-logo-footer"><a href="<?php echo bloginfo( 'url' ); ?>"><img src="/wp-content/themes/inshorefishing/images/logo-header.png" alt=""></a></p>
 			<p class="footer-address"><?php echo get_theme_mod( 'fgc_guide_address_1' ); ?><br/><?php echo get_theme_mod( 'fgc_guide_city' ); ?>, <?php echo get_theme_mod( 'fgc_guide_state' ); ?> <?php echo get_theme_mod( 'fgc_guide_zip_code' ); ?></p>
 
 			<?php include("includes/social-nav-footer.inc.php"); ?>
