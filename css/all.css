@@ -1150,12 +1150,17 @@ img {
   -webkit-flex-wrap: wrap;
           flex-wrap: wrap; }
   .boat-ramp-listing .boat-ramp-item {
-    width: calc(33.33% - 1rem);
     border-radius: 5px;
     box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15);
     margin: 0 0.5rem 1rem;
     -webkit-transition: 0.3s;
     transition: 0.3s; }
+    @media (min-width: 600px) {
+      .boat-ramp-listing .boat-ramp-item {
+        width: calc(50% - 1rem); } }
+    @media (min-width: 960px) {
+      .boat-ramp-listing .boat-ramp-item {
+        width: calc(33.33% - 1rem); } }
     .boat-ramp-listing .boat-ramp-item .boat-ramp-map {
       border-radius: 5px 5px 0 0;
       overflow: hidden;
