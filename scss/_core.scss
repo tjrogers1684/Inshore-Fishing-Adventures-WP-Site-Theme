@@ -40,14 +40,37 @@ img {
 	height: auto !important;
 }
 
-.wp-block-image {
-	img {
-		@include inshorecard();
-		border-radius: 0;
-	}
+hr {
 }
 
-hr {
+.wp-block-quote  {
+	margin-top: 2em;
+	position: relative;
+	padding: 2em 4em;
+	font-size: 1.3em;
+	@include inshorecard();
+
+	&:before,
+	&:after {
+		position: absolute;
+		content: '';
+		width: 50px;
+		height: 50px;
+	}
+
+	&:before {
+		background: url(/wp-content/themes/inshorefishing/images/icn-quotes-start.png) no-repeat;
+		background-size: 100%;
+		top: 0;
+		left: 0;
+	}
+
+	&:after {
+		background: url(/wp-content/themes/inshorefishing/images/icn-quotes-end.png) no-repeat;
+		background-size: 100%;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 
@@ -290,7 +313,7 @@ hr {
 	background: #fff;
 
 	@media (max-width: 750px) {
-		padding-top: 0;
+		//padding-top: 0;
 	}
 
 	h2 {

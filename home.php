@@ -2,11 +2,11 @@
 
 <div class="page-wrap">
 
+	<h1 class="page-title">Inshore Fishing Adventures Blog</h1>
+
 	<div class="content-wrap">
 
 		<div class="content-area blog-listing has-sidebar">
-
-			<h1 class="page-title">Inshore Fishing Adventures Blog</h1>
 
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 

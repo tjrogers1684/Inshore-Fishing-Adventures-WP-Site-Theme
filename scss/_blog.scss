@@ -8,6 +8,11 @@
 // ---------------------------------------------------------------------------------
 .blog,
 .archive.section-blog {
+
+	h1 {
+		max-width: 1440px !important;
+	}
+
 	.content-wrap {
 		max-width: 1440px;
 		font-size: 18px;
@@ -211,6 +216,7 @@
 
 	h1 {
 		margin: 0;
+		max-width: 1440px !important;
 
 		.blog-article-node-meta {
 			display: block;
@@ -228,7 +234,6 @@
 	.content-wrap {
 		max-width: 1440px;
 		font-size: 17.5px;
-		padding-top: 3em;
 
 		.content-area.has-sidebar {
 			width: 70%;
@@ -243,6 +248,17 @@
 				line-height: 0;
 				padding-right: 1.25em;
 
+				@media (max-width: 630px) {
+					width: 100%;
+					padding: 0;
+					margin-bottom: 1.5em;
+					text-align: center;
+
+					img {
+						width: 70% !important;
+					}
+				}
+
 				img {
 					box-shadow: 0 5px 10px rgba(35,37,40,0.2);
 					width: 100%;
@@ -251,6 +267,17 @@
 
 			.blog-article-content {
 				width: 60%;
+
+				@media (max-width: 630px) {
+					width: 100%;
+				}
+
+				.wp-block-image {
+					img {
+						@include inshorecard();
+						border-radius: 0;
+					}
+				}
 			}
 
 			.blog-article-node-social-share {
