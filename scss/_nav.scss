@@ -242,11 +242,11 @@
 			    font-size: 0.75em;
 			    text-transform: uppercase;
 			    padding: 1em;
-			    color: #fff;
+			    //color: #fff;
 			}
 
 			& + li {
-		    	border-top: 1px solid #fff
+		    	border-top: 1px solid #fff;
 		    }
 
 		    &.spacer {
