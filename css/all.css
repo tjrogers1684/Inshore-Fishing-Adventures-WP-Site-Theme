@@ -532,7 +532,7 @@ img {
 /* --------------------------------------------- CALL NOW BOOKING SECTION -- */
 .call-now-booking-callout {
   text-align: center;
-  padding: 6em 1.5em 4em;
+  padding: 3rem 1.5em 4rem;
   font-size: 1.6em;
   font-weight: bold; }
   @media (max-width: 580px) {

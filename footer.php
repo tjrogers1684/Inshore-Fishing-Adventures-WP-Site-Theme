@@ -1,5 +1,3 @@
-<?php wp_footer(); ?>
-
 <!-- CALL NOW SECTION -->
 <div class="call-now-booking-callout">
 	<p>Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> <span>or <a class="btn btn-lg" href="/booking">Book Now</a></span></p>
@@ -81,6 +79,8 @@
 	</div><!-- end of footerWrap -->
 
 </div><!-- end of footerWrapOuter -->
+
+<?php wp_footer(); ?>
 
 </body>
 </html>
