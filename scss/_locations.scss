@@ -5,37 +5,27 @@
 // ---------------------------------------------------------------------------------
 // ----- BOAT RAMPS ----------------------------------------------------------------
 // ---------------------------------------------------------------------------------
-.boat-ramp-row {
-	& + .boat-ramp-row {
-		margin-top: 1.5em;
-	}
+.boat-ramp-listing {
+	display: flex;
+	flex-wrap: wrap;
 
-	.boat-ramp {
-		border-radius: 5px;
-		box-shadow: 0 5px 10px rgba(35,37,40,0.2);
-		margin: 0 2.5em 1.25em 0 !important;
+	.boat-ramp-item {
+		width: calc(33.33% - 1rem);
+		@include inshorecard();
+		margin: 0 0.5rem 1rem;
 		transition: 0.3s;
 
-		&:hover {
-			transform: scale(1.05);
-			background: $brand-secondary;
-			color: #fff;
-		}
-
-		.wp-block-image {
-			border-radius: 5px 5px 0 0;
+		.boat-ramp-map {
+			border-radius: $rad $rad 0 0;
 			overflow: hidden;
 			margin: 0;
 		}
 
-		p {
-			padding: 1em 1.5em 1.5em;
+		.boat-ramp-meta {
+			padding: 1.5rem;
 
-			strong {
-				font-size: 1.25em;
-				line-height: 1.3;
-				display: inline-block;
-				padding-bottom: 0.5em;
+			h2 {
+				margin: 0;
 			}
 		}
 	}
