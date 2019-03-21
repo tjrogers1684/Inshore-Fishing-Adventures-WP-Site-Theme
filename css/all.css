@@ -457,15 +457,11 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100 */
-    /* FF3.6-15 */
-    /* Chrome10-25,Safari5.1-6 */
-    background: -webkit-linear-gradient(white 10%, rgba(255, 255, 255, 0) 25%);
-    background: -webkit-linear-gradient(#ffffff 10%, rgba(255, 255, 255, 0) 25%);
-    background: linear-gradient(#ffffff 10%, rgba(255, 255, 255, 0) 25%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 );
-    /* IE6-9 */
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIxMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC45Ii8+PHN0b3Agb2Zmc2V0PSI0MCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(10%, rgba(255, 255, 255, 0.9)), color-stop(40%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0) 40%);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9) 10%, rgba(255, 255, 255, 0) 40%);
     z-index: 1; }
   .header-wrap-outer .wave-overlay-header {
     line-height: 0; }
@@ -785,6 +781,27 @@ img {
         margin-left: 0.5em;
         font-size: 1.17rem;
         padding: 0.4em 1.5em; }
+
+.section-about .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-aerialhigh.jpg); }
+
+.section-charters .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg); }
+
+.section-rates .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-verobeach-inlet.jpg); }
+
+.section-gallery .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-dune.jpg); }
+
+.section-locations .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-aerial.jpg); }
+
+.section-blog .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-condos.jpg); }
+
+.section-contact .header-wrap-outer {
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-beachsunrise.jpg); }
 
 .not-front .header-wrap {
   height: 40vh;
@@ -1157,30 +1174,32 @@ img {
   padding: 0; }
 
 /* CSS Document */
-.boat-ramp-row + .boat-ramp-row {
-  margin-top: 1.5em; }
-.boat-ramp-row .boat-ramp {
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
-  margin: 0 2.5em 1.25em 0 !important;
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
-  .boat-ramp-row .boat-ramp:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
-    background: #ecebe4;
-    color: #fff; }
-  .boat-ramp-row .boat-ramp .wp-block-image {
-    border-radius: 5px 5px 0 0;
-    overflow: hidden;
-    margin: 0; }
-  .boat-ramp-row .boat-ramp p {
-    padding: 1em 1.5em 1.5em; }
-    .boat-ramp-row .boat-ramp p strong {
-      font-size: 1.25em;
-      line-height: 1.3;
-      display: inline-block;
-      padding-bottom: 0.5em; }
+.boat-ramp-listing {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .boat-ramp-listing .boat-ramp-item {
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15);
+    margin: 0 0.5rem 1rem;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+    @media (min-width: 600px) {
+      .boat-ramp-listing .boat-ramp-item {
+        width: calc(50% - 1rem); } }
+    @media (min-width: 960px) {
+      .boat-ramp-listing .boat-ramp-item {
+        width: calc(33.33% - 1rem); } }
+    .boat-ramp-listing .boat-ramp-item .boat-ramp-map {
+      border-radius: 5px 5px 0 0;
+      overflow: hidden;
+      margin: 0; }
+    .boat-ramp-listing .boat-ramp-item .boat-ramp-meta {
+      padding: 1.5rem; }
+      .boat-ramp-listing .boat-ramp-item .boat-ramp-meta h2 {
+        margin: 0; }
 
 /* CSS Document */
 .blog h1,
