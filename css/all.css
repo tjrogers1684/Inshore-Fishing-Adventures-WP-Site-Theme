@@ -345,6 +345,11 @@ img {
   max-width: 100%;
   height: auto !important; }
 
+.wp-block-image img {
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15);
+  border-radius: 0; }
+
 .social-contact-nav-wrap-outer {
   background: #333; }
   .social-contact-nav-wrap-outer .social-contact-nav-wrap {
@@ -1254,7 +1259,7 @@ img {
 .sidebar-newlsetter-signup {
   width: 100%;
   margin: 0;
-  background: #ecebe4;
+  background: #d0ffff;
   padding: 1.5em 2em;
   font-size: 0.88em; }
   .sidebar-newlsetter-signup h2 {
@@ -1322,35 +1327,51 @@ img {
   @media (max-width: 800px) {
     .single-post .feature-wrap {
       padding: 2em 0; } }
+.single-post h1 {
+  margin: 0; }
+  .single-post h1 .blog-article-node-meta {
+    display: block;
+    font-size: 0.45em;
+    font-style: italic;
+    color: #c7c5b6;
+    margin-top: 0.25em; }
+  @media (max-width: 800px) {
+    .single-post h1 {
+      font-size: 2em; } }
 .single-post .content-wrap {
-  max-width: 1400px;
+  max-width: 1440px;
   font-size: 17.5px;
   padding-top: 3em; }
-  .single-post .content-wrap .blog-article-node-meta-wrap {
-    width: 100%; }
-    .single-post .content-wrap .blog-article-node-meta-wrap h1 {
-      margin: 0; }
-      @media (max-width: 800px) {
-        .single-post .content-wrap .blog-article-node-meta-wrap h1 {
-          font-size: 2em; } }
-    .single-post .content-wrap .blog-article-node-meta-wrap .blog-article-node-meta {
-      display: block;
-      font-size: 0.9em;
-      margin: 0 0 2em;
-      font-style: italic;
-      color: #c7c5b6; }
   .single-post .content-wrap .content-area.has-sidebar {
-    width: 70%; }
+    width: 70%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+            align-items: flex-start; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-image {
-      float: left;
+      width: 40%;
       line-height: 0;
-      margin: 0.5em 1em 0.5em 0; }
+      padding-right: 1.25em; }
       .single-post .content-wrap .content-area.has-sidebar .blog-article-image img {
-        box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
+        box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
+        width: 100%; }
+    .single-post .content-wrap .content-area.has-sidebar .blog-article-content {
+      width: 60%; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share {
       margin-top: 3em;
-      background: #ecebe4;
-      padding: 2em;
+      border-radius: 5px;
+      box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15);
       display: -webkit-box;
       display: -webkit-flex;
       display: flex;
@@ -1367,8 +1388,15 @@ img {
       -webkit-align-items: center;
               align-items: center; }
       .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share h3 {
-        margin-bottom: 0.75em;
-        width: 100%; }
+        margin-bottom: 0.25em;
+        width: 100%;
+        background: #ff9e14;
+        color: #fff;
+        padding: 0.5em 0.75em;
+        border-radius: 5px 5px 0 0;
+        text-transform: capitalize; }
+      .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share .social-share-content {
+        padding: 0.5em 1em 0.75em 1em; }
       .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share .social-share {
         font-size: 0.78em;
         display: -webkit-box;
@@ -1387,6 +1415,8 @@ img {
         -webkit-align-items: center;
                 align-items: center;
         margin: 0.5em 1em 0.5em 0; }
+        .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share .social-share + .social-share {
+          margin-top: 1em; }
         @media (max-width: 650px) {
           .single-post .content-wrap .content-area.has-sidebar .blog-article-node-social-share .social-share {
             width: 100%; } }

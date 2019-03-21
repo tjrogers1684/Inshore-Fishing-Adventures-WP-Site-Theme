@@ -40,6 +40,13 @@ img {
 	height: auto !important;
 }
 
+.wp-block-image {
+	img {
+		@include inshorecard();
+		border-radius: 0;
+	}
+}
+
 hr {
 }
 
