@@ -8,9 +8,9 @@
 
 			<div class="hp-about-section-container">
 				<div class="hp-about-section about-content">
-					<p>Capt. Mark Wright is a full-time Ft. Pierce fishing guide who provides enjoyable angling experiences from Central Florida’s East Coast on the fabled waters of the Mosquito Lagoon and Indian River Lagoon down to Ft. Pierce, FL.</p>
+					<?php $post = get_post( '156' ); ?>
 
-					<p>It is here that anglers come to sample the incredible fishery that has made Ft. Pierce one of the premier fishing destinations in the world!</p>
+					<?php echo $post->post_content; ?>
 
 					<p class="about-content-links">
 						<a href="/about" class="btn">About Captain Mark</a>
