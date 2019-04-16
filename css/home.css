@@ -231,50 +231,37 @@
   max-width: 1220px;
   margin: 3em auto;
   background-color: #ff9e14;
+  padding: 1rem 0;
   color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-          flex-wrap: wrap;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
           justify-content: center;
-  -webkit-box-align: start;
-  -webkit-align-items: flex-start;
-          align-items: flex-start;
-  -webkit-box-align: stretch;
-  -webkit-align-items: stretch;
-          align-items: stretch;
-  box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15); }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-section {
     padding: 1.5em 2em; }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
-    width: 36%;
+    width: 250px;
+    height: 250px;
     position: relative;
-    background: url(/wp-content/themes/inshorefishing/images/img-prefooter-booking-callout-mark-bkd.png) 50% 50%;
-    background-size: 120%; }
-    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container .prefooter-booking-callout-image-captain-mark {
-      position: absolute;
-      bottom: 0;
-      left: 25%;
-      line-height: 0;
-      width: 65%; }
-  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-background {
-    border-radius: 100px;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
-    display: none; }
+    background: url(/wp-content/themes/inshorefishing/images/prefooter-callout-photo.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 1000px;
+    margin-top: -4rem; }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-details {
-    width: 37%;
+    width: 30%;
     font-weight: 300; }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact {
-    width: 27%;
+    width: 30%;
     font-size: 1.58em;
     text-align: right; }
     .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact p span {
@@ -474,7 +461,8 @@
               margin-top: 0.5em;
               color: #ff9e14; }
     .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap {
-      width: 34%; }
+      width: 34%;
+      padding: 0 1.5em; }
       @media (max-width: 1080px) {
         .blog-species-section-container-wrap .blog-species-section-container .species-listing-hp-wrap {
           width: 45%; } }

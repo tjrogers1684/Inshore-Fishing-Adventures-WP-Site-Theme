@@ -348,9 +348,7 @@ img {
   margin-top: 2em;
   position: relative;
   padding: 2em 4em;
-  font-size: 1.3em;
-  border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15); }
+  font-size: 1.3em; }
   .wp-block-quote:before, .wp-block-quote:after {
     position: absolute;
     content: '';
@@ -591,10 +589,12 @@ img {
   background: #fff; }
   .sponsors-listing-hp-container h2 {
     width: 25%;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0; }
     @media (max-width: 750px) {
       .sponsors-listing-hp-container h2 {
         width: 100%;
+        text-align: center;
         padding-bottom: 1.5em; } }
     .sponsors-listing-hp-container h2 span {
       display: block;
@@ -623,20 +623,27 @@ img {
       .sponsors-listing-hp-container .sponsors-listing-hp {
         width: 100%; } }
     .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item {
-      width: 105px;
+      width: 33.33%;
       text-align: center; }
-      .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2) {
-        width: 290px; }
-      .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) {
-        width: 60px; }
+      .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(1) img {
+        max-width: 105px; }
+        @media (max-width: 620px) {
+          .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(1) img {
+            max-width: 200px; } }
+      @media (max-width: 620px) {
+        .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2) img {
+          max-width: 300px; } }
+      .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) img {
+        max-width: 85px; }
+        @media (max-width: 620px) {
+          .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) img {
+            max-width: 200px; } }
       @media (max-width: 620px) {
         .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item {
           width: 100%;
           margin: auto; }
           .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item + .sponsor-item {
-            margin-top: 1.5em; }
-          .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2), .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) {
-            width: 100%; } }
+            margin-top: 1.5em; } }
 
 .wave-overlay-footer {
   margin-bottom: -8px;
@@ -859,6 +866,12 @@ img {
     color: #fff;
     padding-left: 1em;
     border-left: 8px solid #ad6600; }
+
+.coblocks-row-26155036224 {
+  text-align: center; }
+  .coblocks-row-26155036224 .wp-block-coblocks-column {
+    max-width: 100px;
+    margin: 0 auto; }
 
 .post-type-archive-testimonials {
   /* --------------------------------------------- REVIEW US SECTION -- */
@@ -1167,7 +1180,9 @@ img {
     .rates-pricing-table .pricing-table-block.show-fish-species .table-block-fish-types-container {
       display: block; }
 
-/* --------------------------------------------- POLICIES -- */
+#nf-form-1-cont {
+  padding: 2rem; }
+
 .policies {
   max-width: 960px;
   margin: 3em auto 0;

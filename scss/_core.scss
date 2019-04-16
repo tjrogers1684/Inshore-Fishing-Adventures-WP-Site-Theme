@@ -48,7 +48,6 @@ hr {
 	position: relative;
 	padding: 2em 4em;
 	font-size: 1.3em;
-	@include inshorecard();
 
 	&:before,
 	&:after {
@@ -308,16 +307,14 @@ hr {
 	position: relative;
 	background: #fff;
 
-	@media (max-width: 750px) {
-		//padding-top: 0;
-	}
-
 	h2 {
 		width: 25%;
 		text-transform: uppercase;
+		margin: 0;
 
 		@media (max-width: 750px) {
 			width: 100%;
+			text-align: center;
 			padding-bottom: 1.5em;
 		}
 
@@ -343,15 +340,36 @@ hr {
 		}
 
 		.sponsor-item {
-			width: 105px;
+			width: 33.33%;
 			text-align: center;
 
+			&:nth-child(1) {
+				img {
+					max-width: 105px;
+
+					@media (max-width: 620px) {
+						max-width: 200px;
+					}
+				}
+			}
+
 			&:nth-child(2) {
-				width: 290px;
+				img {
+
+					@media (max-width: 620px) {
+						max-width: 300px;
+					}
+				}
 			}
 
 			&:nth-child(3) {
-				width: 60px;
+				img {
+					max-width: 85px;
+
+					@media (max-width: 620px) {
+						max-width: 200px;
+					}
+				}
 			}
 
 			@media (max-width: 620px) {
@@ -360,11 +378,6 @@ hr {
 
 				& + .sponsor-item {
 					margin-top: 1.5em;
-				}
-
-				&:nth-child(2),
-				&:nth-child(3) {
-					width: 100%;
 				}
 			}
 		}
