@@ -89,6 +89,14 @@
 	}
 }
 
+iframe {
+	width: 100%;
+}
+
+
+
+
+
 /* --------------------------------------------- SUBMENUS -- */
 .sidebar-submenu {
 	h2 {
@@ -591,8 +599,94 @@
 }
 
 
+/* --------------------------------------------- SIDEBAR PROFILE -- */
+.sb-profile {
+	padding: 2rem 0;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+
+	.blurb-profile {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+
+		.blurb-profile-image {
+			width: 33%;
+			//border-radius: 50%;
+		}
+
+		.blurb-profile-name-loc {
+			width: 62%;
+
+			.blurb-profile-name {
+				font-weight: bold;
+				font-size: 1.75em;
+				line-height: 1.25;
+				text-transform: uppercase;
+
+				span {
+					display: block;
+					text-transform: capitalize;
+					font-weight: 300;
+					font-size: 0.75em;
+				}
+			}
+		}
+	}
+
+	.blurb-description {
+		margin-top: 2rem;
+	}
+}
 
 
+/* --------------------------------------------- SIDEBAR TESTIMONIALS -- */
+.testimonials-single-container {
+	.tesimonial-sidebar-listing-item {
+		width: 100%;
+		padding: 2rem;
+		@include inshorecard();
+		display: inline-block;
+		border: 1px solid darken(#fff, 5);
+
+		.tesimonial-author-info {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+			align-items: center;
+			margin-top: 1.5em;
+
+			.testimonial-image {
+				//border-radius: 15px 15px 0 0;
+				overflow: hidden;
+				margin-right: 0.5em;
+				background-size: cover; 
+				width: 48px;
+				height: 48px;
+				display: inline-block;
+				border-radius: 100%;
+			}
+
+			.testimonial-author {
+				//font-weight: bold;
+				margin: 0;
+			}
+		}
+
+		.tesimonial-details {
+			//padding: 1.5em 1em;
+
+			.testimonial-quote {
+				//font-style: italic;
+				//font-size: 0.85em;
+				font-weight: 300;
+			}
+		}
+	}
+}
 
 
 
