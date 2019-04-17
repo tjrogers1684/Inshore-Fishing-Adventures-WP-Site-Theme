@@ -128,7 +128,7 @@ button:visited,
     -webkit-box-align: center;
     -webkit-align-items: center;
             align-items: center;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     font-weight: border-left; }
     .btn.btn-full-width:hover img, input.btn-full-width[type="submit"]:hover img,
     input.btn-full-width[type="button"]:hover img,
@@ -163,8 +163,8 @@ button:visited,
     .woocommerce input.button.alt.btn-full-width img {
       width: 40px;
       margin-right: 1rem;
-      -webkit-filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
-              filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
+      -webkit-filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%) drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.7));
+              filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%) drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.7));
       -webkit-transition: 0.2s;
       transition: 0.2s; }
   .btn.btn-alt, input.btn-alt[type="submit"],
@@ -219,6 +219,22 @@ button:visited,
     .woocommerce input.button.alt.btn-alt img {
       position: relative;
       z-index: 1; }
+    .btn.btn-alt span, input.btn-alt[type="submit"] span,
+    input.btn-alt[type="button"] span,
+    button.btn-alt span,
+    .btn:visited.btn-alt span,
+    input[type="submit"]:visited.btn-alt span,
+    input[type="button"]:visited.btn-alt span,
+    button:visited.btn-alt span,
+    .button.btn-alt span,
+    [type="button"].btn-alt span,
+    .woocommerce #respond input#submit.alt.btn-alt span,
+    .woocommerce a.button.alt.btn-alt span,
+    .woocommerce button.button.alt.btn-alt span,
+    .woocommerce input.button.alt.btn-alt span {
+      font-size: 1.25em;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px #555; }
     .btn.btn-alt:after, input.btn-alt[type="submit"]:after,
     input.btn-alt[type="button"]:after,
     button.btn-alt:after,
@@ -234,13 +250,13 @@ button:visited,
     .woocommerce input.button.alt.btn-alt:after {
       content: '';
       background: #256088;
-      background: #143449;
+      background: #df8300;
       position: absolute;
       top: 0;
       right: 0;
       width: 100%;
       height: 100%;
-      opacity: 0.25;
+      opacity: 0.7;
       z-index: 0;
       -webkit-transition: 0.2s;
       transition: 0.2s; }
@@ -272,7 +288,8 @@ button:visited,
       .woocommerce a.button.alt.btn-alt:hover:after,
       .woocommerce button.button.alt.btn-alt:hover:after,
       .woocommerce input.button.alt.btn-alt:hover:after {
-        opacity: 0.7; }
+        background: #143449 !important;
+        opacity: 0.85; }
 
 h1, h2, h3 {
   font-weight: bold;
@@ -1347,8 +1364,15 @@ img {
   margin: 3em auto 0;
   padding: 0; }
 
+.sidebar-cta.book-now .btn-alt {
+  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
+  background-position: 50% 70% !important; }
 .sidebar-cta.testimonials .btn-alt {
-  background-image: none !important; }
+  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-aerialhigh.jpg") !important;
+  background-position: 70% 50% !important; }
+.sidebar-cta.fishing-reports .btn-alt {
+  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-condos.jpg") !important;
+  background-position: 50% 40% !important; }
 
 /* CSS Document */
 .boat-ramp-listing {

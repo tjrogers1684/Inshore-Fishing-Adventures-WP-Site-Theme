@@ -568,9 +568,24 @@
 // ----- SIDEBAR CTAS --------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .sidebar-cta {
+	&.book-now {
+		.btn-alt {
+			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg') !important;
+			background-position: 50% 70% !important;
+		}
+	}
+
 	&.testimonials {
 		.btn-alt {
-			background-image: none !important;
+			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-aerialhigh.jpg') !important;
+			background-position: 70% 50% !important;
+		}
+	}
+
+	&.fishing-reports {
+		.btn-alt {
+			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-condos.jpg') !important;
+			background-position: 50% 40% !important;
 		}
 	}
 }
