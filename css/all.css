@@ -377,7 +377,7 @@ button {
         padding: 0.5em;
         display: block;
         font-weight: normal; }
-      .top-nav .menu > li:hover a, .top-nav .menu > li.current-menu-parent a, .top-nav .menu > li.current_page_parent a {
+      .top-nav .menu > li:hover a, .top-nav .menu > li.current-menu-parent a {
         background: #e08400;
         color: #fff; }
       .top-nav .menu > li.spacer {
