@@ -1379,9 +1379,8 @@ iframe {
 
 /* --------------------------------------------- SIDEBAR PROFILE -- */
 .sb-profile {
-  padding: 2rem 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd; }
+  padding: 2rem 1rem;
+  background: #d0ffff; }
   .sb-profile .blurb-profile {
     display: -webkit-box;
     display: -webkit-flex;
