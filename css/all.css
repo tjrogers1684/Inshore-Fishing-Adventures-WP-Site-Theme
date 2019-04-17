@@ -1347,6 +1347,9 @@ img {
   margin: 3em auto 0;
   padding: 0; }
 
+.sidebar-cta.testimonials .btn-alt {
+  background-image: none !important; }
+
 /* CSS Document */
 .boat-ramp-listing {
   display: -webkit-box;
