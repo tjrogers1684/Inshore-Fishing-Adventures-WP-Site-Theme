@@ -50,7 +50,7 @@
 		img {
 			width: 40px;
 			margin-right: 1rem;
-			filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%)drop-shadow( 1px 1px 3px rgba(0, 0, 0, .7));
+			filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
 			transition: 0.2s;
 		}
 	}
@@ -75,7 +75,6 @@
 		span {
 			font-size: 1.25em;
 			font-weight: bold;
-			text-shadow: 1px 1px 3px #555;
 		}
 
 		&:after {

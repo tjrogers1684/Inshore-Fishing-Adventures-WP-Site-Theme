@@ -596,6 +596,17 @@ iframe {
 			background-position: 50% 40% !important;
 		}
 	}
+
+	&.inshore-charters {
+		.btn-alt {
+			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg') !important;
+			background-position: 50% 40% !important;
+		}
+
+		img {
+			filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+		}
+	}
 }
 
 
@@ -647,10 +658,24 @@ iframe {
 .testimonials-single-container {
 	.tesimonial-sidebar-listing-item {
 		width: 100%;
-		padding: 2rem;
-		@include inshorecard();
-		display: inline-block;
-		border: 1px solid darken(#fff, 5);
+		position: relative;
+		padding: 0 2.5rem;
+
+		.quote-start,
+		.quote-end {
+			position: absolute;
+			width: 30px;
+		}
+
+		.quote-start {
+			top: 0;
+			left: 0;
+		}
+
+		.quote-end {
+			bottom: 0;
+			right: 0;
+		}
 
 		.tesimonial-author-info {
 			display: flex;
@@ -661,7 +686,6 @@ iframe {
 			margin-top: 1.5em;
 
 			.testimonial-image {
-				//border-radius: 15px 15px 0 0;
 				overflow: hidden;
 				margin-right: 0.5em;
 				background-size: cover; 
@@ -676,16 +700,11 @@ iframe {
 				margin: 0;
 			}
 		}
+	}
 
-		.tesimonial-details {
-			//padding: 1.5em 1em;
-
-			.testimonial-quote {
-				//font-style: italic;
-				//font-size: 0.85em;
-				font-weight: 300;
-			}
-		}
+	.more-testimonials-link {
+		margin-top: 2rem;
+		padding-left: 2.5rem;
 	}
 }
 

@@ -163,8 +163,8 @@ button:visited,
     .woocommerce input.button.alt.btn-full-width img {
       width: 40px;
       margin-right: 1rem;
-      -webkit-filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%) drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.7));
-              filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%) drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.7));
+      -webkit-filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
+              filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
       -webkit-transition: 0.2s;
       transition: 0.2s; }
   .btn.btn-alt, input.btn-alt[type="submit"],
@@ -233,8 +233,7 @@ button:visited,
     .woocommerce button.button.alt.btn-alt span,
     .woocommerce input.button.alt.btn-alt span {
       font-size: 1.25em;
-      font-weight: bold;
-      text-shadow: 1px 1px 3px #555; }
+      font-weight: bold; }
     .btn.btn-alt:after, input.btn-alt[type="submit"]:after,
     input.btn-alt[type="button"]:after,
     button.btn-alt:after,
@@ -1376,6 +1375,12 @@ iframe {
 .sidebar-cta.fishing-reports .btn-alt {
   background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-condos.jpg") !important;
   background-position: 50% 40% !important; }
+.sidebar-cta.inshore-charters .btn-alt {
+  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
+  background-position: 50% 40% !important; }
+.sidebar-cta.inshore-charters img {
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); }
 
 /* --------------------------------------------- SIDEBAR PROFILE -- */
 .sb-profile {
@@ -1417,11 +1422,18 @@ iframe {
 /* --------------------------------------------- SIDEBAR TESTIMONIALS -- */
 .testimonials-single-container .tesimonial-sidebar-listing-item {
   width: 100%;
-  padding: 2rem;
-  border-radius: 5px;
-  box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15);
-  display: inline-block;
-  border: 1px solid #f2f2f2; }
+  position: relative;
+  padding: 0 2.5rem; }
+  .testimonials-single-container .tesimonial-sidebar-listing-item .quote-start,
+  .testimonials-single-container .tesimonial-sidebar-listing-item .quote-end {
+    position: absolute;
+    width: 30px; }
+  .testimonials-single-container .tesimonial-sidebar-listing-item .quote-start {
+    top: 0;
+    left: 0; }
+  .testimonials-single-container .tesimonial-sidebar-listing-item .quote-end {
+    bottom: 0;
+    right: 0; }
   .testimonials-single-container .tesimonial-sidebar-listing-item .tesimonial-author-info {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1449,8 +1461,9 @@ iframe {
       border-radius: 100%; }
     .testimonials-single-container .tesimonial-sidebar-listing-item .tesimonial-author-info .testimonial-author {
       margin: 0; }
-  .testimonials-single-container .tesimonial-sidebar-listing-item .tesimonial-details .testimonial-quote {
-    font-weight: 300; }
+.testimonials-single-container .more-testimonials-link {
+  margin-top: 2rem;
+  padding-left: 2.5rem; }
 
 /* CSS Document */
 .boat-ramp-listing {
