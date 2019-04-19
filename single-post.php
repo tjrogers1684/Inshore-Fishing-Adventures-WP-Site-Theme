@@ -49,8 +49,6 @@
 
 							?>
 
-							<h3>Share this article</h3>
-
 							<div class="social-share-content">
 								<a class="social-share share-facebook" href="http://www.facebook.com/sharer.php?u=<?php echo $article_url; ?>"><i class="fab fa-facebook-square"></i><span>Share on Facebook</span></a>
 								<a class="social-share share-twitter" href="http://twitter.com/intent/tweet?text=<?php echo $article_title . ' ' . $article_url; ?>"><i class="fab fa-twitter-square"></i><span>Tweet This Article</span></a>

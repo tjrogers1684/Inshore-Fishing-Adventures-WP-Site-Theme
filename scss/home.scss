@@ -234,6 +234,12 @@
 		.prefooter-booking-callout-details {
 			width: 30%;
 			font-weight: 300;
+
+			strong {
+				font-size: 1.25em;
+				color: $brand-secondary;
+				//font-weight: 400;
+			}
 		}
 
 		.prefooter-booking-callout-contact {
