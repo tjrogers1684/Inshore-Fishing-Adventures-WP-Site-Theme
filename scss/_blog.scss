@@ -282,26 +282,23 @@
 
 			.blog-article-node-social-share {
 				margin-top: 2em;
-				display: flex;
-				flex-direction: row;
-				flex-wrap: wrap;
-				justify-content: flex-start;
-				align-items: center;
 
 				.social-share {
 					font-size: 0.78em;
-					display: flex;
-					flex-direction: row;
-					flex-wrap: wrap;
-					justify-content: flex-start;
-					align-items: center;
+					transition: 0.2s;
+					display: inline-block;
+					vertical-align: middle;
+
+					* {
+						vertical-align: middle;
+					}
 
 					& + .social-share {
-						margin-top: 0.5em;
+						padding-left: 0.5em;
 					}
 
 					@media (max-width: 650px) {
-						width: 100%;
+						//width: 100%;
 					}
 
 					&.share-facebook {
@@ -314,15 +311,6 @@
 
 					&.share-twitter {
 						color: #1da1f2;
-
-						&:hover {
-							color: $brand-dk;
-						}
-					}
-
-					&.share-google {
-						color: #ea4335;
-						margin-right: 0;
 
 						&:hover {
 							color: $brand-dk;
