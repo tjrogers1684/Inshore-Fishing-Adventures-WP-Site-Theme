@@ -255,6 +255,21 @@ iframe {
 		 		text-align: right;
 		 		margin-top: 2em;
 		 		padding-right: 9em;
+
+		 		a {
+		 			@extend .btn;
+
+		 			i {
+		 				margin-left: 0.25rem;
+        				animation: action 1s infinite  alternate;
+		 			}
+
+				    @keyframes action {
+				        0% { transform: translateY(15%); }
+				        100% { transform: translateY(-15%); }
+				    }
+		 		}
+
 		 	}
 		}
 	}
@@ -262,7 +277,7 @@ iframe {
 
 	/* --------------------------------------------- REVIEW US SECTION -- */
 	.review-platforms-conatiner {
-		background: $brand-secondary;
+		background: #ecebe4;
 		padding: 4rem 2rem 4rem;
 		text-align: center;
 

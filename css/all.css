@@ -53,11 +53,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .btn, input[type="submit"],
 input[type="button"],
-button,
+button, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a,
 .btn:visited,
 input[type="submit"]:visited,
 input[type="button"]:visited,
 button:visited,
+.post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited,
 .button,
 [type="button"],
 .woocommerce #respond input#submit.alt,
@@ -72,11 +73,12 @@ button:visited,
   cursor: pointer; }
   .btn:hover, input[type="submit"]:hover,
   input[type="button"]:hover,
-  button:hover,
+  button:hover, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:hover,
   .btn:visited:hover,
   input[type="submit"]:visited:hover,
   input[type="button"]:visited:hover,
   button:visited:hover,
+  .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited:hover,
   .button:hover,
   [type="button"]:hover,
   .woocommerce #respond input#submit.alt:hover,
@@ -87,11 +89,12 @@ button:visited,
     color: #fff; }
   .btn.btn-sm, input.btn-sm[type="submit"],
   input.btn-sm[type="button"],
-  button.btn-sm,
+  button.btn-sm, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-sm,
   .btn:visited.btn-sm,
   input[type="submit"]:visited.btn-sm,
   input[type="button"]:visited.btn-sm,
   button:visited.btn-sm,
+  .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-sm,
   .button.btn-sm,
   [type="button"].btn-sm,
   .woocommerce #respond input#submit.alt.btn-sm,
@@ -102,11 +105,12 @@ button:visited,
     padding: 0.5em 1em; }
   .btn.btn-full-width, input.btn-full-width[type="submit"],
   input.btn-full-width[type="button"],
-  button.btn-full-width,
+  button.btn-full-width, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width,
   .btn:visited.btn-full-width,
   input[type="submit"]:visited.btn-full-width,
   input[type="button"]:visited.btn-full-width,
   button:visited.btn-full-width,
+  .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-full-width,
   .button.btn-full-width,
   [type="button"].btn-full-width,
   .woocommerce #respond input#submit.alt.btn-full-width,
@@ -133,11 +137,12 @@ button:visited,
     font-weight: border-left; }
     .btn.btn-full-width:hover img, input.btn-full-width[type="submit"]:hover img,
     input.btn-full-width[type="button"]:hover img,
-    button.btn-full-width:hover img,
+    button.btn-full-width:hover img, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width:hover img,
     .btn:visited.btn-full-width:hover img,
     input[type="submit"]:visited.btn-full-width:hover img,
     input[type="button"]:visited.btn-full-width:hover img,
     button:visited.btn-full-width:hover img,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-full-width:hover img,
     .button.btn-full-width:hover img,
     [type="button"].btn-full-width:hover img,
     .woocommerce #respond input#submit.alt.btn-full-width:hover img,
@@ -151,11 +156,12 @@ button:visited,
               filter: invert(90%) sepia(90%) saturate(2062%) hue-rotate(346deg) brightness(96%) contrast(99%); }
     .btn.btn-full-width img, input.btn-full-width[type="submit"] img,
     input.btn-full-width[type="button"] img,
-    button.btn-full-width img,
+    button.btn-full-width img, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width img,
     .btn:visited.btn-full-width img,
     input[type="submit"]:visited.btn-full-width img,
     input[type="button"]:visited.btn-full-width img,
     button:visited.btn-full-width img,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-full-width img,
     .button.btn-full-width img,
     [type="button"].btn-full-width img,
     .woocommerce #respond input#submit.alt.btn-full-width img,
@@ -170,11 +176,12 @@ button:visited,
       transition: 0.2s; }
   .btn.btn-white, input.btn-white[type="submit"],
   input.btn-white[type="button"],
-  button.btn-white,
+  button.btn-white, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-white,
   .btn:visited.btn-white,
   input[type="submit"]:visited.btn-white,
   input[type="button"]:visited.btn-white,
   button:visited.btn-white,
+  .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-white,
   .button.btn-white,
   [type="button"].btn-white,
   .woocommerce #respond input#submit.alt.btn-white,
@@ -185,11 +192,12 @@ button:visited,
     color: #ff9e14 !important; }
     .btn.btn-white:hover, input.btn-white[type="submit"]:hover,
     input.btn-white[type="button"]:hover,
-    button.btn-white:hover,
+    button.btn-white:hover, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-white:hover,
     .btn:visited.btn-white:hover,
     input[type="submit"]:visited.btn-white:hover,
     input[type="button"]:visited.btn-white:hover,
     button:visited.btn-white:hover,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-white:hover,
     .button.btn-white:hover,
     [type="button"].btn-white:hover,
     .woocommerce #respond input#submit.alt.btn-white:hover,
@@ -200,11 +208,12 @@ button:visited,
       background: #256088 !important; }
   .btn.btn-alt, input.btn-alt[type="submit"],
   input.btn-alt[type="button"],
-  button.btn-alt,
+  button.btn-alt, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt,
   .btn:visited.btn-alt,
   input[type="submit"]:visited.btn-alt,
   input[type="button"]:visited.btn-alt,
   button:visited.btn-alt,
+  .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt,
   .button.btn-alt,
   [type="button"].btn-alt,
   .woocommerce #respond input#submit.alt.btn-alt,
@@ -223,19 +232,22 @@ button:visited,
     transition: 0.2s; }
     .btn.btn-alt span, input.btn-alt[type="submit"] span,
     input.btn-alt[type="button"] span,
-    button.btn-alt span,
+    button.btn-alt span, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt span,
     .btn.btn-alt img,
     input.btn-alt[type="submit"] img,
     input.btn-alt[type="button"] img,
     button.btn-alt img,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt img,
     .btn:visited.btn-alt span,
     input[type="submit"]:visited.btn-alt span,
     input[type="button"]:visited.btn-alt span,
     button:visited.btn-alt span,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt span,
     .btn:visited.btn-alt img,
     input[type="submit"]:visited.btn-alt img,
     input[type="button"]:visited.btn-alt img,
     button:visited.btn-alt img,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt img,
     .button.btn-alt span,
     .button.btn-alt img,
     [type="button"].btn-alt span,
@@ -252,11 +264,12 @@ button:visited,
       z-index: 1; }
     .btn.btn-alt span, input.btn-alt[type="submit"] span,
     input.btn-alt[type="button"] span,
-    button.btn-alt span,
+    button.btn-alt span, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt span,
     .btn:visited.btn-alt span,
     input[type="submit"]:visited.btn-alt span,
     input[type="button"]:visited.btn-alt span,
     button:visited.btn-alt span,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt span,
     .button.btn-alt span,
     [type="button"].btn-alt span,
     .woocommerce #respond input#submit.alt.btn-alt span,
@@ -267,11 +280,12 @@ button:visited,
       font-weight: bold; }
     .btn.btn-alt:after, input.btn-alt[type="submit"]:after,
     input.btn-alt[type="button"]:after,
-    button.btn-alt:after,
+    button.btn-alt:after, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:after,
     .btn:visited.btn-alt:after,
     input[type="submit"]:visited.btn-alt:after,
     input[type="button"]:visited.btn-alt:after,
     button:visited.btn-alt:after,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt:after,
     .button.btn-alt:after,
     [type="button"].btn-alt:after,
     .woocommerce #respond input#submit.alt.btn-alt:after,
@@ -292,11 +306,12 @@ button:visited,
       transition: 0.2s; }
     .btn.btn-alt:hover, input.btn-alt[type="submit"]:hover,
     input.btn-alt[type="button"]:hover,
-    button.btn-alt:hover,
+    button.btn-alt:hover, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:hover,
     .btn:visited.btn-alt:hover,
     input[type="submit"]:visited.btn-alt:hover,
     input[type="button"]:visited.btn-alt:hover,
     button:visited.btn-alt:hover,
+    .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt:hover,
     .button.btn-alt:hover,
     [type="button"].btn-alt:hover,
     .woocommerce #respond input#submit.alt.btn-alt:hover,
@@ -307,11 +322,12 @@ button:visited,
       background-position: 60% 80% !important; }
       .btn.btn-alt:hover:after, input.btn-alt[type="submit"]:hover:after,
       input.btn-alt[type="button"]:hover:after,
-      button.btn-alt:hover:after,
+      button.btn-alt:hover:after, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:hover:after,
       .btn:visited.btn-alt:hover:after,
       input[type="submit"]:visited.btn-alt:hover:after,
       input[type="button"]:visited.btn-alt:hover:after,
       button:visited.btn-alt:hover:after,
+      .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt:hover:after,
       .button.btn-alt:hover:after,
       [type="button"].btn-alt:hover:after,
       .woocommerce #respond input#submit.alt.btn-alt:hover:after,
@@ -607,7 +623,7 @@ img {
       margin: 0; }
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .btn, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="submit"],
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="button"],
-      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact button {
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact button, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact a {
         padding: 0.35em 1em;
         margin: 0 0.25em; }
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social {
@@ -761,7 +777,7 @@ img {
       display: block; } }
   .call-now-booking-callout .btn, .call-now-booking-callout input[type="submit"],
   .call-now-booking-callout input[type="button"],
-  .call-now-booking-callout button {
+  .call-now-booking-callout button, .call-now-booking-callout .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .call-now-booking-callout a {
     padding: 0.25em 1em;
     margin-left: 0.25em; }
 
@@ -990,7 +1006,7 @@ img {
           margin-top: 0.75em; } }
       .footer-wrap-outer .footer-wrap .footer-contact span .btn, .footer-wrap-outer .footer-wrap .footer-contact span input[type="submit"],
       .footer-wrap-outer .footer-wrap .footer-contact span input[type="button"],
-      .footer-wrap-outer .footer-wrap .footer-contact span button {
+      .footer-wrap-outer .footer-wrap .footer-contact span button, .footer-wrap-outer .footer-wrap .footer-contact span .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .footer-wrap-outer .footer-wrap .footer-contact span a {
         margin-left: 0.5em;
         font-size: 1.17rem;
         padding: 0.4em 1.5em; }
@@ -1161,8 +1177,26 @@ iframe {
         text-align: right;
         margin-top: 2em;
         padding-right: 9em; }
+        .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a i {
+          margin-left: 0.25rem;
+          -webkit-animation: action 1s infinite  alternate;
+                  animation: action 1s infinite  alternate; }
+@-webkit-keyframes action {
+  0% {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%); }
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%); } }
+@keyframes action {
+  0% {
+    -webkit-transform: translateY(15%);
+            transform: translateY(15%); }
+  100% {
+    -webkit-transform: translateY(-15%);
+            transform: translateY(-15%); } }
   .post-type-archive-testimonials .review-platforms-conatiner {
-    background: #256088;
+    background: #ecebe4;
     padding: 4rem 2rem 4rem;
     text-align: center; }
     .post-type-archive-testimonials .review-platforms-conatiner h2 {
@@ -1220,7 +1254,7 @@ iframe {
           margin-top: 0.75em; } }
       .post-type-archive-testimonials .review-platforms-conatiner .footer-contact span .btn, .post-type-archive-testimonials .review-platforms-conatiner .footer-contact span input[type="submit"],
       .post-type-archive-testimonials .review-platforms-conatiner .footer-contact span input[type="button"],
-      .post-type-archive-testimonials .review-platforms-conatiner .footer-contact span button {
+      .post-type-archive-testimonials .review-platforms-conatiner .footer-contact span button, .post-type-archive-testimonials .review-platforms-conatiner .footer-contact span .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .post-type-archive-testimonials .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .review-platforms-conatiner .footer-contact span a {
         margin-left: 0.25em;
         font-size: 1.17rem;
         padding: 0.4em 1.5em; }

@@ -56,7 +56,7 @@ get_header();
 
 				</div>
 
-				<p class="more-testimonials-link"><a href="#testimonialsgrid">Read More Testimonials</a></p>
+				<p class="more-testimonials-link"><a href="#testimonialsgrid">Read More Testimonials <i class="fas fa-arrow-down"></i></a></p>
 
 			<?php endwhile; else : ?>
 			<?php wp_reset_postdata(); ?>
