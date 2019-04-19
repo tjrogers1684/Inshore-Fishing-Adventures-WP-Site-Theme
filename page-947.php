@@ -9,10 +9,8 @@ get_header();
 
 	<h1 class="page-title"><?php the_title(); ?></h1>
 
-	<div class="content-wrap">
-		<div class="content-area">
-			<?php the_content(); ?>
-		</div>
+	<div class="testimonials-page-leadin-content">
+		<?php the_content(); ?>
 	</div>
 
 	<!-- SINGLE RANDOM TESTIMONIAL -->
