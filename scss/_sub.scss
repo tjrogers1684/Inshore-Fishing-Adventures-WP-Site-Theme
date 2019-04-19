@@ -151,17 +151,25 @@ iframe {
 // ---------------------------------------------------------------------------------
 .certifications {
 	margin-top: 2rem !important;
+	text-align: center;
+
+	p {
+		margin-bottom: 1rem;
+	}
 
 	.cert-logos {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: center;
 		align-items: center;
+
+
 
 		img {
 			width: 48%;
 			padding: 0 1rem;
+			max-width: 100px;
 		}
 	}
 }

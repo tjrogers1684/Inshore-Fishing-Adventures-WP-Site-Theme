@@ -166,8 +166,6 @@ button:visited,
       margin-right: 1rem;
       -webkit-filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
               filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
-      -webkit-filter: invert(100%) sepia(49%) saturate(0%) hue-rotate(67deg) brightness(111%) contrast(101%);
-              filter: invert(100%) sepia(49%) saturate(0%) hue-rotate(67deg) brightness(111%) contrast(101%);
       -webkit-transition: 0.2s;
       transition: 0.2s; }
   .btn.btn-white, input.btn-white[type="submit"],
@@ -1083,7 +1081,10 @@ iframe {
     border-left: 8px solid #ad6600; }
 
 .certifications {
-  margin-top: 2rem !important; }
+  margin-top: 2rem !important;
+  text-align: center; }
+  .certifications p {
+    margin-bottom: 1rem; }
   .certifications .cert-logos {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1094,14 +1095,16 @@ iframe {
             flex-direction: row;
     -webkit-flex-wrap: wrap;
             flex-wrap: wrap;
-    -webkit-justify-content: space-around;
-            justify-content: space-around;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
     -webkit-box-align: center;
     -webkit-align-items: center;
             align-items: center; }
     .certifications .cert-logos img {
       width: 48%;
-      padding: 0 1rem; }
+      padding: 0 1rem;
+      max-width: 100px; }
 
 .coblocks-row-26155036224 {
   text-align: center; }
