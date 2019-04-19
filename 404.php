@@ -9,6 +9,8 @@
 		<div class="content-area <?php if ( is_active_sidebar( 'subnav_sidebar' ) ) { echo 'has-sidebar'; } ?>">
 			<p>Sorry page you're looking for does not exist. We apologize for the inconvenience. Feel free to check out the rates of our trips, contact us, or book a trip.</p>
 
+			<p></p>
+
 		</div>
 	</div>
 </div>
