@@ -1131,6 +1131,9 @@ iframe {
 .page-id-947 {
   /* --------------------------------------------- REVIEW US SECTION -- */
   /* --------------------------------------------- TESTIMONIALS GRID -- */ }
+  .page-id-947 .testimonials-page-leadin-content {
+    max-width: 900px;
+    margin: 0 auto; }
   .page-id-947 .testimonials-page-listing-single-container {
     padding: 4em 0;
     /* --------------------------------------------- SINGLE RANDOM TESTIMONIAL -- */ }
