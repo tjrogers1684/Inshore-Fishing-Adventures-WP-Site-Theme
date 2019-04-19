@@ -34,11 +34,8 @@
 
 			<?php endif; ?>
 
-			<br class="clearfloat" />
 
 		</div>
-
-		<br class="clearfloat" />
 
 		<?php get_sidebar(); ?>
 

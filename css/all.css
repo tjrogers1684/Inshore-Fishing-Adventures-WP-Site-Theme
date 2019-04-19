@@ -68,7 +68,8 @@ button:visited,
   background-color: #ff9e14;
   padding: 0.75em 1.5em;
   display: inline-block;
-  border-radius: 2.5px; }
+  border-radius: 2.5px;
+  cursor: pointer; }
   .btn:hover, input[type="submit"]:hover,
   input[type="button"]:hover,
   button:hover,
@@ -167,6 +168,36 @@ button:visited,
               filter: invert(95%) sepia(85%) saturate(121%) hue-rotate(156deg) brightness(113%) contrast(101%);
       -webkit-transition: 0.2s;
       transition: 0.2s; }
+  .btn.btn-white, input.btn-white[type="submit"],
+  input.btn-white[type="button"],
+  button.btn-white,
+  .btn:visited.btn-white,
+  input[type="submit"]:visited.btn-white,
+  input[type="button"]:visited.btn-white,
+  button:visited.btn-white,
+  .button.btn-white,
+  [type="button"].btn-white,
+  .woocommerce #respond input#submit.alt.btn-white,
+  .woocommerce a.button.alt.btn-white,
+  .woocommerce button.button.alt.btn-white,
+  .woocommerce input.button.alt.btn-white {
+    background: #fff;
+    color: #ff9e14 !important; }
+    .btn.btn-white:hover, input.btn-white[type="submit"]:hover,
+    input.btn-white[type="button"]:hover,
+    button.btn-white:hover,
+    .btn:visited.btn-white:hover,
+    input[type="submit"]:visited.btn-white:hover,
+    input[type="button"]:visited.btn-white:hover,
+    button:visited.btn-white:hover,
+    .button.btn-white:hover,
+    [type="button"].btn-white:hover,
+    .woocommerce #respond input#submit.alt.btn-white:hover,
+    .woocommerce a.button.alt.btn-white:hover,
+    .woocommerce button.button.alt.btn-white:hover,
+    .woocommerce input.button.alt.btn-white:hover {
+      color: #f4e30c !important;
+      background: #256088 !important; }
   .btn.btn-alt, input.btn-alt[type="submit"],
   input.btn-alt[type="button"],
   button.btn-alt,
@@ -1022,6 +1053,10 @@ img {
 iframe {
   width: 100%; }
 
+.page-id-5 .content-wrap,
+.page-id-873 .content-wrap {
+  padding-bottom: 0.5rem; }
+
 /* --------------------------------------------- SUBMENUS -- */
 .sidebar-submenu h2 {
   margin-bottom: 0.5em; }
@@ -1359,7 +1394,7 @@ iframe {
       display: block; }
 
 #nf-form-1-cont {
-  padding: 2rem; }
+  padding: 0 2rem; }
 
 .policies {
   max-width: 960px;
@@ -1375,10 +1410,10 @@ iframe {
 .sidebar-cta.fishing-reports .btn-alt {
   background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-condos.jpg") !important;
   background-position: 50% 40% !important; }
-.sidebar-cta.inshore-charters .btn-alt {
+.sidebar-cta.inshore-charters .btn-alt, .sidebar-cta.inlet-charters .btn-alt, .sidebar-cta.family-charters .btn-alt {
   background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
   background-position: 50% 40% !important; }
-.sidebar-cta.inshore-charters img {
+.sidebar-cta.inshore-charters img, .sidebar-cta.inlet-charters img, .sidebar-cta.family-charters img {
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
           filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); }
 
@@ -1581,7 +1616,7 @@ iframe {
       margin-top: 1em; }
 
 #right_sidebar + #right_sidebar {
-  margin-top: 2em; }
+  margin-top: 1em; }
 
 /* --------------------------------------------- NEWSLETTER SIGN UP -- */
 .sidebar-newlsetter-signup {

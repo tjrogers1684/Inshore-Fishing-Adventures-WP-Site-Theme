@@ -94,7 +94,12 @@ iframe {
 }
 
 
-
+.page-id-5,
+.page-id-873 {
+	.content-wrap {
+		padding-bottom: 0.5rem;
+	}
+}
 
 
 /* --------------------------------------------- SUBMENUS -- */
@@ -558,7 +563,7 @@ iframe {
 // ----- CONTACT -------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 #nf-form-1-cont {
-	padding: 2rem;
+	padding: 0 2rem;
 }
 
 
@@ -597,7 +602,9 @@ iframe {
 		}
 	}
 
-	&.inshore-charters {
+	&.inshore-charters,
+	&.inlet-charters,
+	&.family-charters {
 		.btn-alt {
 			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg') !important;
 			background-position: 50% 40% !important;
