@@ -229,6 +229,10 @@
 			display: flex;
 			border-radius: 1000px;
 			margin-top: -4rem;
+
+			@media (max-width: 930px) {
+				margin-top: 0;
+			}
 		}
 
 		.prefooter-booking-callout-details {

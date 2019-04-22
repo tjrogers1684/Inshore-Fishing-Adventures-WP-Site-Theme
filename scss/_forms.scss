@@ -38,3 +38,28 @@ button {
 .nf-form-fields-required {
 	display: none;
 }
+
+
+/* --------------------------------------------- ALERTS -- */
+.nf-response-msg {
+	background: #d0ffff;
+	padding: 2rem;
+	display: flex !important;
+	flex-direction: row;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	h2 {
+		width: 20%;
+		font-size: 2.75em;
+		text-align: center;
+		margin: 0;
+		color: #3b7b5d;
+	}
+
+	.success-content {
+		width: 75%;
+	}
+}

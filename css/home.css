@@ -337,6 +337,9 @@
     display: flex;
     border-radius: 1000px;
     margin-top: -4rem; }
+    @media (max-width: 930px) {
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
+        margin-top: 0; } }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-details {
     width: 30%;
     font-weight: 300; }
