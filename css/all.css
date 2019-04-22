@@ -1574,6 +1574,35 @@ iframe {
   margin-top: 2rem;
   padding-left: 2.5rem; }
 
+.pagenotfound-ctas {
+  margin-top: 2rem; }
+  .pagenotfound-ctas .pagenotfound-link-container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+            align-items: stretch; }
+    .pagenotfound-ctas .pagenotfound-link-container .btn, .pagenotfound-ctas .pagenotfound-link-container input[type="submit"],
+    .pagenotfound-ctas .pagenotfound-link-container input[type="button"],
+    .pagenotfound-ctas .pagenotfound-link-container button, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a {
+      width: 49%; }
+      .pagenotfound-ctas .pagenotfound-link-container .btn.inshore, .pagenotfound-ctas .pagenotfound-link-container input.inshore[type="submit"],
+      .pagenotfound-ctas .pagenotfound-link-container input.inshore[type="button"],
+      .pagenotfound-ctas .pagenotfound-link-container button.inshore, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inshore, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inshore, .pagenotfound-ctas .pagenotfound-link-container .btn.inlet, .pagenotfound-ctas .pagenotfound-link-container input.inlet[type="submit"],
+      .pagenotfound-ctas .pagenotfound-link-container input.inlet[type="button"],
+      .pagenotfound-ctas .pagenotfound-link-container button.inlet, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inlet, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inlet {
+        padding: 1.75rem 1.5rem; }
+
 /* CSS Document */
 .boat-ramp-listing {
   display: -webkit-box;
