@@ -752,6 +752,9 @@ img {
         width: 100%;
         max-width: 350px;
         margin-top: -1rem; }
+        @media (max-width: 1030px) {
+          .header-wrap-outer .header-wrap .header-nav .site-logo {
+            max-width: 250px; } }
         @media (max-width: 680px) {
           .header-wrap-outer .header-wrap .header-nav .site-logo {
             width: auto; } }
