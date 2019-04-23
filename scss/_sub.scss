@@ -818,6 +818,44 @@ iframe {
 		padding-top: 1.5rem;
 		border-top: 1px solid #eee;
 	}
+
+	.charter-type {
+		margin-top: 2rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #eee;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.charter-name {
+			width: 100%;
+			@extend h2;
+		}
+
+		.charter-image {
+			width: 33%;
+			padding: 0 1rem;
+		}
+
+		.charter-description {
+			width: 66%;
+			padding-right: 1rem;
+		}
+
+		@media (max-width: 460px) {
+			.charter-image,
+			.charter-description {
+				width :100%;
+				padding: 0;
+			}
+
+			.charter-image {
+				margin-bottom: 1rem;
+			}
+		}
+	}
 }
 
 
