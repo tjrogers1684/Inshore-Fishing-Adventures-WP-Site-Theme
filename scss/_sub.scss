@@ -829,9 +829,8 @@ iframe {
 		justify-content: space-between;
 		align-items: flex-start;
 
-		.charter-name {
+		h2 {
 			width: 100%;
-			@extend h2;
 		}
 
 		.charter-image {
@@ -842,12 +841,17 @@ iframe {
 		.charter-description {
 			width: 66%;
 			padding-right: 1rem;
+			padding: 0 1rem;
+
+			.btn {
+				margin-top: 0.75rem;
+			}
 		}
 
 		@media (max-width: 460px) {
 			.charter-image,
 			.charter-description {
-				width :100%;
+				width: 100%;
 				padding: 0;
 			}
 

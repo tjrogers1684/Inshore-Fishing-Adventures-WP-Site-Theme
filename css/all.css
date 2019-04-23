@@ -12,7 +12,7 @@ type: reset css
   font-weight: bold; }
 
 /* ----- Reset all CSS ----- */
-html, body, div, span, applet, object, iframe, h1, h2, .page-id-7 .charter-type .charter-name, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, fieldset, form, label, legend, caption, tbody, tfoot, thead {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, font, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, fieldset, form, label, legend, caption, tbody, tfoot, thead {
   margin: 0;
   padding: 0;
   outline: 0;
@@ -337,18 +337,18 @@ button:visited,
         background: #143449 !important;
         opacity: 0.85; }
 
-h1, h2, .page-id-7 .charter-type .charter-name, h3 {
+h1, h2, h3 {
   font-weight: bold;
   line-height: 1.25;
   margin-bottom: 1em; }
 
-* ~ h1, * ~ h2, .page-id-7 .charter-type * ~ .charter-name, * ~ h3 {
+* ~ h1, * ~ h2, * ~ h3 {
   margin-top: 1em; }
 
 h1 {
   font-size: 2.5em; }
 
-h2, .page-id-7 .charter-type .charter-name {
+h2 {
   font-size: 1.75em; }
 
 h3 {
@@ -410,7 +410,7 @@ button {
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center; }
-  .nf-response-msg h2, .nf-response-msg .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .nf-response-msg .charter-name {
+  .nf-response-msg h2 {
     width: 20%;
     font-size: 2.75em;
     text-align: center;
@@ -838,16 +838,16 @@ img {
   z-index: 3;
   position: relative;
   background: #fff; }
-  .sponsors-listing-hp-container h2, .sponsors-listing-hp-container .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .sponsors-listing-hp-container .charter-name {
+  .sponsors-listing-hp-container h2 {
     width: 25%;
     text-transform: uppercase;
     margin: 0; }
     @media (max-width: 750px) {
-      .sponsors-listing-hp-container h2, .sponsors-listing-hp-container .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .sponsors-listing-hp-container .charter-name {
+      .sponsors-listing-hp-container h2 {
         width: 100%;
         text-align: center;
         padding-bottom: 1.5em; } }
-    .sponsors-listing-hp-container h2 span, .sponsors-listing-hp-container .page-id-7 .charter-type .charter-name span, .page-id-7 .charter-type .sponsors-listing-hp-container .charter-name span {
+    .sponsors-listing-hp-container h2 span {
       display: block;
       font-size: 0.5em;
       font-weight: normal;
@@ -1103,7 +1103,7 @@ iframe {
   padding-bottom: 0.5rem; }
 
 /* --------------------------------------------- SUBMENUS -- */
-.sidebar-submenu h2, .sidebar-submenu .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .sidebar-submenu .charter-name {
+.sidebar-submenu h2 {
   margin-bottom: 0.5em; }
 .sidebar-submenu ul, .sidebar-submenu li {
   list-style: none;
@@ -1231,10 +1231,10 @@ iframe {
     background: #ecebe4;
     padding: 4rem 2rem 4rem;
     text-align: center; }
-    .page-id-947 .review-platforms-conatiner h2, .page-id-947 .review-platforms-conatiner .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .page-id-947 .review-platforms-conatiner .charter-name {
+    .page-id-947 .review-platforms-conatiner h2 {
       font-size: 2.5rem;
       text-transform: capitalize; }
-      .page-id-947 .review-platforms-conatiner h2 span, .page-id-947 .review-platforms-conatiner .page-id-7 .charter-type .charter-name span, .page-id-7 .charter-type .page-id-947 .review-platforms-conatiner .charter-name span {
+      .page-id-947 .review-platforms-conatiner h2 span {
         text-transform: uppercase;
         display: block;
         font-weight: 300;
@@ -1632,7 +1632,7 @@ iframe {
       .pagenotfound-ctas .pagenotfound-link-container button.inlet, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inlet, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inlet {
         padding: 1.75rem 1.5rem; }
 
-.page-id-7 * + h2, .page-id-7 .charter-type * + .charter-name {
+.page-id-7 * + h2 {
   margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid #eee; }
@@ -1655,14 +1655,19 @@ iframe {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
           align-items: flex-start; }
-  .page-id-7 .charter-type .charter-name {
+  .page-id-7 .charter-type h2 {
     width: 100%; }
   .page-id-7 .charter-type .charter-image {
     width: 33%;
     padding: 0 1rem; }
   .page-id-7 .charter-type .charter-description {
     width: 66%;
-    padding-right: 1rem; }
+    padding-right: 1rem;
+    padding: 0 1rem; }
+    .page-id-7 .charter-type .charter-description .btn, .page-id-7 .charter-type .charter-description input[type="submit"],
+    .page-id-7 .charter-type .charter-description input[type="button"],
+    .page-id-7 .charter-type .charter-description button, .page-id-7 .charter-type .charter-description .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .page-id-7 .charter-type .charter-description a {
+      margin-top: 0.75rem; }
   @media (max-width: 460px) {
     .page-id-7 .charter-type .charter-image,
     .page-id-7 .charter-type .charter-description {
@@ -1696,7 +1701,7 @@ iframe {
       margin: 0; }
     .boat-ramp-listing .boat-ramp-item .boat-ramp-meta {
       padding: 1.5rem; }
-      .boat-ramp-listing .boat-ramp-item .boat-ramp-meta h2, .boat-ramp-listing .boat-ramp-item .boat-ramp-meta .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .boat-ramp-listing .boat-ramp-item .boat-ramp-meta .charter-name {
+      .boat-ramp-listing .boat-ramp-item .boat-ramp-meta h2 {
         margin: 0; }
 
 /* CSS Document */
@@ -1773,10 +1778,8 @@ iframe {
         .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image {
           width: 100%;
           padding: 1em 0; } }
-      .blog .blog-listing .blog-item .blog-item-content.has-blog-image h2, .blog .blog-listing .blog-item .blog-item-content.has-blog-image .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .blog .blog-listing .blog-item .blog-item-content.has-blog-image .charter-name,
-      .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image h2,
-      .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image .page-id-7 .charter-type .charter-name,
-      .page-id-7 .charter-type .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image .charter-name {
+      .blog .blog-listing .blog-item .blog-item-content.has-blog-image h2,
+      .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image h2 {
         margin: 0; }
       .blog .blog-listing .blog-item .blog-item-content.has-blog-image .blog-article-meta,
       .archive.section-blog .blog-listing .blog-item .blog-item-content.has-blog-image .blog-article-meta {
@@ -1798,7 +1801,7 @@ iframe {
   background: #d0ffff;
   padding: 1.5em 2em;
   font-size: 0.88em; }
-  .sidebar-newlsetter-signup h2, .sidebar-newlsetter-signup .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .sidebar-newlsetter-signup .charter-name {
+  .sidebar-newlsetter-signup h2 {
     font-size: 1.35em; }
   .sidebar-newlsetter-signup #nf-field-6-container,
   .sidebar-newlsetter-signup #nf-field-9-container {
@@ -1809,7 +1812,7 @@ iframe {
     margin-top: 1.5em; }
 
 /* --------------------------------------------- CATEGORIES -- */
-.widget_categories h2, .widget_categories .page-id-7 .charter-type .charter-name, .page-id-7 .charter-type .widget_categories .charter-name {
+.widget_categories h2 {
   margin-bottom: 0.5em; }
 .widget_categories ul, .widget_categories li {
   list-style: none;
