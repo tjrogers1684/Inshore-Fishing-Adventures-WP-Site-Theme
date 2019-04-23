@@ -266,7 +266,11 @@
 			}
 
 			.blog-article-content {
-				width: 60%;
+				width: 100%;
+
+				&.has-blog-image {
+					width: 60%;
+				}
 
 				@media (max-width: 630px) {
 					width: 100%;

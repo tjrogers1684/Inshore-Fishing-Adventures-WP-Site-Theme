@@ -1918,7 +1918,9 @@ iframe {
         box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
         width: 100%; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-content {
-      width: 60%; }
+      width: 100%; }
+      .single-post .content-wrap .content-area.has-sidebar .blog-article-content.has-blog-image {
+        width: 60%; }
       @media (max-width: 630px) {
         .single-post .content-wrap .content-area.has-sidebar .blog-article-content {
           width: 100%; } }
