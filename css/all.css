@@ -1507,7 +1507,7 @@ iframe {
 
 .policies {
   max-width: 960px;
-  margin: 3em auto 0;
+  margin: 0 auto;
   padding: 0; }
 
 .sidebar-cta.book-now .btn-alt {
