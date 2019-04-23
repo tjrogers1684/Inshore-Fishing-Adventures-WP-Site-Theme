@@ -23,7 +23,7 @@ $('.mobile-nav-close a').on('click', function(e){
 });
 
 $(window).resize(function(){
-	if ($(window).width() >= 680){
+	if ($(window).width() >= 940){
 		$('.mobile-nav-close').hide(200);
 		$('.mobile-nav-icon').hide(200);
 		$('.mobile-nav').slideUp(400);

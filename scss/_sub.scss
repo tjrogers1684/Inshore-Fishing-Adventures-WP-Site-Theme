@@ -101,6 +101,10 @@ iframe {
 	}
 }
 
+.no-top-margin {
+	margin-top: 0;
+}
+
 
 /* --------------------------------------------- SUBMENUS -- */
 .sidebar-submenu {
@@ -447,7 +451,7 @@ iframe {
 		@include inshorecard();
 
 		&.show-fish-species {
-			@include background-image(linear-gradient(to bottom, rgba(darken($brand-secondary, 10), 0) 80%, rgba(darken($brand-secondary, 10), 1) 81%));
+			@include background-image(linear-gradient(to bottom, rgba(darken(#ecebe4, 10), 0) 80%, rgba(darken(#ecebe4, 10), 1) 81%));
 		}
 
 		@media (max-width: 860px) {
@@ -555,7 +559,7 @@ iframe {
 		}
 
 		.table-block-fish-types-container {
-			background: darken($brand-secondary, 10);
+			background: darken(#ecebe4, 10);
 			margin-top: 2rem;
 			padding: 2rem;
 			border-radius: 0 0 $rad $rad;
