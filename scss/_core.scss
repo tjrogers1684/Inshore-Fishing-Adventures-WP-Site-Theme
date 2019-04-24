@@ -349,10 +349,10 @@ hr {
 
 			&:nth-child(1) {
 				img {
-					max-width: 105px;
+					width: 105px;
 
 					@media (max-width: 620px) {
-						max-width: 200px;
+						width: 105px;
 					}
 				}
 			}
@@ -361,17 +361,17 @@ hr {
 				img {
 
 					@media (max-width: 620px) {
-						max-width: 300px;
+						width: 300px;
 					}
 				}
 			}
 
 			&:nth-child(3) {
 				img {
-					max-width: 85px;
+					width: 85px;
 
 					@media (max-width: 620px) {
-						max-width: 200px;
+						width: 100px;
 					}
 				}
 			}

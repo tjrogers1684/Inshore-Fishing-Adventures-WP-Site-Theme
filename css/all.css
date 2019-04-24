@@ -880,18 +880,18 @@ img {
       width: 33.33%;
       text-align: center; }
       .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(1) img {
-        max-width: 105px; }
+        width: 105px; }
         @media (max-width: 620px) {
           .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(1) img {
-            max-width: 200px; } }
+            width: 105px; } }
       @media (max-width: 620px) {
         .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(2) img {
-          max-width: 300px; } }
+          width: 300px; } }
       .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) img {
-        max-width: 85px; }
+        width: 85px; }
         @media (max-width: 620px) {
           .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item:nth-child(3) img {
-            max-width: 200px; } }
+            width: 100px; } }
       @media (max-width: 620px) {
         .sponsors-listing-hp-container .sponsors-listing-hp .sponsor-item {
           width: 100%;
