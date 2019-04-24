@@ -91,6 +91,7 @@
 
 iframe {
 	width: 100%;
+	height: 1100px;
 }
 
 
@@ -98,6 +99,22 @@ iframe {
 .page-id-873 {
 	.content-wrap {
 		padding-bottom: 0.5rem;
+	}
+}
+
+.section-blog,
+.archive,
+.section-contact,
+.section-charters,
+.section-locations {
+	.call-now-booking-callout {
+		padding: 3rem 1.5rem 5rem;
+	}
+}
+
+.page-id-9 {
+	.page-wrap + .call-now-booking-callout {
+		padding: 2rem 1.5rem 5rem;
 	}
 }
 
@@ -122,27 +139,80 @@ iframe {
 		li {
 
 			& + li {
-				border-top: 1px solid #efefef;
+				border-top: 1px solid $brand-alt;
 			}
 
 			&.current-menu-item {
 				a {
-					background: #d7d7d7;
+					background: $brand-alt;
 					color: #434343;
 				}
 			}
 
 			a {
 				display: block;
-				padding: 0.5em 0.5em;
+				padding: 0.75rem 1rem 0.75rem 3rem;
 				//background: #f6f6f6;
 				transition: 0.3s;
+				position: relative;
 
 				&:hover {
-					background: $brand;
-					color: #fff;
-					padding-left: 1em;
-					border-left: 8px solid darken($brand, 20);
+					background: $brand-secondary;
+					color: #f4e30c;
+					//padding-left: 2.5rem;
+					border-left: 8px solid darken($brand-secondary, 20);
+					border-left: 8px solid #f4e30c;
+				}
+
+				&:after {
+					position: absolute;
+					top: 50%;
+					left: 1rem;
+					transform: translateY(-50%)scale(1.25);
+					content: "\f007";
+					font-family: "Font Awesome 5 Free";
+					//font-weight: 900;
+					font-size: 0.9em;
+					color: $brand;
+				}
+			}
+		}
+	}
+}
+
+
+/* --------------------------------------------- ABOUT MENU ICONS -- */
+.about {
+	li {
+		&#menu-item-812 {
+			a {
+				&:after {
+					content: "\f075";
+				}
+			}
+		}
+
+		&#menu-item-810 {
+			a {
+				&:after {
+					content: "\f21a";
+					font-weight: 900;
+				}
+			}
+		}
+
+		&:hover {
+			a {
+				&:after {
+					color: inherit;
+				}
+			}
+		}
+
+		&.current-menu-item {
+			a {
+				&:after {
+					color: inherit;
 				}
 			}
 		}
@@ -652,6 +722,10 @@ iframe {
 // ---------------------------------------------------------------------------------
 // ----- SIDEBAR CTAS --------------------------------------------------------------
 // ---------------------------------------------------------------------------------
+.sidebar-submenu + .sidebar-cta {
+	margin-top: 2rem !important;
+}
+
 .sidebar-cta {
 	&.book-now {
 		.btn-alt {
