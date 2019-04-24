@@ -1137,31 +1137,45 @@ iframe {
   margin: 0;
   padding: 0; }
 .sidebar-submenu ul li + li {
-  border-top: 1px solid #ecebe4; }
-.sidebar-submenu ul li.current-menu-item a {
-  background: #ecebe4;
-  color: #434343; }
+  margin-top: 1rem; }
 .sidebar-submenu ul li a {
-  display: block;
-  padding: 0.75rem 1rem 0.75rem 3rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  position: relative; }
-  .sidebar-submenu ul li a:hover {
-    background: #256088;
-    color: #f4e30c;
-    border-left: 8px solid #0f2738;
-    border-left: 8px solid #f4e30c; }
+  background: #256088 !important;
+  background-image: url("/wp-content/themes/inshorefishing/images/bkd-footer.jpg") !important;
+  background-position: 100% 70% !important;
+  background-repeat: no-repeat !important;
+  background-size: 160% !important;
+  color: #fff !important;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  display: block; }
+  .sidebar-submenu ul li a span,
+  .sidebar-submenu ul li a img {
+    position: relative;
+    z-index: 1; }
+  .sidebar-submenu ul li a span {
+    font-size: 1.25em;
+    font-weight: bold; }
   .sidebar-submenu ul li a:after {
+    content: '';
+    background: #256088;
+    background: #ff9e15;
     position: absolute;
-    top: 50%;
-    left: 1rem;
-    -webkit-transform: translateY(-50%) scale(1.25);
-            transform: translateY(-50%) scale(1.25);
-    content: "\f007";
-    font-family: "Font Awesome 5 Free";
-    font-size: 0.9em;
-    color: #ff9e14; }
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: 0;
+    -webkit-transition: 0.2s;
+    transition: 0.2s; }
+  .sidebar-submenu ul li a:hover {
+    color: #f4e30c !important;
+    background-position: 60% 80% !important; }
+    .sidebar-submenu ul li a:hover:after {
+      background: #143449 !important;
+      opacity: 0.85; }
 
 /* --------------------------------------------- ABOUT MENU ICONS -- */
 .about li#menu-item-812 a:after {
@@ -1173,6 +1187,10 @@ iframe {
   color: inherit; }
 .about li.current-menu-item a:after {
   color: inherit; }
+
+/* ---------------------------------------------  -- */
+#right_sidebar + #right_sidebar {
+  margin-top: 2rem; }
 
 .certifications {
   margin-top: 2rem !important;
@@ -1842,9 +1860,6 @@ iframe {
     .blog .blog-listing .blog-item .blog-item-content .btn-sm,
     .archive.section-blog .blog-listing .blog-item .blog-item-content .btn-sm {
       margin-top: 1em; }
-
-#right_sidebar + #right_sidebar {
-  margin-top: 1em; }
 
 /* --------------------------------------------- NEWSLETTER SIGN UP -- */
 .sidebar-newlsetter-signup {
