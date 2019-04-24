@@ -1973,4 +1973,13 @@ iframe {
     .single-post .content-wrap .sidebar-area {
       margin-top: 2em; } }
 
+.section-blog .call-now-booking-callout,
+.archive .call-now-booking-callout,
+.section-contact .call-now-booking-callout,
+.section-charters .call-now-booking-callout {
+  padding: 3rem 1.5rem 5rem; }
+
+.page-id-9 .page-wrap + .call-now-booking-callout {
+  padding: 2rem 1.5rem 5rem; }
+
 /*# sourceMappingURL=all.css.map */
