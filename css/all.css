@@ -1933,7 +1933,9 @@ iframe {
         width: 60%; }
       @media (max-width: 630px) {
         .single-post .content-wrap .content-area.has-sidebar .blog-article-content {
-          width: 100%; } }
+          width: 100%; }
+          .single-post .content-wrap .content-area.has-sidebar .blog-article-content.has-blog-image {
+            width: 100%; } }
       .single-post .content-wrap .content-area.has-sidebar .blog-article-content .wp-block-image img {
         border-radius: 5px;
         box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15);

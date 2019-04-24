@@ -274,6 +274,10 @@
 
 				@media (max-width: 630px) {
 					width: 100%;
+
+						&.has-blog-image {
+						width: 100%;
+					}
 				}
 
 				.wp-block-image {
