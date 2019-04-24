@@ -41,7 +41,7 @@ button {
 
 
 /* --------------------------------------------- ALERTS -- */
-.nf-response-msg {
+.nf-response-msg[style="display: block;"] {
 	background: #d0ffff;
 	padding: 2rem;
 	display: flex !important;

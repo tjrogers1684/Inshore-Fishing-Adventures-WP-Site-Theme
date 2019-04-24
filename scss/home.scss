@@ -209,58 +209,115 @@
 		max-width: 1220px;
 		margin: 3em auto;
 		background-color: $brand;
-		padding: 1rem 0;
+		padding: 1rem 2.5rem 1rem 0;
 		color: #fff;
 		display: flex;
-		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
 		align-items: center;
 		@include inshorecard();
 
+		@media (max-width: 560px) {
+			padding: 3rem 2rem;
+		}
+
 		.prefooter-booking-callout-section {
-			padding: 1.5em 2em;
+			//padding: 1.5em 2em;
 		}
 
 		.prefooter-booking-callout-image-container {
-			width: 250px;
-			height: 250px;
-			position: relative;
-			background: url(/wp-content/themes/inshorefishing/images/prefooter-callout-photo.jpg) 50% 50% no-repeat;
-			background-size: cover;
-			display: flex;
-			border-radius: 1000px;
+			width: 35%;
+			text-align: center;
+			padding: 0 4rem;
 			margin-top: -4rem;
+
+			img {
+				border-radius: 100%;
+			}
 
 			@media (max-width: 930px) {
 				margin-top: 0;
 			}
-		}
 
-		.prefooter-booking-callout-details {
-			width: 30%;
-			font-weight: 300;
+			@media (max-width: 850px) {
+				padding: 0 1.5rem;
+				width: 35%;
+			}
 
-			strong {
-				font-size: 1.25em;
-				color: $brand-secondary;
-				//font-weight: 400;
+			@media (max-width: 560px) {
+				width: 100%;
+				margin-bottom: 2rem;
+
+				img {
+					width: 70%;
+				}
 			}
 		}
 
-		.prefooter-booking-callout-contact {
-			width: 30%;
-			font-size: 1.58em;
-			text-align: right;
+		.prefooter-booking-callout-content {
+			width: 65%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
 
-			p {
-				span {
-					display: block;
-					padding-top: 0.25em;
+			@media (max-width: 850px) {
+				width: 65%;
+			}
 
-					.btn {
-						font-size: 1.4rem;
-						font-weight: bold;
-						padding: 0.35em 1.35em;
-						margin-left: 0.25em;
+			@media (max-width: 560px) {
+				width: 100%;
+			}
+
+			.prefooter-booking-callout-details {
+				width: 60%;
+				font-weight: 300;
+				padding-right: 2rem;
+
+				@media (max-width: 850px) {
+					width: 100%;
+				}
+
+				strong {
+					font-size: 1.25em;
+					color: $brand-secondary;
+					//font-weight: 400;
+				}
+			}
+
+			.prefooter-booking-callout-contact {
+				width: 40%;
+				font-size: 1.58em;
+				text-align: right;
+
+				@media (max-width: 850px) {
+					width: 100%;
+					text-align: left;
+					margin-top: 1rem;
+
+					span {
+						display: inline-block !important;
+						margin-left: 0.25rem;
+					}
+				}
+
+				@media (max-width: 500px) {
+					text-align: center;
+				}
+
+				p {
+					span {
+						display: block;
+						padding-top: 0.25em;
+
+						.btn {
+							font-size: 1.4rem;
+							font-weight: bold;
+							padding: 0.35em 1.35em;
+							margin-left: 0.25rem;
+						}
 					}
 				}
 			}

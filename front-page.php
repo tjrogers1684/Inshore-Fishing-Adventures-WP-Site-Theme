@@ -64,15 +64,19 @@
 
 	<div class="prefooter-booking-callout-wrap">
 		<div class="prefooter-booking-callout">
-			<div class="prefooter-booking-callout-section prefooter-booking-callout-image-container"></div>
-
-			<div class="prefooter-booking-callout-section prefooter-booking-callout-details">
-				<p><strong>Rates starting as low as $325.</strong></p>
-				<p>Multi-boat trips are available. Call Capt. Mark for details. Online booking is available for your convenience.</p>
+			<div class="prefooter-booking-callout-section prefooter-booking-callout-image-container">
+				<img src="/wp-content/themes/inshorefishing/images/prefooter-callout-photo.jpg" alt="">
 			</div>
 
-			<div class="prefooter-booking-callout-section prefooter-booking-callout-contact">
-				<p>Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> <span>or <a class="btn btn-white" href="/booking">Book Now</a></span></p>
+			<div class="prefooter-booking-callout-section prefooter-booking-callout-content">
+				<div class="prefooter-booking-callout-content-section prefooter-booking-callout-details">
+					<p><strong>Rates starting as low as $325.</strong></p>
+					<p>Multi-boat trips are available. Call Capt. Mark for details. Online booking is available for your convenience.</p>
+				</div>
+
+				<div class="prefooter-booking-callout-content-section prefooter-booking-callout-contact">
+					<p>Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> <span>or <a class="btn btn-white" href="/booking">Book Now</a></span></p>
+				</div>
 			</div>
 		</div>
 

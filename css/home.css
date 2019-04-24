@@ -319,45 +319,84 @@
   max-width: 1220px;
   margin: 3em auto;
   background-color: #ff9e14;
-  padding: 1rem 0;
+  padding: 1rem 2.5rem 1rem 0;
   color: #fff;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
   border-radius: 5px;
   box-shadow: 0 0.5rem 1rem rgba(79, 79, 79, 0.15); }
-  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-section {
-    padding: 1.5em 2em; }
+  @media (max-width: 560px) {
+    .prefooter-booking-callout-wrap .prefooter-booking-callout {
+      padding: 3rem 2rem; } }
   .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
-    width: 250px;
-    height: 250px;
-    position: relative;
-    background: url(/wp-content/themes/inshorefishing/images/prefooter-callout-photo.jpg) 50% 50% no-repeat;
-    background-size: cover;
-    display: flex;
-    border-radius: 1000px;
+    width: 35%;
+    text-align: center;
+    padding: 0 4rem;
     margin-top: -4rem; }
+    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container img {
+      border-radius: 100%; }
     @media (max-width: 930px) {
       .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
         margin-top: 0; } }
-  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-details {
-    width: 30%;
-    font-weight: 300; }
-    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-details strong {
-      font-size: 1.25em;
-      color: #256088; }
-  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact {
-    width: 30%;
-    font-size: 1.58em;
-    text-align: right; }
-    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact p span {
-      display: block;
-      padding-top: 0.25em; }
-      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-contact p span .btn {
-        font-size: 1.4rem;
-        font-weight: bold;
-        padding: 0.35em 1.35em;
-        margin-left: 0.25em; }
+    @media (max-width: 850px) {
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
+        padding: 0 1.5rem;
+        width: 35%; } }
+    @media (max-width: 560px) {
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container {
+        width: 100%;
+        margin-bottom: 2rem; }
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-image-container img {
+          width: 70%; } }
+  .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 850px) {
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content {
+        width: 65%; } }
+    @media (max-width: 560px) {
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content {
+        width: 100%; } }
+    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-details {
+      width: 60%;
+      font-weight: 300;
+      padding-right: 2rem; }
+      @media (max-width: 850px) {
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-details {
+          width: 100%; } }
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-details strong {
+        font-size: 1.25em;
+        color: #256088; }
+    .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact {
+      width: 40%;
+      font-size: 1.58em;
+      text-align: right; }
+      @media (max-width: 850px) {
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact {
+          width: 100%;
+          text-align: left;
+          margin-top: 1rem; }
+          .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact span {
+            display: inline-block !important;
+            margin-left: 0.25rem; } }
+      @media (max-width: 500px) {
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact {
+          text-align: center; } }
+      .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact p span {
+        display: block;
+        padding-top: 0.25em; }
+        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact p span .btn {
+          font-size: 1.4rem;
+          font-weight: bold;
+          padding: 0.35em 1.35em;
+          margin-left: 0.25rem; }
 
 .testimonials-listing-hp {
   max-width: 1120px;
