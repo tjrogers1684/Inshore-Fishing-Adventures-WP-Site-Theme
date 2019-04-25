@@ -201,6 +201,99 @@
 }
 
 
+/* --------------------------------------------- CHARTER CTA -- */
+.sb-charters-cta {
+	background: $brand-secondary;
+	background-image: url('/wp-content/themes/inshorefishing/images/bkd-charters-cta.jpg');
+	background-position: 80% 70%;
+	background-repeat: no-repeat;
+	background-size: 120%;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s;
+	padding: 2rem 2rem 2.5rem;
+	text-align: center;
+	//border-bottom: 8px solid $brand;
+
+	&:hover {
+		background-size: 150%;
+		background-position: 60% 70%;
+
+		&:after,
+		&:before {
+			opacity: 0.75;
+		}
+
+		.sidebar-charters-cta-learn-more {
+			background: $brand-dk;
+			// background: #f4e30c !important;
+			// color: $brand-secondary !important;
+		}
+	}
+
+	* {
+		position: relative;
+		z-index: 1;
+	}
+
+	&:after {
+		content: '';
+		background: $brand-secondary;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#256088+0,256088+55,183656+100&0.34+0,1+100 */
+		background: -moz-linear-gradient(45deg, rgba(37,96,136,0.34) 0%, rgba(37,96,136,0.7) 55%, rgba(24,54,86,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, rgba(37,96,136,0.34) 0%,rgba(37,96,136,0.7) 55%,rgba(24,54,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, rgba(37,96,136,0.34) 0%,rgba(37,96,136,0.7) 55%,rgba(24,54,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57256088', endColorstr='#183656',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+		z-index: 0;
+		transition: 0.3s;
+	}
+
+	&:before {
+		line-height: 0;
+		position: absolute;
+		bottom: 1.25rem;
+		left: 1.25rem;
+		transform: scale(1.125)rotate(20deg);
+		transform-origin: top left;
+		left: 0;
+		z-index: 1;
+		opacity: 0.5;
+		content: url(/wp-content/themes/inshorefishing/images/header-wavy-swirl.png);
+		transition: 0.3s;
+	}
+
+	.full-cover-hidden {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	.sidebar-charters-cta-tag {
+		margin-top: 0;
+		font-size: 1.35em;
+		font-weight: 900;
+	}
+
+	.sidebar-charters-cta-learn-more {
+		margin-top: 1.5rem;
+		padding: 0.5rem 1.5rem;
+
+		@extend .btn;
+		@extend .btn-sm;
+	}
+}
+
+
 /* --------------------------------------------- ABOUT MENU ICONS -- */
 // .about {
 // 	li {
