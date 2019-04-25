@@ -98,8 +98,6 @@
 
 	iframe {
 		width: 100%;
-		//padding: 0 2rem;
-		//height: 1100px;
 	}
 }
 
@@ -184,18 +182,6 @@
 				&:hover {
 					background: $brand-alt;
 				}
-
-				// &:after {
-				// 	position: absolute;
-				// 	top: 50%;
-				// 	left: 1rem;
-				// 	transform: translateY(-50%)scale(1.25);
-				// 	content: "\f007";
-				// 	font-family: "Font Awesome 5 Free";
-				// 	//font-weight: 900;
-				// 	font-size: 0.9em;
-				// 	color: $brand;
-				// }
 			}
 		}
 	}
@@ -295,45 +281,6 @@
 }
 
 
-/* --------------------------------------------- ABOUT MENU ICONS -- */
-// .about {
-// 	li {
-// 		&#menu-item-812 {
-// 			a {
-// 				&:after {
-// 					content: "\f075";
-// 				}
-// 			}
-// 		}
-
-// 		&#menu-item-810 {
-// 			a {
-// 				&:after {
-// 					content: "\f21a";
-// 					font-weight: 900;
-// 				}
-// 			}
-// 		}
-
-// 		&:hover {
-// 			a {
-// 				&:after {
-// 					color: inherit;
-// 				}
-// 			}
-// 		}
-
-// 		&.current-menu-item {
-// 			a {
-// 				&:after {
-// 					color: inherit;
-// 				}
-// 			}
-// 		}
-// 	}
-// }
-
-
 /* ---------------------------------------------  -- */
 #right_sidebar + #right_sidebar {
 	margin-top: 2rem;
@@ -382,6 +329,11 @@
 // ---------------------------------------------------------------------------------
 .page-id-947 {
 
+	h1.page-title {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
 	.testimonials-page-leadin-content {
 		max-width: 900px;
 		margin: 0 auto;
@@ -389,6 +341,10 @@
 
 	.testimonials-page-listing-single-container {
 		padding: 4em 0;
+
+		@media (max-width: 640px) {
+			padding: 2rem 0;
+		}
 
 		h1 {
 			text-align: center;
