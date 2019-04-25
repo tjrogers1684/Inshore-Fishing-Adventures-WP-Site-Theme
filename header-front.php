@@ -42,7 +42,7 @@ if( !empty(explode('/', $_SERVER['REQUEST_URI'])[2]) && !strstr(explode('/', $_S
 			<div class="feature-wrap">
 				<div class="booking-callout">
 					<h1>Ft. Pierce Fishing Charters <span>with a Family-Friendly, Professional Fishing Guide</span></h1>
-					<a href="/booking" class="btn">Book now</a>
+					<a href="/reservations" class="btn">Book now</a>
 				</div>
 			</div>
 

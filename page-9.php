@@ -132,7 +132,7 @@
 				</div>
 
 				<div class="call-now-booking-callout">
-					<p>Call 321-302-3474 <span>or <a class="btn btn-lg" href="/booking">Book Now</a></span></p>
+					<p>Call 321-302-3474 <span>or <a class="btn btn-lg" href="/reservations">Book Now</a></span></p>
 				</div>
 
 				<div class="policies">
