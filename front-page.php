@@ -75,7 +75,7 @@
 				</div>
 
 				<div class="prefooter-booking-callout-content-section prefooter-booking-callout-contact">
-					<p>Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> <span>or <a class="btn btn-white" href="/booking">Book Now</a></span></p>
+					<p class="prefooter-booking-callout-contact-phone">Call <strong><?php echo get_theme_mod('fgc_guide_phone_number'); ?></strong> <span>or <a class="btn btn-white" href="/booking">Book Now</a></span></p>
 				</div>
 			</div>
 		</div>

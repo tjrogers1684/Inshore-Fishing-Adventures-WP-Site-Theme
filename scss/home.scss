@@ -308,6 +308,14 @@
 				}
 
 				p {
+					strong {
+						font-weight: normal;
+
+						a {
+							color: #fff;
+						}
+					}
+
 					span {
 						display: block;
 						padding-top: 0.25em;
