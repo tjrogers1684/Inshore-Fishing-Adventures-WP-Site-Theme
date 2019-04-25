@@ -1162,7 +1162,8 @@ input {
 
 .certifications h2,
 .sb-profile h2,
-.sb-charters-cta h2 {
+.sb-charters-cta h2,
+.sidebar-submenu h2 {
   display: none; }
 
 /* --------------------------------------------- SUBMENUS -- */
