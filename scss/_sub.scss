@@ -132,6 +132,14 @@
 	margin-top: 0;
 }
 
+.certifications,
+.sb-profile,
+.sb-charters-cta {
+	h2 {
+		display: none;
+	}
+}
+
 // ---------------------------------------------------------------------------------
 // ----- SIDEBAR -------------------------------------------------------------------
 // ---------------------------------------------------------------------------------
@@ -149,98 +157,44 @@
 
 	ul {
 		li {
-
-			// & + li {
-			// 	;margin-top: 1rem;
-			// }
-
-			// a {
-			// 	background: #256088 !important;
-			// 	background-image: url('/wp-content/themes/inshorefishing/images/bkd-footer.jpg') !important;
-			// 	background-position: 100% 70% !important;
-			// 	background-repeat: no-repeat !important;
-			// 	background-size: 160% !important;
-			// 	color: #fff !important;
-			// 	position: relative;
-			// 	overflow: hidden;
-			// 	transition: 0.2s;
-			// 	display: block;
-
-			// 	span,
-			// 	img {
-			// 		position: relative;
-			// 		z-index: 1;
-			// 	}
-
-			// 	span {
-			// 		font-size: 1.25em;
-			// 		font-weight: bold;
-			// 	}
-
-			// 	&:after {
-			// 		content: '';
-			// 		background: #256088;
-			// 		background: #ff9e15;
-			// 		position: absolute;
-			// 		top: 0;
-			// 		right: 0;
-			// 		width: 100%;
-			// 		height: 100%;
-			// 		opacity: 0.9;
-			// 		z-index: 0;
-			// 		transition: 0.2s;
-			// 	}
-
-			// 	&:hover {
-			// 		color: #f4e30c !important;
-			// 		background-position: 60% 80% !important;
-
-			// 		&:after {
-			// 			background: #143449 !important;
-			// 			opacity: 0.85;
-			// 		}
-			// 	}
-			// }
-
-
-			// ------------------------------------- OG STYLES --
 			& + li {
 				border-top: 1px solid $brand-alt;
 			}
 
 			&.current-menu-item {
 				a {
-					background: $brand-alt;
-					color: #434343;
+					background: $brand;
+					color: #fff;
+
+					&:hover {
+						background: $brand-alt;
+						color: $brand-dk;
+					}
 				}
 			}
 
 			a {
 				display: block;
-				padding: 0.75rem 1rem 0.75rem 3rem;
+				padding: 0.75rem;
 				//background: #f6f6f6;
 				transition: 0.3s;
 				position: relative;
 
 				&:hover {
-					background: $brand-secondary;
-					color: #f4e30c;
-					//padding-left: 2.5rem;
-					border-left: 8px solid darken($brand-secondary, 20);
-					border-left: 8px solid #f4e30c;
+					background: $brand-alt;
 				}
 
-				&:after {
-					position: absolute;
-					top: 50%;
-					left: 1rem;
-					transform: translateY(-50%)scale(1.25);
-					content: "\f007";
-					font-family: "Font Awesome 5 Free";
-					//font-weight: 900;
-					font-size: 0.9em;
-					color: $brand;
-				}
+				// &:after {
+				// 	position: absolute;
+				// 	top: 50%;
+				// 	left: 1rem;
+				// 	transform: translateY(-50%)scale(1.25);
+				// 	content: "\f007";
+				// 	font-family: "Font Awesome 5 Free";
+				// 	//font-weight: 900;
+				// 	font-size: 0.9em;
+				// 	color: $brand;
+				// }
 			}
 		}
 	}
@@ -248,42 +202,42 @@
 
 
 /* --------------------------------------------- ABOUT MENU ICONS -- */
-.about {
-	li {
-		&#menu-item-812 {
-			a {
-				&:after {
-					content: "\f075";
-				}
-			}
-		}
+// .about {
+// 	li {
+// 		&#menu-item-812 {
+// 			a {
+// 				&:after {
+// 					content: "\f075";
+// 				}
+// 			}
+// 		}
 
-		&#menu-item-810 {
-			a {
-				&:after {
-					content: "\f21a";
-					font-weight: 900;
-				}
-			}
-		}
+// 		&#menu-item-810 {
+// 			a {
+// 				&:after {
+// 					content: "\f21a";
+// 					font-weight: 900;
+// 				}
+// 			}
+// 		}
 
-		&:hover {
-			a {
-				&:after {
-					color: inherit;
-				}
-			}
-		}
+// 		&:hover {
+// 			a {
+// 				&:after {
+// 					color: inherit;
+// 				}
+// 			}
+// 		}
 
-		&.current-menu-item {
-			a {
-				&:after {
-					color: inherit;
-				}
-			}
-		}
-	}
-}
+// 		&.current-menu-item {
+// 			a {
+// 				&:after {
+// 					color: inherit;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
 
 /* ---------------------------------------------  -- */
@@ -799,6 +753,11 @@
 }
 
 .sidebar-cta {
+
+	h2 {
+		display: none;
+	}
+
 	&.book-now {
 		.btn-alt {
 			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg') !important;

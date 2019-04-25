@@ -1132,6 +1132,11 @@ input {
 .no-top-margin {
   margin-top: 0; }
 
+.certifications h2,
+.sb-profile h2,
+.sb-charters-cta h2 {
+  display: none; }
+
 /* --------------------------------------------- SUBMENUS -- */
 .sidebar-submenu h2 {
   margin-bottom: 0.5em; }
@@ -1142,41 +1147,21 @@ input {
 .sidebar-submenu ul li + li {
   border-top: 1px solid #ecebe4; }
 .sidebar-submenu ul li.current-menu-item a {
-  background: #ecebe4;
-  color: #434343; }
+  background: #ff9e14;
+  color: #fff; }
+  .sidebar-submenu ul li.current-menu-item a:hover {
+    background: #ecebe4;
+    color: #e08400; }
 .sidebar-submenu ul li a {
   display: block;
-  padding: 0.75rem 1rem 0.75rem 3rem;
+  padding: 0.75rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative; }
   .sidebar-submenu ul li a:hover {
-    background: #256088;
-    color: #f4e30c;
-    border-left: 8px solid #0f2738;
-    border-left: 8px solid #f4e30c; }
-  .sidebar-submenu ul li a:after {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    -webkit-transform: translateY(-50%) scale(1.25);
-            transform: translateY(-50%) scale(1.25);
-    content: "\f007";
-    font-family: "Font Awesome 5 Free";
-    font-size: 0.9em;
-    color: #ff9e14; }
+    background: #ecebe4; }
 
 /* --------------------------------------------- ABOUT MENU ICONS -- */
-.about li#menu-item-812 a:after {
-  content: "\f075"; }
-.about li#menu-item-810 a:after {
-  content: "\f21a";
-  font-weight: 900; }
-.about li:hover a:after {
-  color: inherit; }
-.about li.current-menu-item a:after {
-  color: inherit; }
-
 /* ---------------------------------------------  -- */
 #right_sidebar + #right_sidebar {
   margin-top: 2rem; }
@@ -1563,6 +1548,8 @@ input {
 .sidebar-submenu + .sidebar-cta {
   margin-top: 2rem !important; }
 
+.sidebar-cta h2 {
+  display: none; }
 .sidebar-cta.book-now .btn-alt {
   background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
   background-position: 50% 70% !important; }
