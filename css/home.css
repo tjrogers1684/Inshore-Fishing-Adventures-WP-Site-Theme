@@ -498,11 +498,13 @@
           box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2);
           height: 0;
           padding-top: calc(50% - 0.75rem);
-          position: relative; }
+          position: relative;
+          background-size: cover;
+          background-position: center bottom; }
           @media (max-width: 860px) {
             .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item {
               width: 100%;
-              background-size: cover; }
+              background-position: center top; }
               .blog-species-section-container-wrap .blog-species-section-container .blog-listing-hp-wrap .blog-listing-hp .blog-listing-item + .blog-listing-item {
                 margin-top: 1.25em; } }
           @media (max-width: 650px) {

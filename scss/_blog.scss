@@ -9,13 +9,13 @@
 .blog,
 .archive.section-blog {
 
-	h1 {
-		max-width: 1440px !important;
-	}
+	// h1 {
+	// 	max-width: 1440px !important;
+	// }
 
 	.content-wrap {
-		max-width: 1440px;
-		font-size: 18px;
+		// max-width: 1440px;
+		// font-size: 18px;
 
 		.content-area.has-sidebar {
 			width: 70%;
@@ -110,7 +110,7 @@
 	margin: 0;
 	background: #d0ffff;
 	//background: #beffff;
-	padding: 1.5em 2em;
+	padding: 1.25em 1em;
 	font-size: 0.88em;
 
 	h2 {
@@ -207,7 +207,7 @@
 
 	h1 {
 		margin: 0;
-		max-width: 1440px !important;
+		// max-width: 1440px !important;
 
 		.blog-article-node-meta {
 			display: block;
@@ -223,8 +223,8 @@
 	}
 
 	.content-wrap {
-		max-width: 1440px;
-		font-size: 17.5px;
+		// max-width: 1440px;
+		// font-size: 17.5px;
 		padding-bottom: 0;
 
 		.content-area.has-sidebar {
@@ -236,7 +236,7 @@
 			align-items: flex-start;
 
 			.blog-article-image {
-				width: 40%;
+				width: 35%;
 				line-height: 0;
 				padding-right: 1.25em;
 
@@ -261,7 +261,7 @@
 				width: 100%;
 
 				&.has-blog-image {
-					width: 60%;
+					width: 65%;
 				}
 
 				@media (max-width: 630px) {
