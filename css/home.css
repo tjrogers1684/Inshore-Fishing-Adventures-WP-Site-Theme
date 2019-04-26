@@ -387,9 +387,6 @@
           .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact span {
             display: inline-block !important;
             margin-left: 0.25rem; } }
-      @media (max-width: 500px) {
-        .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact {
-          text-align: center; } }
       .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact p strong {
         font-weight: normal; }
         .prefooter-booking-callout-wrap .prefooter-booking-callout .prefooter-booking-callout-content .prefooter-booking-callout-contact p strong a {
