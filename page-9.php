@@ -139,11 +139,11 @@
 					<h2>Payment, Cancellation, & Bad Weather Policy</h2>
 
 					<p>
-						$100* per boat/per day deposit required to confirm a reservation. If you do not wish to bring cash or a check with you on the day of your trip you can choose to pay in full now. Your payment will be refunded in full (minus processing fee paid at time of booking) for any cancellation made prior to 7 days of the scheduled charter. All other cancellations are subject to forfeiture of deposit. If you pay in full and fail to cancel prior to 7 days, payment will be refunded minus the deposit amount. Unreturned deposits may be applied to another charter within 90 days of original charter date. The Captain reserves the right to cancel any charter due to unsafe weather conditions or factors beyond his control. In this event the your entire payment will be refunded in full (minus processing fee paid at time of booking). By rendering your payment you are agreeing to these terms and accept these conditions.
+						A $100* per boat/per day deposit is required to confirm your reservation. If you do not wish to bring cash or a check with you on the day of your trip you can choose to pay in full now. Your payment will be refunded in full (minus processing fee paid at time of booking) for any cancellation made prior to 7 days of the scheduled charter. All other cancellations are subject to forfeiture of deposit. If you pay in full and fail to cancel prior to 7 days, payment will be refunded minus the deposit amount. Unreturned deposits may be applied to another charter within 90 days of original charter date. The Captain reserves the right to cancel any charter due to unsafe weather conditions or factors beyond his control. In this event your entire payment will be refunded in full (minus processing fee paid at time of booking). By rendering your payment you are agreeing to these terms and accept these conditions.
 					</p>
 
 					<p>
-						If your captain determines that weather or ocean conditions are unsafe for a near shore trip he may, at his discretion, change your trip to an inshore flats trip.
+						If your captain determines that weather or ocean conditions are unsafe for a nearshore trip he may, at his discretion, change your trip to an inshore flats trip.
 					</p>
 
 					<p class="processing-fee"><small>*online processing fee applied to all reservations</small></p>
