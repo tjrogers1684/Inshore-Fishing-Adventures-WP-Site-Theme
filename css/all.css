@@ -1197,9 +1197,10 @@ input {
 .sb-charters-cta {
   background: #256088;
   background-image: url("/wp-content/themes/inshorefishing/images/bkd-charters-cta.jpg");
-  background-position: 80% 70%;
+  background-image: url("/wp-content/themes/inshorefishing/images/bkd-co-charters.jpg");
+  background-position: 80% 50%;
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 100%;
   color: #fff;
   position: relative;
   overflow: hidden;
@@ -1208,8 +1209,8 @@ input {
   padding: 2rem 2rem 2.5rem;
   text-align: center; }
   .sb-charters-cta:hover {
-    background-size: 150%;
-    background-position: 60% 70%; }
+    background-size: 120%;
+    background-position: 70% 60%; }
     .sb-charters-cta:hover:after, .sb-charters-cta:hover:before {
       opacity: 0.75; }
     .sb-charters-cta:hover .sidebar-charters-cta-learn-more {
@@ -1248,7 +1249,7 @@ input {
             transform-origin: top left;
     left: 0;
     z-index: 1;
-    opacity: 0.5;
+    opacity: 0.45;
     content: url(/wp-content/themes/inshorefishing/images/header-wavy-swirl.png);
     -webkit-transition: 0.3s;
     transition: 0.3s; }

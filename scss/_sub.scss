@@ -192,9 +192,10 @@
 .sb-charters-cta {
 	background: $brand-secondary;
 	background-image: url('/wp-content/themes/inshorefishing/images/bkd-charters-cta.jpg');
-	background-position: 80% 70%;
+	background-image: url('/wp-content/themes/inshorefishing/images/bkd-co-charters.jpg');
+	background-position: 80% 50%;
 	background-repeat: no-repeat;
-	background-size: 120%;
+	background-size: 100%;
 	color: #fff;
 	position: relative;
 	overflow: hidden;
@@ -204,8 +205,8 @@
 	//border-bottom: 8px solid $brand;
 
 	&:hover {
-		background-size: 150%;
-		background-position: 60% 70%;
+		background-size: 120%;
+		background-position: 70% 60%;
 
 		&:after,
 		&:before {
@@ -251,7 +252,7 @@
 		transform-origin: top left;
 		left: 0;
 		z-index: 1;
-		opacity: 0.5;
+		opacity: 0.45;
 		content: url(/wp-content/themes/inshorefishing/images/header-wavy-swirl.png);
 		transition: 0.3s;
 	}
