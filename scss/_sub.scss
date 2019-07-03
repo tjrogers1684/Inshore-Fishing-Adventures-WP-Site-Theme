@@ -89,10 +89,18 @@
 	}
 }
 
-iframe {
-	width: 100%;
-	height: 1100px;
+.section-gallery {
+	.wp-block-embed-youtube {
+		width: 85%;
+		margin: 0 auto 2.5rem;
+		text-align: center;
+	}
+
+	iframe {
+		width: 100%;
+	}
 }
+
 
 
 .page-id-5,
@@ -122,7 +130,18 @@ iframe {
 	margin-top: 0;
 }
 
+.certifications,
+.sb-profile,
+.sb-charters-cta,
+.sidebar-submenu {
+	h2 {
+		display: none;
+	}
+}
 
+// ---------------------------------------------------------------------------------
+// ----- SIDEBAR -------------------------------------------------------------------
+// ---------------------------------------------------------------------------------
 /* --------------------------------------------- SUBMENUS -- */
 .sidebar-submenu {
 	h2 {
@@ -137,43 +156,31 @@ iframe {
 
 	ul {
 		li {
-
 			& + li {
 				border-top: 1px solid $brand-alt;
 			}
 
 			&.current-menu-item {
 				a {
-					background: $brand-alt;
-					color: #434343;
+					background: $brand;
+					color: #fff;
+
+					&:hover {
+						background: $brand-alt;
+						color: $brand-dk;
+					}
 				}
 			}
 
 			a {
 				display: block;
-				padding: 0.75rem 1rem 0.75rem 3rem;
+				padding: 0.75rem;
 				//background: #f6f6f6;
 				transition: 0.3s;
 				position: relative;
 
 				&:hover {
-					background: $brand-secondary;
-					color: #f4e30c;
-					//padding-left: 2.5rem;
-					border-left: 8px solid darken($brand-secondary, 20);
-					border-left: 8px solid #f4e30c;
-				}
-
-				&:after {
-					position: absolute;
-					top: 50%;
-					left: 1rem;
-					transform: translateY(-50%)scale(1.25);
-					content: "\f007";
-					font-family: "Font Awesome 5 Free";
-					//font-weight: 900;
-					font-size: 0.9em;
-					color: $brand;
+					background: $brand-alt;
 				}
 			}
 		}
@@ -181,42 +188,103 @@ iframe {
 }
 
 
-/* --------------------------------------------- ABOUT MENU ICONS -- */
-.about {
-	li {
-		&#menu-item-812 {
-			a {
-				&:after {
-					content: "\f075";
-				}
-			}
+/* --------------------------------------------- CHARTER CTA -- */
+.sb-charters-cta {
+	background: $brand-secondary;
+	background-image: url('/wp-content/themes/inshorefishing/images/bkd-charters-cta.jpg');
+	background-image: url('/wp-content/themes/inshorefishing/images/bkd-co-charters.jpg');
+	background-position: 80% 75%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: #fff;
+	position: relative;
+	overflow: hidden;
+	transition: 0.3s;
+	padding: 2rem 2rem 2.5rem;
+	text-align: center;
+	//border-bottom: 8px solid $brand;
+
+	&:hover {
+		background-size: 120%;
+		background-position: 70% 60%;
+
+		&:after,
+		&:before {
+			opacity: 0.7;
 		}
 
-		&#menu-item-810 {
-			a {
-				&:after {
-					content: "\f21a";
-					font-weight: 900;
-				}
-			}
-		}
-
-		&:hover {
-			a {
-				&:after {
-					color: inherit;
-				}
-			}
-		}
-
-		&.current-menu-item {
-			a {
-				&:after {
-					color: inherit;
-				}
-			}
+		.sidebar-charters-cta-learn-more {
+			background: $brand-dk;
+			// background: #f4e30c !important;
+			// color: $brand-secondary !important;
 		}
 	}
+
+	* {
+		position: relative;
+		z-index: 1;
+	}
+
+	&:after {
+		content: '';
+		background: $brand-secondary;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#256088+0,256088+55,183656+100&0.34+0,1+100 */
+		background: -moz-linear-gradient(45deg, rgba(37,96,136,0.34) 0%, rgba(37,96,136,0.7) 55%, rgba(24,54,86,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(45deg, rgba(37,96,136,0.34) 0%,rgba(37,96,136,0.7) 55%,rgba(24,54,86,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(45deg, rgba(37,96,136,0.34) 0%,rgba(37,96,136,0.7) 55%,rgba(24,54,86,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57256088', endColorstr='#183656',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.85;
+		z-index: 0;
+		transition: 0.3s;
+	}
+
+	&:before {
+		line-height: 0;
+		position: absolute;
+		bottom: 1.25rem;
+		left: 1.25rem;
+		transform: scale(1.125)rotate(20deg);
+		transform-origin: top left;
+		left: 0;
+		z-index: 1;
+		opacity: 0.45;
+		content: url(/wp-content/themes/inshorefishing/images/header-wavy-swirl.png);
+		transition: 0.3s;
+	}
+
+	.full-cover-hidden {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
+
+	.sidebar-charters-cta-tag {
+		margin-top: 0;
+		font-size: 1.35em;
+		font-weight: 900;
+	}
+
+	.sidebar-charters-cta-learn-more {
+		margin-top: 1.5rem;
+		padding: 0.5rem 1.5rem;
+
+		@extend .btn;
+		@extend .btn-sm;
+	}
+}
+
+
+/* ---------------------------------------------  -- */
+#right_sidebar + #right_sidebar {
+	margin-top: 2rem;
 }
 
 
@@ -262,6 +330,11 @@ iframe {
 // ---------------------------------------------------------------------------------
 .page-id-947 {
 
+	h1.page-title {
+		margin-bottom: 0 !important;
+		padding-bottom: 0 !important;
+	}
+
 	.testimonials-page-leadin-content {
 		max-width: 900px;
 		margin: 0 auto;
@@ -269,6 +342,10 @@ iframe {
 
 	.testimonials-page-listing-single-container {
 		padding: 4em 0;
+
+		@media (max-width: 640px) {
+			padding: 2rem 0;
+		}
 
 		h1 {
 			text-align: center;
@@ -727,6 +804,11 @@ iframe {
 }
 
 .sidebar-cta {
+
+	h2 {
+		display: none;
+	}
+
 	&.book-now {
 		.btn-alt {
 			background-image: url('/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg') !important;

@@ -303,11 +303,19 @@
 					}
 				}
 
-				@media (max-width: 500px) {
-					text-align: center;
-				}
+				// @media (max-width: 500px) {
+				// 	text-align: center;
+				// }
 
 				p {
+					strong {
+						font-weight: normal;
+
+						a {
+							color: #fff;
+						}
+					}
+
 					span {
 						display: block;
 						padding-top: 0.25em;
@@ -464,10 +472,12 @@
 					// flex-wrap: wrap;
 					// justify-content: flex-start;
 					// align-items: flex-end;
+					background-size: cover;
+					background-position: center bottom;
 
 					@media (max-width: 860px) {
 						width: 100%;
-						background-size: cover;
+						background-position: center top;
 
 						& + .blog-listing-item {
 							margin-top: 1.25em;

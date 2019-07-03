@@ -40,7 +40,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 @media (max-width: 650px) {
   .flt-left {
     float: none;
-    margin: 0; } }
+    margin: 0 0 1rem 0;
+    text-align: center; }
+    .flt-left img {
+      width: 70%; } }
 .clearfloat {
   clear: both;
   height: 0;
@@ -53,11 +56,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .btn, input[type="submit"],
 input[type="button"],
-button, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a,
+button, .sb-charters-cta .sidebar-charters-cta-learn-more, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a,
 .btn:visited,
 input[type="submit"]:visited,
 input[type="button"]:visited,
 button:visited,
+.sb-charters-cta .sidebar-charters-cta-learn-more:visited,
 .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited,
 .button,
 [type="button"],
@@ -74,11 +78,12 @@ button:visited,
   -webkit-appearance: none; }
   .btn:hover, input[type="submit"]:hover,
   input[type="button"]:hover,
-  button:hover, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:hover,
+  button:hover, .sb-charters-cta .sidebar-charters-cta-learn-more:hover, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:hover,
   .btn:visited:hover,
   input[type="submit"]:visited:hover,
   input[type="button"]:visited:hover,
   button:visited:hover,
+  .sb-charters-cta .sidebar-charters-cta-learn-more:visited:hover,
   .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited:hover,
   .button:hover,
   [type="button"]:hover,
@@ -90,27 +95,41 @@ button:visited,
     color: #fff; }
   .btn.btn-sm, input.btn-sm[type="submit"],
   input.btn-sm[type="button"],
-  button.btn-sm, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-sm,
+  button.btn-sm, .sb-charters-cta .sidebar-charters-cta-learn-more, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-sm, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .sb-charters-cta a.sidebar-charters-cta-learn-more, .sb-charters-cta .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.sidebar-charters-cta-learn-more,
   .btn:visited.btn-sm,
   input[type="submit"]:visited.btn-sm,
   input[type="button"]:visited.btn-sm,
   button:visited.btn-sm,
+  .sb-charters-cta .sidebar-charters-cta-learn-more:visited,
   .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-sm,
+  .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .sb-charters-cta a.sidebar-charters-cta-learn-more:visited,
+  .sb-charters-cta .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.sidebar-charters-cta-learn-more:visited,
   .button.btn-sm,
+  .sb-charters-cta .button.sidebar-charters-cta-learn-more,
   [type="button"].btn-sm,
+  .sb-charters-cta [type="button"].sidebar-charters-cta-learn-more,
   .woocommerce #respond input#submit.alt.btn-sm,
+  .woocommerce #respond .sb-charters-cta input#submit.alt.sidebar-charters-cta-learn-more,
+  .sb-charters-cta .woocommerce #respond input#submit.alt.sidebar-charters-cta-learn-more,
   .woocommerce a.button.alt.btn-sm,
+  .woocommerce .sb-charters-cta a.button.alt.sidebar-charters-cta-learn-more,
+  .sb-charters-cta .woocommerce a.button.alt.sidebar-charters-cta-learn-more,
   .woocommerce button.button.alt.btn-sm,
-  .woocommerce input.button.alt.btn-sm {
+  .woocommerce .sb-charters-cta button.button.alt.sidebar-charters-cta-learn-more,
+  .sb-charters-cta .woocommerce button.button.alt.sidebar-charters-cta-learn-more,
+  .woocommerce input.button.alt.btn-sm,
+  .woocommerce .sb-charters-cta input.button.alt.sidebar-charters-cta-learn-more,
+  .sb-charters-cta .woocommerce input.button.alt.sidebar-charters-cta-learn-more {
     font-size: 0.8em;
     padding: 0.5em 1em; }
   .btn.btn-full-width, input.btn-full-width[type="submit"],
   input.btn-full-width[type="button"],
-  button.btn-full-width, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width,
+  button.btn-full-width, .sb-charters-cta .btn-full-width.sidebar-charters-cta-learn-more, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width,
   .btn:visited.btn-full-width,
   input[type="submit"]:visited.btn-full-width,
   input[type="button"]:visited.btn-full-width,
   button:visited.btn-full-width,
+  .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-full-width,
   .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-full-width,
   .button.btn-full-width,
   [type="button"].btn-full-width,
@@ -138,11 +157,12 @@ button:visited,
     font-weight: border-left; }
     .btn.btn-full-width:hover img, input.btn-full-width[type="submit"]:hover img,
     input.btn-full-width[type="button"]:hover img,
-    button.btn-full-width:hover img, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width:hover img,
+    button.btn-full-width:hover img, .sb-charters-cta .btn-full-width.sidebar-charters-cta-learn-more:hover img, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width:hover img,
     .btn:visited.btn-full-width:hover img,
     input[type="submit"]:visited.btn-full-width:hover img,
     input[type="button"]:visited.btn-full-width:hover img,
     button:visited.btn-full-width:hover img,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-full-width:hover img,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-full-width:hover img,
     .button.btn-full-width:hover img,
     [type="button"].btn-full-width:hover img,
@@ -157,11 +177,12 @@ button:visited,
               filter: invert(90%) sepia(90%) saturate(2062%) hue-rotate(346deg) brightness(96%) contrast(99%); }
     .btn.btn-full-width img, input.btn-full-width[type="submit"] img,
     input.btn-full-width[type="button"] img,
-    button.btn-full-width img, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width img,
+    button.btn-full-width img, .sb-charters-cta .btn-full-width.sidebar-charters-cta-learn-more img, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-full-width img,
     .btn:visited.btn-full-width img,
     input[type="submit"]:visited.btn-full-width img,
     input[type="button"]:visited.btn-full-width img,
     button:visited.btn-full-width img,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-full-width img,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-full-width img,
     .button.btn-full-width img,
     [type="button"].btn-full-width img,
@@ -177,11 +198,12 @@ button:visited,
       transition: 0.2s; }
   .btn.btn-white, input.btn-white[type="submit"],
   input.btn-white[type="button"],
-  button.btn-white, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-white,
+  button.btn-white, .sb-charters-cta .btn-white.sidebar-charters-cta-learn-more, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-white,
   .btn:visited.btn-white,
   input[type="submit"]:visited.btn-white,
   input[type="button"]:visited.btn-white,
   button:visited.btn-white,
+  .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-white,
   .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-white,
   .button.btn-white,
   [type="button"].btn-white,
@@ -193,11 +215,12 @@ button:visited,
     color: #ff9e14 !important; }
     .btn.btn-white:hover, input.btn-white[type="submit"]:hover,
     input.btn-white[type="button"]:hover,
-    button.btn-white:hover, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-white:hover,
+    button.btn-white:hover, .sb-charters-cta .btn-white.sidebar-charters-cta-learn-more:hover, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-white:hover,
     .btn:visited.btn-white:hover,
     input[type="submit"]:visited.btn-white:hover,
     input[type="button"]:visited.btn-white:hover,
     button:visited.btn-white:hover,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-white:hover,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-white:hover,
     .button.btn-white:hover,
     [type="button"].btn-white:hover,
@@ -209,11 +232,12 @@ button:visited,
       background: #256088 !important; }
   .btn.btn-alt, input.btn-alt[type="submit"],
   input.btn-alt[type="button"],
-  button.btn-alt, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt,
+  button.btn-alt, .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt,
   .btn:visited.btn-alt,
   input[type="submit"]:visited.btn-alt,
   input[type="button"]:visited.btn-alt,
   button:visited.btn-alt,
+  .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt,
   .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt,
   .button.btn-alt,
   [type="button"].btn-alt,
@@ -233,21 +257,24 @@ button:visited,
     transition: 0.2s; }
     .btn.btn-alt span, input.btn-alt[type="submit"] span,
     input.btn-alt[type="button"] span,
-    button.btn-alt span, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt span,
+    button.btn-alt span, .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more span, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt span,
     .btn.btn-alt img,
     input.btn-alt[type="submit"] img,
     input.btn-alt[type="button"] img,
     button.btn-alt img,
+    .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more img,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt img,
     .btn:visited.btn-alt span,
     input[type="submit"]:visited.btn-alt span,
     input[type="button"]:visited.btn-alt span,
     button:visited.btn-alt span,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt span,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt span,
     .btn:visited.btn-alt img,
     input[type="submit"]:visited.btn-alt img,
     input[type="button"]:visited.btn-alt img,
     button:visited.btn-alt img,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt img,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt img,
     .button.btn-alt span,
     .button.btn-alt img,
@@ -265,11 +292,12 @@ button:visited,
       z-index: 1; }
     .btn.btn-alt span, input.btn-alt[type="submit"] span,
     input.btn-alt[type="button"] span,
-    button.btn-alt span, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt span,
+    button.btn-alt span, .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more span, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt span,
     .btn:visited.btn-alt span,
     input[type="submit"]:visited.btn-alt span,
     input[type="button"]:visited.btn-alt span,
     button:visited.btn-alt span,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt span,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt span,
     .button.btn-alt span,
     [type="button"].btn-alt span,
@@ -281,11 +309,12 @@ button:visited,
       font-weight: bold; }
     .btn.btn-alt:after, input.btn-alt[type="submit"]:after,
     input.btn-alt[type="button"]:after,
-    button.btn-alt:after, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:after,
+    button.btn-alt:after, .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more:after, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:after,
     .btn:visited.btn-alt:after,
     input[type="submit"]:visited.btn-alt:after,
     input[type="button"]:visited.btn-alt:after,
     button:visited.btn-alt:after,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt:after,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt:after,
     .button.btn-alt:after,
     [type="button"].btn-alt:after,
@@ -307,11 +336,12 @@ button:visited,
       transition: 0.2s; }
     .btn.btn-alt:hover, input.btn-alt[type="submit"]:hover,
     input.btn-alt[type="button"]:hover,
-    button.btn-alt:hover, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:hover,
+    button.btn-alt:hover, .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more:hover, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:hover,
     .btn:visited.btn-alt:hover,
     input[type="submit"]:visited.btn-alt:hover,
     input[type="button"]:visited.btn-alt:hover,
     button:visited.btn-alt:hover,
+    .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt:hover,
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt:hover,
     .button.btn-alt:hover,
     [type="button"].btn-alt:hover,
@@ -323,11 +353,12 @@ button:visited,
       background-position: 60% 80% !important; }
       .btn.btn-alt:hover:after, input.btn-alt[type="submit"]:hover:after,
       input.btn-alt[type="button"]:hover:after,
-      button.btn-alt:hover:after, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:hover:after,
+      button.btn-alt:hover:after, .sb-charters-cta .btn-alt.sidebar-charters-cta-learn-more:hover:after, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.btn-alt:hover:after,
       .btn:visited.btn-alt:hover:after,
       input[type="submit"]:visited.btn-alt:hover:after,
       input[type="button"]:visited.btn-alt:hover:after,
       button:visited.btn-alt:hover:after,
+      .sb-charters-cta .sidebar-charters-cta-learn-more:visited.btn-alt:hover:after,
       .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a:visited.btn-alt:hover:after,
       .button.btn-alt:hover:after,
       [type="button"].btn-alt:hover:after,
@@ -665,7 +696,7 @@ input {
       margin: 0; }
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .btn, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="submit"],
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact input[type="button"],
-      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact button, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact a {
+      .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact button, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .sidebar-charters-cta-learn-more, .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-contact a {
         padding: 0.35em 1em;
         margin: 0 0.25em; }
       .social-contact-nav-wrap-outer .social-contact-nav-wrap p.social-contact-social {
@@ -822,7 +853,7 @@ input {
       display: block; } }
   .call-now-booking-callout .btn, .call-now-booking-callout input[type="submit"],
   .call-now-booking-callout input[type="button"],
-  .call-now-booking-callout button, .call-now-booking-callout .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .call-now-booking-callout a {
+  .call-now-booking-callout button, .call-now-booking-callout .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .call-now-booking-callout .sidebar-charters-cta-learn-more, .call-now-booking-callout .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .call-now-booking-callout a {
     padding: 0.25em 1em;
     margin-left: 0.25em; }
 
@@ -1048,7 +1079,7 @@ input {
           margin-top: 0.75em; } }
       .footer-wrap-outer .footer-wrap .footer-contact span .btn, .footer-wrap-outer .footer-wrap .footer-contact span input[type="submit"],
       .footer-wrap-outer .footer-wrap .footer-contact span input[type="button"],
-      .footer-wrap-outer .footer-wrap .footer-contact span button, .footer-wrap-outer .footer-wrap .footer-contact span .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .footer-wrap-outer .footer-wrap .footer-contact span a {
+      .footer-wrap-outer .footer-wrap .footer-contact span button, .footer-wrap-outer .footer-wrap .footer-contact span .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .footer-wrap-outer .footer-wrap .footer-contact span .sidebar-charters-cta-learn-more, .footer-wrap-outer .footer-wrap .footer-contact span .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .footer-wrap-outer .footer-wrap .footer-contact span a {
         margin-left: 0.5em;
         font-size: 1.17rem;
         padding: 0.4em 1.5em; }
@@ -1108,9 +1139,12 @@ input {
   box-shadow: 0 -10px 7px rgba(35, 37, 40, 0.2);
   border-radius: 5px; }
 
-iframe {
-  width: 100%;
-  height: 1100px; }
+.section-gallery .wp-block-embed-youtube {
+  width: 85%;
+  margin: 0 auto 2.5rem;
+  text-align: center; }
+.section-gallery iframe {
+  width: 100%; }
 
 .page-id-5 .content-wrap,
 .page-id-873 .content-wrap {
@@ -1129,6 +1163,12 @@ iframe {
 .no-top-margin {
   margin-top: 0; }
 
+.certifications h2,
+.sb-profile h2,
+.sb-charters-cta h2,
+.sidebar-submenu h2 {
+  display: none; }
+
 /* --------------------------------------------- SUBMENUS -- */
 .sidebar-submenu h2 {
   margin-bottom: 0.5em; }
@@ -1139,40 +1179,98 @@ iframe {
 .sidebar-submenu ul li + li {
   border-top: 1px solid #ecebe4; }
 .sidebar-submenu ul li.current-menu-item a {
-  background: #ecebe4;
-  color: #434343; }
+  background: #ff9e14;
+  color: #fff; }
+  .sidebar-submenu ul li.current-menu-item a:hover {
+    background: #ecebe4;
+    color: #e08400; }
 .sidebar-submenu ul li a {
   display: block;
-  padding: 0.75rem 1rem 0.75rem 3rem;
+  padding: 0.75rem;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative; }
   .sidebar-submenu ul li a:hover {
-    background: #256088;
-    color: #f4e30c;
-    border-left: 8px solid #0f2738;
-    border-left: 8px solid #f4e30c; }
-  .sidebar-submenu ul li a:after {
-    position: absolute;
-    top: 50%;
-    left: 1rem;
-    -webkit-transform: translateY(-50%) scale(1.25);
-            transform: translateY(-50%) scale(1.25);
-    content: "\f007";
-    font-family: "Font Awesome 5 Free";
-    font-size: 0.9em;
-    color: #ff9e14; }
+    background: #ecebe4; }
 
-/* --------------------------------------------- ABOUT MENU ICONS -- */
-.about li#menu-item-812 a:after {
-  content: "\f075"; }
-.about li#menu-item-810 a:after {
-  content: "\f21a";
-  font-weight: 900; }
-.about li:hover a:after {
-  color: inherit; }
-.about li.current-menu-item a:after {
-  color: inherit; }
+/* --------------------------------------------- CHARTER CTA -- */
+.sb-charters-cta {
+  background: #256088;
+  background-image: url("/wp-content/themes/inshorefishing/images/bkd-charters-cta.jpg");
+  background-image: url("/wp-content/themes/inshorefishing/images/bkd-co-charters.jpg");
+  background-position: 80% 75%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2rem 2rem 2.5rem;
+  text-align: center; }
+  .sb-charters-cta:hover {
+    background-size: 120%;
+    background-position: 70% 60%; }
+    .sb-charters-cta:hover:after, .sb-charters-cta:hover:before {
+      opacity: 0.7; }
+    .sb-charters-cta:hover .sidebar-charters-cta-learn-more {
+      background: #e08400; }
+  .sb-charters-cta * {
+    position: relative;
+    z-index: 1; }
+  .sb-charters-cta:after {
+    content: '';
+    background: #256088;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#256088+0,256088+55,183656+100&0.34+0,1+100 */
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(37, 96, 136, 0.34) 0%, rgba(37, 96, 136, 0.7) 55%, #183656 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(37, 96, 136, 0.34) 0%, rgba(37, 96, 136, 0.7) 55%, #183656 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57256088', endColorstr='#183656',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+    z-index: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .sb-charters-cta:before {
+    line-height: 0;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 1.25rem;
+    -webkit-transform: scale(1.125) rotate(20deg);
+            transform: scale(1.125) rotate(20deg);
+    -webkit-transform-origin: top left;
+            transform-origin: top left;
+    left: 0;
+    z-index: 1;
+    opacity: 0.45;
+    content: url(/wp-content/themes/inshorefishing/images/header-wavy-swirl.png);
+    -webkit-transition: 0.3s;
+    transition: 0.3s; }
+  .sb-charters-cta .full-cover-hidden {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+  .sb-charters-cta .sidebar-charters-cta-tag {
+    margin-top: 0;
+    font-size: 1.35em;
+    font-weight: 900; }
+  .sb-charters-cta .sidebar-charters-cta-learn-more {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem; }
+
+/* ---------------------------------------------  -- */
+#right_sidebar + #right_sidebar {
+  margin-top: 2rem; }
 
 .certifications {
   margin-top: 2rem !important;
@@ -1209,12 +1307,18 @@ iframe {
 .page-id-947 {
   /* --------------------------------------------- REVIEW US SECTION -- */
   /* --------------------------------------------- TESTIMONIALS GRID -- */ }
+  .page-id-947 h1.page-title {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important; }
   .page-id-947 .testimonials-page-leadin-content {
     max-width: 900px;
     margin: 0 auto; }
   .page-id-947 .testimonials-page-listing-single-container {
     padding: 4em 0;
     /* --------------------------------------------- SINGLE RANDOM TESTIMONIAL -- */ }
+    @media (max-width: 640px) {
+      .page-id-947 .testimonials-page-listing-single-container {
+        padding: 2rem 0; } }
     .page-id-947 .testimonials-page-listing-single-container h1 {
       text-align: center; }
     .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single {
@@ -1335,7 +1439,7 @@ iframe {
           margin-top: 0.75em; } }
       .page-id-947 .review-platforms-conatiner .footer-contact span .btn, .page-id-947 .review-platforms-conatiner .footer-contact span input[type="submit"],
       .page-id-947 .review-platforms-conatiner .footer-contact span input[type="button"],
-      .page-id-947 .review-platforms-conatiner .footer-contact span button, .page-id-947 .review-platforms-conatiner .footer-contact span .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .review-platforms-conatiner .footer-contact span a {
+      .page-id-947 .review-platforms-conatiner .footer-contact span button, .page-id-947 .review-platforms-conatiner .footer-contact span .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .page-id-947 .review-platforms-conatiner .footer-contact span .sidebar-charters-cta-learn-more, .page-id-947 .review-platforms-conatiner .footer-contact span .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .review-platforms-conatiner .footer-contact span a {
         margin-left: 0.25em;
         font-size: 1.17rem;
         padding: 0.4em 1.5em; }
@@ -1556,6 +1660,8 @@ iframe {
 .sidebar-submenu + .sidebar-cta {
   margin-top: 2rem !important; }
 
+.sidebar-cta h2 {
+  display: none; }
 .sidebar-cta.book-now .btn-alt {
   background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
   background-position: 50% 70% !important; }
@@ -1675,13 +1781,13 @@ iframe {
             align-items: stretch; }
     .pagenotfound-ctas .pagenotfound-link-container .btn, .pagenotfound-ctas .pagenotfound-link-container input[type="submit"],
     .pagenotfound-ctas .pagenotfound-link-container input[type="button"],
-    .pagenotfound-ctas .pagenotfound-link-container button, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a {
+    .pagenotfound-ctas .pagenotfound-link-container button, .pagenotfound-ctas .pagenotfound-link-container .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .pagenotfound-ctas .pagenotfound-link-container .sidebar-charters-cta-learn-more, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a {
       width: 49%; }
       .pagenotfound-ctas .pagenotfound-link-container .btn.inshore, .pagenotfound-ctas .pagenotfound-link-container input.inshore[type="submit"],
       .pagenotfound-ctas .pagenotfound-link-container input.inshore[type="button"],
-      .pagenotfound-ctas .pagenotfound-link-container button.inshore, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inshore, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inshore, .pagenotfound-ctas .pagenotfound-link-container .btn.inlet, .pagenotfound-ctas .pagenotfound-link-container input.inlet[type="submit"],
+      .pagenotfound-ctas .pagenotfound-link-container button.inshore, .pagenotfound-ctas .pagenotfound-link-container .sb-charters-cta .inshore.sidebar-charters-cta-learn-more, .sb-charters-cta .pagenotfound-ctas .pagenotfound-link-container .inshore.sidebar-charters-cta-learn-more, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inshore, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inshore, .pagenotfound-ctas .pagenotfound-link-container .btn.inlet, .pagenotfound-ctas .pagenotfound-link-container input.inlet[type="submit"],
       .pagenotfound-ctas .pagenotfound-link-container input.inlet[type="button"],
-      .pagenotfound-ctas .pagenotfound-link-container button.inlet, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inlet, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inlet {
+      .pagenotfound-ctas .pagenotfound-link-container button.inlet, .pagenotfound-ctas .pagenotfound-link-container .sb-charters-cta .inlet.sidebar-charters-cta-learn-more, .sb-charters-cta .pagenotfound-ctas .pagenotfound-link-container .inlet.sidebar-charters-cta-learn-more, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inlet, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inlet {
         padding: 1.75rem 1.5rem; }
 
 .page-id-7 * + h2 {
@@ -1718,7 +1824,7 @@ iframe {
     padding: 0 1rem; }
     .page-id-7 .charter-type .charter-description .btn, .page-id-7 .charter-type .charter-description input[type="submit"],
     .page-id-7 .charter-type .charter-description input[type="button"],
-    .page-id-7 .charter-type .charter-description button, .page-id-7 .charter-type .charter-description .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .page-id-7 .charter-type .charter-description a {
+    .page-id-7 .charter-type .charter-description button, .page-id-7 .charter-type .charter-description .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .page-id-7 .charter-type .charter-description .sidebar-charters-cta-learn-more, .page-id-7 .charter-type .charter-description .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .page-id-7 .charter-type .charter-description a {
       margin-top: 0.75rem; }
   @media (max-width: 460px) {
     .page-id-7 .charter-type .charter-image,
@@ -1762,29 +1868,22 @@ iframe {
         margin: 0; }
 
 /* CSS Document */
-.blog h1,
-.archive.section-blog h1 {
-  max-width: 1440px !important; }
-.blog .content-wrap,
-.archive.section-blog .content-wrap {
-  max-width: 1440px;
-  font-size: 18px; }
+.blog .content-wrap .content-area.has-sidebar,
+.archive.section-blog .content-wrap .content-area.has-sidebar {
+  width: 70%; }
+.blog .content-wrap .sidebar-area,
+.archive.section-blog .content-wrap .sidebar-area {
+  width: 30%; }
+@media (max-width: 750px) {
   .blog .content-wrap .content-area.has-sidebar,
-  .archive.section-blog .content-wrap .content-area.has-sidebar {
-    width: 70%; }
+  .blog .content-wrap .sidebar-area,
+  .archive.section-blog .content-wrap .content-area.has-sidebar,
+  .archive.section-blog .content-wrap .sidebar-area {
+    width: 100%;
+    padding: 0; }
   .blog .content-wrap .sidebar-area,
   .archive.section-blog .content-wrap .sidebar-area {
-    width: 30%; }
-  @media (max-width: 750px) {
-    .blog .content-wrap .content-area.has-sidebar,
-    .blog .content-wrap .sidebar-area,
-    .archive.section-blog .content-wrap .content-area.has-sidebar,
-    .archive.section-blog .content-wrap .sidebar-area {
-      width: 100%;
-      padding: 0; }
-    .blog .content-wrap .sidebar-area,
-    .archive.section-blog .content-wrap .sidebar-area {
-      margin-top: 2em; } }
+    margin-top: 2em; } }
 .blog .blog-listing .blog-item,
 .archive.section-blog .blog-listing .blog-item {
   display: -webkit-box;
@@ -1844,19 +1943,18 @@ iframe {
         font-style: italic;
         color: #777;
         font-size: 0.9em; }
-    .blog .blog-listing .blog-item .blog-item-content .btn-sm,
-    .archive.section-blog .blog-listing .blog-item .blog-item-content .btn-sm {
+    .blog .blog-listing .blog-item .blog-item-content .btn-sm, .blog .blog-listing .blog-item .blog-item-content .sb-charters-cta .sidebar-charters-cta-learn-more, .sb-charters-cta .blog .blog-listing .blog-item .blog-item-content .sidebar-charters-cta-learn-more,
+    .archive.section-blog .blog-listing .blog-item .blog-item-content .btn-sm,
+    .archive.section-blog .blog-listing .blog-item .blog-item-content .sb-charters-cta .sidebar-charters-cta-learn-more,
+    .sb-charters-cta .archive.section-blog .blog-listing .blog-item .blog-item-content .sidebar-charters-cta-learn-more {
       margin-top: 1em; }
-
-#right_sidebar + #right_sidebar {
-  margin-top: 1em; }
 
 /* --------------------------------------------- NEWSLETTER SIGN UP -- */
 .sidebar-newlsetter-signup {
   width: 100%;
   margin: 0;
   background: #d0ffff;
-  padding: 1.5em 2em;
+  padding: 1.25em 1em;
   font-size: 0.88em; }
   .sidebar-newlsetter-signup h2 {
     font-size: 1.35em; }
@@ -1921,8 +2019,7 @@ iframe {
     .single-post .feature-wrap {
       padding: 2em 0; } }
 .single-post h1 {
-  margin: 0;
-  max-width: 1440px !important; }
+  margin: 0; }
   .single-post h1 .blog-article-node-meta {
     display: block;
     font-size: 0.45em;
@@ -1933,8 +2030,6 @@ iframe {
     .single-post h1 {
       font-size: 2em; } }
 .single-post .content-wrap {
-  max-width: 1440px;
-  font-size: 17.5px;
   padding-bottom: 0; }
   .single-post .content-wrap .content-area.has-sidebar {
     width: 70%;
@@ -1954,7 +2049,7 @@ iframe {
     -webkit-align-items: flex-start;
             align-items: flex-start; }
     .single-post .content-wrap .content-area.has-sidebar .blog-article-image {
-      width: 40%;
+      width: 35%;
       line-height: 0;
       padding-right: 1.25em; }
       @media (max-width: 630px) {
@@ -1971,7 +2066,7 @@ iframe {
     .single-post .content-wrap .content-area.has-sidebar .blog-article-content {
       width: 100%; }
       .single-post .content-wrap .content-area.has-sidebar .blog-article-content.has-blog-image {
-        width: 60%; }
+        width: 65%; }
       @media (max-width: 630px) {
         .single-post .content-wrap .content-area.has-sidebar .blog-article-content {
           width: 100%; }
