@@ -1747,10 +1747,15 @@ iframe {
     @media (min-width: 960px) {
       .boat-ramp-listing .boat-ramp-item {
         width: calc(33.33% - 1rem); } }
+    .boat-ramp-listing .boat-ramp-item .boat-ramp-map-link {
+      display: block;
+      overflow: hidden; }
     .boat-ramp-listing .boat-ramp-item .boat-ramp-map {
       border-radius: 5px 5px 0 0;
       overflow: hidden;
-      margin: 0; }
+      margin: 0;
+      -webkit-transform: scale(1.25);
+      transform: scale(1.25); }
     .boat-ramp-listing .boat-ramp-item .boat-ramp-meta {
       padding: 1.5rem; }
       .boat-ramp-listing .boat-ramp-item .boat-ramp-meta h2 {

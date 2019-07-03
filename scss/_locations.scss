@@ -22,10 +22,16 @@
 			width: calc(33.33% - 1rem);
 		}
 
+		.boat-ramp-map-link {
+			display: block;
+			overflow: hidden;
+		}
+
 		.boat-ramp-map {
 			border-radius: $rad $rad 0 0;
 			overflow: hidden;
 			margin: 0;
+			@include transform(scale(1.25));
 		}
 
 		.boat-ramp-meta {
