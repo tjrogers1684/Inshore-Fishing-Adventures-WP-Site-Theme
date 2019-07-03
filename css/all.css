@@ -1121,8 +1121,8 @@ input {
     height: 100% !important; }
   .not-front .content-wrap .shadow figure {
     margin-top: 0.5em; }
-    .not-front .content-wrap .shadow figure img {
-      box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
+  .not-front .content-wrap .shadow img {
+    box-shadow: 0 5px 10px rgba(35, 37, 40, 0.2); }
   .not-front .content-wrap .wp-block-separator {
     margin: 2.5em 0; }
 .not-front .page-title {
