@@ -245,11 +245,6 @@ button:visited,
   .woocommerce a.button.alt.btn-alt,
   .woocommerce button.button.alt.btn-alt,
   .woocommerce input.button.alt.btn-alt {
-    background: #256088 !important;
-    background-image: url("/wp-content/themes/inshorefishing/images/bkd-footer.jpg") !important;
-    background-position: 100% 70% !important;
-    background-repeat: no-repeat !important;
-    background-size: 160% !important;
     color: #fff !important;
     position: relative;
     overflow: hidden;
@@ -366,8 +361,7 @@ button:visited,
       .woocommerce a.button.alt.btn-alt:hover:after,
       .woocommerce button.button.alt.btn-alt:hover:after,
       .woocommerce input.button.alt.btn-alt:hover:after {
-        background: #143449 !important;
-        opacity: 0.85; }
+        background: #143449 !important; }
 
 h1, h2, h3 {
   font-weight: bold;
@@ -482,9 +476,6 @@ button {
             align-items: center; }
     .top-nav .menu > li {
       position: relative; }
-      .top-nav .menu > li.current-menu-item.menu-item-has-children:after, .top-nav .menu > li.current-menu-parent.menu-item-has-children:after {
-        color: #ff9e14;
-        content: "\f107"; }
       .top-nav .menu > li.current-menu-item a, .top-nav .menu > li.current-menu-parent a {
         background: #ff9e14;
         color: #fff; }
@@ -505,25 +496,6 @@ button {
             height: 0; } }
       .top-nav .menu > li.page_item_has_children, .top-nav .menu > li.menu-item-has-children {
         position: relative; }
-        .top-nav .menu > li.page_item_has_children:hover:after, .top-nav .menu > li.menu-item-has-children:hover:after {
-          color: #fff;
-          content: "\f107";
-          -webkit-transform: translateY(-50%) rotate(-90deg);
-          transform: translateY(-50%) rotate(-90deg);
-          right: 0.25em; }
-        .top-nav .menu > li.page_item_has_children:after, .top-nav .menu > li.menu-item-has-children:after {
-          transition: 0.2s;
-          position: absolute;
-          top: 50%;
-          right: 0.5em;
-          -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-          -webkit-transition: 0.2s;
-          transition: 0.2s;
-          content: "\f107";
-          font-family: "Font Awesome 5 Free";
-          font-size: 0.9em;
-          color: #ff9e14; }
         .top-nav .menu > li.page_item_has_children > a, .top-nav .menu > li.menu-item-has-children > a {
           padding: 0.5em 1.35em 0.5em 0.5em; }
         .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
@@ -635,6 +607,12 @@ a, a:visited {
 img {
   max-width: 100%;
   height: auto !important; }
+
+hr {
+  border: 0;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee; }
 
 input {
   -webkit-appearance: none; }
@@ -1016,11 +994,10 @@ input {
                   align-items: center;
           margin-bottom: 3em; } }
       .footer-wrap-outer .footer-wrap .footer-address-container .footer-social {
-        margin-top: 1.5em; }
+        margin-top: 1em; }
         .footer-wrap-outer .footer-wrap .footer-address-container .footer-social a {
           display: inline-block;
           font-size: 1.25em;
-          margin: 0 0.5em;
           color: #fff; }
           .footer-wrap-outer .footer-wrap .footer-address-container .footer-social a:first-of-type {
             margin-left: 0; }
@@ -1091,7 +1068,7 @@ input {
   background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-aerialhigh.jpg); }
 
 .section-charters .header-wrap-outer {
-  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg); }
+  background-image: url(/wp-content/themes/inshorefishing/images/hdr-ftpierce-boats.jpg); }
 
 .section-rates .header-wrap-outer {
   background-image: url(/wp-content/themes/inshorefishing/images/hdr-verobeach-inlet.jpg); }
@@ -1662,21 +1639,6 @@ input {
 
 .sidebar-cta h2 {
   display: none; }
-.sidebar-cta.book-now .btn-alt {
-  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
-  background-position: 50% 70% !important; }
-.sidebar-cta.testimonials .btn-alt {
-  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-aerialhigh.jpg") !important;
-  background-position: 70% 50% !important; }
-.sidebar-cta.fishing-reports .btn-alt {
-  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-condos.jpg") !important;
-  background-position: 50% 40% !important; }
-.sidebar-cta.inshore-charters .btn-alt, .sidebar-cta.inlet-charters .btn-alt, .sidebar-cta.family-charters .btn-alt {
-  background-image: url("/wp-content/themes/inshorefishing/images/hdr-ftpierce-bridge.jpg") !important;
-  background-position: 50% 40% !important; }
-.sidebar-cta.inshore-charters img, .sidebar-cta.inlet-charters img, .sidebar-cta.family-charters img {
-  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%); }
 
 /* --------------------------------------------- SIDEBAR PROFILE -- */
 .sb-profile {
@@ -1790,10 +1752,6 @@ input {
       .pagenotfound-ctas .pagenotfound-link-container button.inlet, .pagenotfound-ctas .pagenotfound-link-container .sb-charters-cta .inlet.sidebar-charters-cta-learn-more, .sb-charters-cta .pagenotfound-ctas .pagenotfound-link-container .inlet.sidebar-charters-cta-learn-more, .pagenotfound-ctas .pagenotfound-link-container .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link a.inlet, .page-id-947 .testimonials-page-listing-single-container .testimonials-listing.random.single .more-testimonials-link .pagenotfound-ctas .pagenotfound-link-container a.inlet {
         padding: 1.75rem 1.5rem; }
 
-.page-id-7 * + h2 {
-  margin-top: 2rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid #eee; }
 .page-id-7 .charter-type {
   margin-top: 2rem;
   padding-top: 1.5rem;
@@ -1833,6 +1791,14 @@ input {
       padding: 0; }
     .page-id-7 .charter-type .charter-image {
       margin-bottom: 1rem; } }
+
+.sidebar-contact-info .sidebar-contact-title {
+  font-size: 1.35em;
+  font-weight: bold; }
+.sidebar-contact-info .sidebar-contact-email {
+  display: inline-block;
+  vertical-align: top;
+  margin: 1rem 0 0; }
 
 /* CSS Document */
 .page-id-13 .wp-block-coblocks-row[data-columns="1"] .wp-block-coblocks-column__inner > [class*="wp-block-"] {

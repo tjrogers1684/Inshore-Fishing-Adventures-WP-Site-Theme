@@ -29,14 +29,6 @@
 			&.current-menu-item,
 			&.current-menu-parent {
 
-				&.menu-item-has-children {
-
-					&:after {
-						color: $brand;
-						content: "\f107";
-					}
-				}
-
 				a {
 					background: $brand;
 					color: #fff;
@@ -70,29 +62,6 @@
 			&.page_item_has_children,
 			&.menu-item-has-children {
 				position: relative;
-
-				&:hover {
-
-					&:after {
-						color: #fff;
-						content: "\f107";
-						@include transform(translateY(-50%) rotate(-90deg));
-						right: 0.25em;
-					}
-				}
-
-				&:after {
-					transition: 0.2s;
-					position: absolute;
-					top: 50%;
-					right: 0.5em;
-					@include transform(translateY(-50%));
-					@include transition(0.2s);
-					content: "\f107";
-					font-family: "Font Awesome 5 Free";
-					font-size: 0.9em;
-					color: $brand;
-				}
 
 				& > a {
 					padding: 0.5em 1.35em 0.5em 0.5em;

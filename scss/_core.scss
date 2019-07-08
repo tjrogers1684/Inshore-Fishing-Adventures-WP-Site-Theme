@@ -41,6 +41,10 @@ img {
 }
 
 hr {
+	border: 0;
+	margin-top: 2rem;
+	padding-top: 1.5rem;
+	border-top: 1px solid #eee;
 }
 
 input {
@@ -464,12 +468,12 @@ input {
 			}
 
 			.footer-social {
-				margin-top: 1.5em;
+				margin-top: 1em;
 
 				a {
 					display: inline-block;
 					font-size: 1.25em;
-					margin: 0 0.5em;
+					//margin: 0 0.5em;
 					color: #fff;
 
 					&:first-of-type {

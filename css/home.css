@@ -100,11 +100,6 @@
   .woocommerce a.button.alt.btn-alt,
   .woocommerce button.button.alt.btn-alt,
   .woocommerce input.button.alt.btn-alt {
-    background: #256088 !important;
-    background-image: url("/wp-content/themes/inshorefishing/images/bkd-footer.jpg") !important;
-    background-position: 100% 70% !important;
-    background-repeat: no-repeat !important;
-    background-size: 160% !important;
     color: #fff !important;
     position: relative;
     overflow: hidden;
@@ -174,8 +169,7 @@
       .woocommerce a.button.alt.btn-alt:hover:after,
       .woocommerce button.button.alt.btn-alt:hover:after,
       .woocommerce input.button.alt.btn-alt:hover:after {
-        background: #143449 !important;
-        opacity: 0.85; }
+        background: #143449 !important; }
 
 .feature-wrap {
   display: flex;
@@ -612,3 +606,5 @@
 
 .call-now-booking-callout {
   margin-top: 4rem; }
+
+/*# sourceMappingURL=home.css.map */

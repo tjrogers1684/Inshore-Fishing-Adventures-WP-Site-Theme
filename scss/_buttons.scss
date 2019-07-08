@@ -68,11 +68,6 @@
 	}
 
 	&.btn-alt {
-		background: #256088 !important;
-		background-image: url('/wp-content/themes/inshorefishing/images/bkd-footer.jpg') !important;
-		background-position: 100% 70% !important;
-		background-repeat: no-repeat !important;
-		background-size: 160% !important;
 		color: #fff !important;
 		position: relative;
 		overflow: hidden;
@@ -109,7 +104,6 @@
 
 			&:after {
 				background: #143449 !important;
-				opacity: 0.85;
 			}
 		}
 	}

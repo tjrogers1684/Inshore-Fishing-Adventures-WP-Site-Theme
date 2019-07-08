@@ -15,7 +15,7 @@
 		$addl_body_classes[] = 'section-'.explode('/', $_SERVER['REQUEST_URI'])[1].'-'.explode('/', $_SERVER['REQUEST_URI'])[2];
 	}
 
-	if ( !is_front_page() ) { 
+	if ( !is_front_page() ) {
 		$addl_body_classes[] = 'not-front';
 	}
 ?>
