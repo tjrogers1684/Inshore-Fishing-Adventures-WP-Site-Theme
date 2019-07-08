@@ -65,11 +65,12 @@
 		.shadow {
 			figure {
 				margin-top: 0.5em;
-
-				img {
-					box-shadow: 0 5px 10px rgba(35,37,40,0.2);
-				}
 			}
+
+			img {
+				box-shadow: 0 5px 10px rgba(35,37,40,0.2);
+			}
+
 		}
 
 		.wp-block-separator {
@@ -329,11 +330,6 @@
 // ----- TESTIMONIALS --------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .page-id-947 {
-
-	h1.page-title {
-		margin-bottom: 0 !important;
-		padding-bottom: 0 !important;
-	}
 
 	.testimonials-page-leadin-content {
 		max-width: 900px;
