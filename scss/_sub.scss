@@ -446,7 +446,7 @@
 		}
 
 		.review-platforms {
-			max-width: 1440px;
+			max-width: 900px;
 			margin: auto;
 			display: flex;
 			flex-direction: row;
@@ -461,16 +461,19 @@
 			}
 
 			a {
-				margin: 0 2em;
-				transform: scale(1.15);
-				filter: invert(75%) sepia(41%) saturate(2251%) hue-rotate(348deg) brightness(252%) contrast(101%);
+				padding: 0 2rem;
+				display: block;
+				width: 25%;
+				filter: invert(71%) sepia(96%) saturate(2309%) hue-rotate(346deg) brightness(102%) contrast(105%);
 
 				@media (max-width: 610px) {
 					margin: 1.5em 0;
+					padding: 0;
+					//width: 35%;
 				}
 
 				&:hover {
-					filter: invert(75%) sepia(41%) saturate(2251%) hue-rotate(348deg) brightness(202%) contrast(71%);
+					filter: invert(53%) sepia(79%) saturate(1970%) hue-rotate(7deg) brightness(95%) contrast(101%);
 				}
 			}
 		}

@@ -75,9 +75,9 @@ get_header();
 		<h2>We'd love to hear from you! <span> Review Inshore Fishing on these platforms</span></h2>
 
 		<p class="review-platforms">
-			<a href="https://www.yelp.com/biz/capt-mark-wright-titusville?osq=capt+mark+wright"><img class="footer-review-site review-yelp" src="/wp-content/themes/inshorefishing/images/footer-logo-yelp.png" alt=""></a>
-			<a href="https://www.google.com/search?q=capt+mark+wright+google+reviews&oq=capt+mark+wright+google+reviews&aqs=chrome..69i57.4032j0j4&sourceid=chrome&ie=UTF-8#lrd=0x88e0aa3f39bb1755:0xcfbe9cf36314f9e6,1,,,"><img class="footer-review-site review-google" src="/wp-content/themes/inshorefishing/images/footer-logo-google.png" alt=""></a>
-			<a href="https://www.tripadvisor.com/Attraction_Review-g60751-d8098820-Reviews-Florida_East_Coast_Fishing_Adventures-Titusville_Brevard_County_Florida.html"><img class="footer-review-site review-trip-advisor" src="/wp-content/themes/inshorefishing/images/footer-logo-trip-advisor.png" alt=""></a>
+			<a href="https://www.yelp.com/biz/capt-mark-wright-titusville?osq=capt+mark+wright"><img class="footer-review-site review-yelp" src="/wp-content/themes/inshorefishing/images/icon-yelp.svg" alt=""></a>
+			<a href="https://www.google.com/search?q=capt+mark+wright+google+reviews&oq=capt+mark+wright+google+reviews&aqs=chrome..69i57.4032j0j4&sourceid=chrome&ie=UTF-8#lrd=0x88e0aa3f39bb1755:0xcfbe9cf36314f9e6,1,,,"><img class="footer-review-site review-google" src="/wp-content/themes/inshorefishing/images/icon-google-logo-black.svg" alt=""></a>
+			<a href="https://www.tripadvisor.com/Attraction_Review-g60751-d8098820-Reviews-Florida_East_Coast_Fishing_Adventures-Titusville_Brevard_County_Florida.html"><img class="footer-review-site review-trip-advisor" src="/wp-content/themes/inshorefishing/images/tripadvisor-black.svg" alt=""></a>
 		</p>
 		<p class="footer-contact">Call <?php echo get_theme_mod('fgc_guide_phone_number'); ?> <span>or <a href="/reservations" class="btn book">Book Now</a></span></p>
 	</div>

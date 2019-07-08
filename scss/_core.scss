@@ -521,17 +521,28 @@ input {
 
 			.footer-review {
 				margin-bottom: 4em;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-items: center;
 
 				@media (max-width: 900px) {
 					margin-bottom: 2em;
 				}
 
 				a {
-					margin: 0 1.5em;
+					padding: 0 1rem;
+					display: block;
+					width: 33.33%;
 
 					@media (max-width: 560px) {
 						display: block;
 						margin: 1.5em 0;
+					}
+
+					img {
+						filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(32deg) brightness(106%) contrast(106%);
 					}
 				}
 			}
