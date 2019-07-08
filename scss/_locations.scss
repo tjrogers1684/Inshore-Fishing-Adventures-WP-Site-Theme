@@ -3,6 +3,41 @@
 
 /* CSS Document */
 // ---------------------------------------------------------------------------------
+// ----- LANDING PAGE --------------------------------------------------------------
+// ---------------------------------------------------------------------------------
+.page-id-13 {
+	.wp-block-coblocks-row[data-columns="1"] .wp-block-coblocks-column__inner>[class*="wp-block-"] {
+		max-width: 100% !important;
+	}
+
+	.has-medium-gutter>[class*="wp-block-coblocks-"]:not(:first-child) {
+		margin: 0;
+	}
+}
+
+figure {
+	margin-top: 0.5rem;
+
+	&.alignright,
+	&.alignleft {
+		@media (max-width: 600px) {
+			float: none !important;
+			margin: 0 0 1rem !important;
+			width: 100%;
+			text-align: center;
+
+			img {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+
+
+
+
+// ---------------------------------------------------------------------------------
 // ----- BOAT RAMPS ----------------------------------------------------------------
 // ---------------------------------------------------------------------------------
 .boat-ramp-listing {
