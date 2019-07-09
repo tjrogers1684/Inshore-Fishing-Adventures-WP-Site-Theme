@@ -350,10 +350,12 @@ input {
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		justify-content: flex-start;
 		align-items: center;
 
 		@media (max-width: 750px) {
 			width: 100%;
+			justify-content: center;
 		}
 
 		.sponsor-item {
@@ -374,7 +376,7 @@ input {
 				img {
 
 					@media (max-width: 620px) {
-						width: 300px;
+						width: 100px;
 					}
 				}
 			}
