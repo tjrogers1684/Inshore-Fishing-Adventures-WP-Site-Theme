@@ -1817,10 +1817,10 @@ input {
 .sidebar-contact-info .sidebar-contact-title {
   font-size: 1.35em;
   font-weight: bold; }
-.sidebar-contact-info .sidebar-contact-email {
+.sidebar-contact-info .sidebar-contact-phone {
+  font-size: 1.35em;
   display: inline-block;
-  vertical-align: top;
-  margin: 1rem 0 0; }
+  margin-top: 0.5rem; }
 
 /* CSS Document */
 .page-id-13 .wp-block-coblocks-row[data-columns="1"] .wp-block-coblocks-column__inner > [class*="wp-block-"] {
