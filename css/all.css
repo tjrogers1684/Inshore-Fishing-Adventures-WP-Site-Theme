@@ -496,8 +496,6 @@ button {
             height: 0; } }
       .top-nav .menu > li.page_item_has_children, .top-nav .menu > li.menu-item-has-children {
         position: relative; }
-        .top-nav .menu > li.page_item_has_children > a, .top-nav .menu > li.menu-item-has-children > a {
-          padding: 0.5em 1.35em 0.5em 0.5em; }
         .top-nav .menu > li.page_item_has_children ul, .top-nav .menu > li.menu-item-has-children ul {
           display: none;
           position: absolute;
