@@ -40,7 +40,7 @@
 
 					<div class="hp-perk-item boats">
 						<p class="hp-perk-item-icon"><img src="/wp-content/themes/inshorefishing/images/icon-boats.svg" alt=""></p>
-						<p class="hp-perk-item-description">Multi-boat trips are available. Choose from one of two beautiful boats... or both!</p>
+						<p class="hp-perk-item-description">Multi-boat trips are available, upon request, for larger group charters.</p>
 					</div>
 
 					<div class="hp-perk-item locations">
