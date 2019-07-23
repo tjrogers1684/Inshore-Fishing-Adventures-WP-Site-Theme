@@ -30,7 +30,7 @@
 
 					<div class="hp-perk-item fulltime-guide">
 						<p class="hp-perk-item-icon"><img src="/wp-content/themes/inshorefishing/images/icon-fulltime-guide.svg" alt=""></p>
-						<p class="hp-perk-item-description">Capt. Mark is a full-time Ft. Pierce fishing guide who provides enjoyable angling.</p>
+						<p class="hp-perk-item-description">Capt. Mark is a full-time Fort Pierce fishing guide who provides enjoyable angling.</p>
 					</div>
 
 					<div class="hp-perk-item booking">
