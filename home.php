@@ -40,7 +40,7 @@
 
 						<?php // the_excerpt(); ?>
 
-						<div class="blog-article-excerpt"><?php echo $article_snippet; ?></div>
+						<div class="blog-article-excerpt"><?php the_excerpt(); ?></div>
 
 						<p><a class="btn btn-sm" href="<?php echo get_the_permalink(); ?>">Read Article <i class="fas fa-angle-double-right"></i></a></p>
 					</div>
